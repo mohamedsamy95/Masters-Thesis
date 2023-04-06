@@ -1,0 +1,89 @@
+{% set version = "6.5.2" %}
+{% set min_nbclassic = "0.4.7" %}
+
+package:
+  name: notebook
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/n/notebook/notebook-{{ version }}.tar.gz
+  sha256: c1897e5317e225fc78b45549a6ab4b668e4c996fd03a04e938fe5e7af2bfffd0
+
+build:
+  noarch: python
+  script:
+    - {{ PYTHON }} -m pip install . --no-deps -vv
+    - find {{ PREFIX }} -name '*.js.map' -delete  # [not win]
+  number: 1
+  entry_points:
+    - jupyter-notebook = notebook.notebookapp:main
+    - jupyter-nbextension = notebook.nbextensions:main
+    - jupyter-serverextension = notebook.serverextensions:main
+    - jupyter-bundlerextension = notebook.bundler.bundlerextensions:main
+
+requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+  host:
+    - jupyter-packaging >=0.9,<1
+    - nbclassic >={{ min_nbclassic }}
+    - python >=3.7
+    - pip
+  run:
+    - argon2-cffi
+    - ipykernel
+    - ipython_genutils
+    - jinja2
+    - jupyter_client >=5.3.4
+    - jupyter_core >=4.6.1
+    - nbclassic >={{ min_nbclassic }}
+    - nbconvert-core >=5
+    - nbformat
+    - nest-asyncio >=1.5
+    - prometheus_client
+    - python >=3.7
+    - pyzmq >=17
+    - send2trash >=1.8.0
+    - terminado >=0.8.3
+    - tornado >=6.1
+    - traitlets >=4.2.1
+
+test:
+  requires:
+    - pip
+    - requests
+    - requests-unixsocket  # [unix]
+    - nbclassic =={{ min_nbclassic }}
+  commands:
+    - python -m pip check
+    - jupyter notebook -h
+    - jupyter nbextension -h
+    - jupyter serverextension -h
+    - jupyter bundlerextension -h
+  imports:
+    - notebook
+    - notebook.tests.launchnotebook
+
+about:
+  home: https://jupyter.org
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: A web-based notebook environment for interactive computing
+  dev_url: https://github.com/jupyter/notebook
+  doc_url: https://jupyter-notebook.readthedocs.io
+  doc_source_url: https://github.com/jupyter/notebook/tree/master/docs
+
+extra:
+  recipe-maintainers:
+    - SylvainCorlay
+    - jakirkham
+    - minrk
+    - pelson
+    - gnestor
+    - takluyver
+    - lresende
+    - bollwyvl
+    - blink1073
+    - davidbrochart

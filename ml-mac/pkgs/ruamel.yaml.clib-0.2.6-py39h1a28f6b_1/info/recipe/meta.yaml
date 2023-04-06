@@ -1,0 +1,94 @@
+# This file created by conda-build 3.22.0
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f64xdg2rww/clone/recipe, last modified Thu Oct 20 16:43:58 2022
+# ------------------------------------------------
+
+package:
+  name: ruamel.yaml.clib
+  version: 0.2.6
+source:
+  sha256: 4ff604ce439abb20794f05613c374759ce10e3595d1867764dd1ae675b85acbd
+  url: https://pypi.io/packages/source/r/ruamel.yaml.clib/ruamel.yaml.clib-0.2.6.tar.gz
+build:
+  ignore_run_exports:
+    - python
+  number: '1'
+  script: /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f64xdg2rww/croot/ruamel.yaml.clib_1666302244208/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/bin/python
+    -m pip install . -vv
+  string: py39h1a28f6b_1
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_25
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 14.0.6 h848a8c0_0
+    - libffi 3.4.2 hc377ac9_4
+    - libllvm12 12.0.0 h12f7ac0_4
+    - libllvm14 14.0.6 h4b41812_0
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - tapi 1100.0.11 h8754e6a_1
+    - zlib 1.2.12 h5a0b063_3
+  host:
+    - ca-certificates 2022.07.19 hca03da5_0
+    - certifi 2022.9.24 py39hca03da5_0
+    - libcxx 14.0.6 h848a8c0_0
+    - libffi 3.4.2 hc377ac9_4
+    - ncurses 6.3 h1a28f6b_3
+    - openssl 1.1.1q h1a28f6b_0
+    - pip 22.2.2 py39hca03da5_0
+    - python 3.9.13 hbdb9e5c_2
+    - readline 8.1.2 h1a28f6b_1
+    - setuptools 63.4.1 py39hca03da5_0
+    - sqlite 3.39.3 h1058600_0
+    - tk 8.6.12 hb8d0fd4_0
+    - tzdata 2022e h04d1e81_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.6 h1a28f6b_0
+    - zlib 1.2.12 h5a0b063_3
+  run:
+    - python >=3.9,<3.10.0a0
+test:
+  commands:
+    - pip check
+  imports:
+    - _ruamel_yaml
+  requires:
+    - pip
+    - ruamel.yaml
+about:
+  description: 'This package was split of from ruamel.yaml, so that ruamel.yaml can
+    be build as a universal wheel.
+
+    Apart from the C code seldom changing, and taking a long time to compile for all
+    platforms, this allows
+
+    installation of the .so on Linux systems under /usr/lib64/pythonX.Y (without a
+    .pth file or a ruamel
+
+    directory) and the Python code for ruamel.yaml under /usr/lib/pythonX.Y.
+
+    '
+  dev_url: https://sourceforge.net/projects/ruamel-yaml-clib/
+  doc_source_url: https://sourceforge.net/p/ruamel-yaml-clib/code/ci/0.2.6/tree/_doc/
+  doc_url: https://yaml.readthedocs.io
+  home: https://sourceforge.net/projects/ruamel-yaml-clib/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  license_url: https://sourceforge.net/p/ruamel-yaml-clib/code/ci/0.2.6/tree/LICENSE
+  summary: C version of reader, parser and emitter for ruamel.yaml derived from libyaml
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: f6fa944c-eda9-4e89-a820-8140c18c59ad
+  recipe-maintainers:
+    - ocefpaf
+  remote_url: git@github.com:AnacondaRecipes/ruamel.yaml.clib-feedstock.git
+  sha: c1bb1b3cc6bc8adcbecf071e4ac5ae362c96c534

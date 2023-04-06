@@ -1,0 +1,18 @@
+{
+  "arch": "arm64",
+  "build": "h009349e_28",
+  "build_number": 28,
+  "constrains": [
+    "libgfortran 5.0.0 *_28"
+  ],
+  "depends": [
+    "llvm-openmp >=8.0.0"
+  ],
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "name": "libgfortran5",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1665498967410,
+  "version": "11.3.0"
+}

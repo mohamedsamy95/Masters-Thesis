@@ -1,0 +1,295 @@
+{
+  "paths": [
+    {
+      "_path": "python-scripts/jupyter-execute",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/nbclient_1669795076334/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+      "sha256": "6efd892990310e315a680cbff1e2f898bc46f73233ee832d57c5909737066134",
+      "size_in_bytes": 494
+    },
+    {
+      "_path": "site-packages/nbclient-0.7.2.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/nbclient-0.7.2.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "b1e08c0339740c7028b79d0827555188119d62425690d06b7230a46bb5918f21",
+      "size_in_bytes": 8239
+    },
+    {
+      "_path": "site-packages/nbclient-0.7.2.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "cb2b00d49363426b0d81b3f53e5b78a2aa0107756b715091cb002444fa1b35ba",
+      "size_in_bytes": 5029
+    },
+    {
+      "_path": "site-packages/nbclient-0.7.2.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/nbclient-0.7.2.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "35a2e68071d6fdff634efbffc1187dbdc2bb73b10af68e5fc2c21730ece81a03",
+      "size_in_bytes": 87
+    },
+    {
+      "_path": "site-packages/nbclient-0.7.2.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "0acfc401cbcbbf1423cbfd4f62022bf4a53ae1a668288b56771715e8538f6ce5",
+      "size_in_bytes": 104
+    },
+    {
+      "_path": "site-packages/nbclient-0.7.2.dist-info/entry_points.txt",
+      "path_type": "hardlink",
+      "sha256": "b072509d4055a242b8e8ed8f2be835586f500214e6697cb77f0b2143fb7b4c50",
+      "size_in_bytes": 54
+    },
+    {
+      "_path": "site-packages/nbclient-0.7.2.dist-info/licenses/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "d58229db4e1b74cf33ea1c5d962e32d5e7670ecbe3b473e5ce89929b3b5087a7",
+      "size_in_bytes": 2836
+    },
+    {
+      "_path": "site-packages/nbclient/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "bacbab5929bdefd7208f7db64ec94701920d1156af87477ebec917eb439c3f7d",
+      "size_in_bytes": 507
+    },
+    {
+      "_path": "site-packages/nbclient/_version.py",
+      "path_type": "hardlink",
+      "sha256": "4a884900f1054f7a7b54b2c7870dc066c7b96a4ec13ba0fb82b5bb97bf906899",
+      "size_in_bytes": 443
+    },
+    {
+      "_path": "site-packages/nbclient/cli.py",
+      "path_type": "hardlink",
+      "sha256": "c3a22700831a99e49abbe1e585a95e65ac60a13c4feed7db2d9bb59691f90deb",
+      "size_in_bytes": 4490
+    },
+    {
+      "_path": "site-packages/nbclient/client.py",
+      "path_type": "hardlink",
+      "sha256": "8d2ae76924e39a56d7a792f4e7c411db6921b1b369999e6d5a70e421d5e88369",
+      "size_in_bytes": 47103
+    },
+    {
+      "_path": "site-packages/nbclient/exceptions.py",
+      "path_type": "hardlink",
+      "sha256": "c1461674545852bc751e5cfc4a24400f2c8b19dcae894c603596164834565663",
+      "size_in_bytes": 3202
+    },
+    {
+      "_path": "site-packages/nbclient/jsonutil.py",
+      "path_type": "hardlink",
+      "sha256": "ac6572f91e0e9f1aea666b835064f2112dd62cbcbd197f5b1064a4ec9780dda5",
+      "size_in_bytes": 4541
+    },
+    {
+      "_path": "site-packages/nbclient/output_widget.py",
+      "path_type": "hardlink",
+      "sha256": "5c6d9a8dac724f8d536826c6ec901bbd3d8b67e5fd01c0d14024304b8e7d0967",
+      "size_in_bytes": 4024
+    },
+    {
+      "_path": "site-packages/nbclient/py.typed",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/nbclient/tests/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/nbclient/tests/base.py",
+      "path_type": "hardlink",
+      "sha256": "45cf6b4b5b3ec827d0fef2e163523e808b28c058a9f53ea43adc8811fa7048e6",
+      "size_in_bytes": 1950
+    },
+    {
+      "_path": "site-packages/nbclient/tests/conftest.py",
+      "path_type": "hardlink",
+      "sha256": "82cb7fff312d3df3c55618cc346d36574fc1014233fa8976ed39e8218bf8f6b8",
+      "size_in_bytes": 262
+    },
+    {
+      "_path": "site-packages/nbclient/tests/fake_kernelmanager.py",
+      "path_type": "hardlink",
+      "sha256": "4623f43e65797c0b060fbbe69c01534fea11fc24a63f3993f45c2519e014c73b",
+      "size_in_bytes": 796
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Autokill.ipynb",
+      "path_type": "hardlink",
+      "sha256": "2e268787e52fe6fd1a686d40b776bc599aeb3482515fd2b4f075f2fefbdc661a",
+      "size_in_bytes": 663
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Check History in Memory.ipynb",
+      "path_type": "hardlink",
+      "sha256": "f814231689e18cd82e8428b886fea7938c83edc17c9fe3c6c17598d775f72deb",
+      "size_in_bytes": 450
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Clear Output.ipynb",
+      "path_type": "hardlink",
+      "sha256": "1fc63951b1bebed4260c097da59d7816c4cbcbb6a1bccd249d7d66dfa0becc84",
+      "size_in_bytes": 3730
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Disable Stdin.ipynb",
+      "path_type": "hardlink",
+      "sha256": "de62ba2457c4e8b77c2cac81c0d2e91ddab03d0c60cc3ba6857587a0759212c2",
+      "size_in_bytes": 339
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Empty Cell.ipynb",
+      "path_type": "hardlink",
+      "sha256": "e6ed9a640e376a408b26cefb0928137ac860b991a5f20ea78477c319686163ac",
+      "size_in_bytes": 1291
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Error.ipynb",
+      "path_type": "hardlink",
+      "sha256": "c90d826e06b758a20ea64407fd9d186b3bc4e574b9527f3859e6c5fddb5a45d6",
+      "size_in_bytes": 1291
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Factorials.ipynb",
+      "path_type": "hardlink",
+      "sha256": "d480e18f4e4d4297e5c410dc20a1dced77fd75690a24c38425a0d8d2751e53c0",
+      "size_in_bytes": 679
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/HelloWorld.ipynb",
+      "path_type": "hardlink",
+      "sha256": "eb6803c7966164a82aef4ace4b9654854527c218fadae7abece8e2e73e8dcf13",
+      "size_in_bytes": 357
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Inline Image.ipynb",
+      "path_type": "hardlink",
+      "sha256": "9dd06cb0d8e7c37ad7d45edd7d38ee8a9c9b7623109ece3207c4ea418af2a8c1",
+      "size_in_bytes": 14333
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Interrupt.ipynb",
+      "path_type": "hardlink",
+      "sha256": "5143d8a9ca31baf7f60176f5de32bee60522bd0016dfa83d5def0f9c9f2bc7b0",
+      "size_in_bytes": 1184
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/JupyterWidgets.ipynb",
+      "path_type": "hardlink",
+      "sha256": "ace7b22a04dc3fd7f36f364c8b8ab89cf271569e54035f18662eb1b969e7d40e",
+      "size_in_bytes": 2139
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Other Comms.ipynb",
+      "path_type": "hardlink",
+      "sha256": "fc96cf2eab319808a46906ac341232e51d0a74119872c7bf49784a9cc9445538",
+      "size_in_bytes": 1319
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Output.ipynb",
+      "path_type": "hardlink",
+      "sha256": "c45bf6e59796c5aaddba07682c205765bd5933788ecd8e01d91a320948356c6f",
+      "size_in_bytes": 20337
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Parallel Execute A.ipynb",
+      "path_type": "hardlink",
+      "sha256": "882060c712b0b92a792feb8ca424334de7796278bf86a20bcc3cfbf55786ec72",
+      "size_in_bytes": 2486
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Parallel Execute B.ipynb",
+      "path_type": "hardlink",
+      "sha256": "8b7caa11ff2fa6d0e1ed2a011fec9f8861219dc3083dda4f52de4f46a83d324d",
+      "size_in_bytes": 2486
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/SVG.ipynb",
+      "path_type": "hardlink",
+      "sha256": "611cb435a914f6da4849a7ae1e5b5a47ba8e8397935e726b8dad141728c6d226",
+      "size_in_bytes": 978
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Skip Exceptions with Cell Tags.ipynb",
+      "path_type": "hardlink",
+      "sha256": "ae6db4a0b03dd831823ddaf91f92aeb2e8c7f56b1de02b352589374176440bae",
+      "size_in_bytes": 1351
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Skip Exceptions.ipynb",
+      "path_type": "hardlink",
+      "sha256": "d8978b634436d436e123fa8e8701d14b986a450440122b4d04052989843fca1d",
+      "size_in_bytes": 1357
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Skip Execution with Cell Tag.ipynb",
+      "path_type": "hardlink",
+      "sha256": "ef1ff2957aa37cb214b0e3be18252f1c80b240bbaf6f8cc1ce9c0f79a1d3acb4",
+      "size_in_bytes": 511
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Sleep1s.ipynb",
+      "path_type": "hardlink",
+      "sha256": "e5fdbc1604b4c230f066d78cb8d099c35d7947e19207d52e4c89520110da5ead",
+      "size_in_bytes": 1197
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/Unicode.ipynb",
+      "path_type": "hardlink",
+      "sha256": "be00ba3b21d74277da3fb0551562343cf5c694e83c0b6f69eb9947cfc2fe6647",
+      "size_in_bytes": 345
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/UnicodePy3.ipynb",
+      "path_type": "hardlink",
+      "sha256": "c3d3eab93cc32a6b531490977e5b30794fc105239a2ca3f7ec5d9910ed8a5840",
+      "size_in_bytes": 446
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/python.png",
+      "path_type": "hardlink",
+      "sha256": "4ed13028bb76b19d2e2ba43972c3b64405f0e58d0034ed17239df80e43abff46",
+      "size_in_bytes": 8758
+    },
+    {
+      "_path": "site-packages/nbclient/tests/files/update-display-id.ipynb",
+      "path_type": "hardlink",
+      "sha256": "ba4b894fc8f652fed61d77a841421b7bed7e858b324b5b8702c52023784cb268",
+      "size_in_bytes": 3306
+    },
+    {
+      "_path": "site-packages/nbclient/tests/test_client.py",
+      "path_type": "hardlink",
+      "sha256": "bcdff3e7760821f74dc4fcf27adb245f5a2effc7dfbf551f6b3f2e45285a4f92",
+      "size_in_bytes": 69115
+    },
+    {
+      "_path": "site-packages/nbclient/tests/test_util.py",
+      "path_type": "hardlink",
+      "sha256": "ab60911e57eb81c89af1ef941ac9175e4b8aca6432f4479c0ac23c83a2486a71",
+      "size_in_bytes": 1805
+    },
+    {
+      "_path": "site-packages/nbclient/util.py",
+      "path_type": "hardlink",
+      "sha256": "e410191d628fd61f89cfb4ff164f351a3655dea2080264bb4ef8a837daba7b33",
+      "size_in_bytes": 443
+    }
+  ],
+  "paths_version": 1
+}

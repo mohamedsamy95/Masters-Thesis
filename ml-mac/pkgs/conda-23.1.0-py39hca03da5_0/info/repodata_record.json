@@ -1,0 +1,40 @@
+{
+  "arch": "arm64",
+  "build": "py39hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [
+    "conda-content-trust >=0.1.1",
+    "cytoolz >=0.8.1",
+    "conda-env >=2.6",
+    "conda-libmamba-solver >=22.12.0",
+    "conda-build >=3"
+  ],
+  "depends": [
+    "conda-package-handling >=1.3.0",
+    "pluggy >=1.0.0",
+    "pycosat >=0.6.3",
+    "pyopenssl >=16.2.0",
+    "python >=3.9,<3.10.0a0",
+    "requests >=2.20.1,<3",
+    "ruamel.yaml >=0.11.14,<0.18",
+    "setuptools >=31.0.1",
+    "toolz >=0.8.1",
+    "tqdm >=4"
+  ],
+  "features": "",
+  "fn": "conda-23.1.0-py39hca03da5_0.conda",
+  "legacy_bz2_md5": "cce3e28dfd6c3c39091c7ff26fcce5c3",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "c6d35020e7a317cedd40d9cee9bc11f5",
+  "name": "conda",
+  "platform": "darwin",
+  "sha256": "0afd470569ca0afa0a69326d50555b0724a7c03c46bfe116360fa35c8a0c1063",
+  "size": 971213,
+  "subdir": "osx-arm64",
+  "timestamp": 1674574678962,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/conda-23.1.0-py39hca03da5_0.conda",
+  "version": "23.1.0"
+}

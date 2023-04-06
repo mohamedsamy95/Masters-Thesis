@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "py39h1a28f6b_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "pyrsistent",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1628941083263,
+  "version": "0.18.0"
+}

@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "py39h1a28f6b_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "python.app",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1629479590356,
+  "version": "3"
+}

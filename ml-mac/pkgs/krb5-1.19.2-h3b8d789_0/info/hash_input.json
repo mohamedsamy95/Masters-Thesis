@@ -1,0 +1,11 @@
+{
+  "c_compiler": "clang",
+  "CONDA_BUILD_SYSROOT": "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk",
+  "tk": "8.6",
+  "channel_targets": "defaults",
+  "openssl": "1.1.1",
+  "cxx_compiler": "clangxx",
+  "target_platform": "osx-arm64",
+  "cxx_compiler_version": "12",
+  "c_compiler_version": "12"
+}

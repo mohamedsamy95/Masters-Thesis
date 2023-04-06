@@ -1,0 +1,51 @@
+{% set version = "2.19.2" %}
+
+package:
+  name: pandoc
+  version: {{ version }}
+
+source:
+  url: https://github.com/jgm/pandoc/archive/refs/tags/{{ version }}.tar.gz  # [not aarch64]
+  sha256: 5cebed5bfa8daa8c3f7ba0c29b0c84b36fd279bdcd25891d3ae9843fa2c98592  # [not aarch64]
+  # repackage for aarch64 until aarch64-build of stack is available, see https://github.com/conda-forge/stack-feedstock/pull/35
+  url: https://github.com/jgm/pandoc/releases/download/{{ version }}/pandoc-{{ version }}-linux-arm64.tar.gz  # [aarch64]
+  sha256: 43f364915b9da64905fc3f6009f5542f224e54fb24f71043ef5154540f1a3983  # [aarch64]
+
+build:
+  number: 1
+  binary_relocation: false  # [osx]
+  missing_dso_whitelist:
+    - /usr/lib/libiconv.2.dylib  # [osx]
+    - /usr/lib/libz.1.dylib  # [osx]
+    - /usr/lib/libcharset.1.dylib  # [osx]
+
+requirements:
+  build:
+    - stack  # [not aarch64]
+  host:
+    - zlib  # [linux and not aarch64]
+
+test:
+  commands:
+    - type pandoc  # [osx]
+    - pandoc --version
+    - pandoc --help
+
+about:
+  home: http://pandoc.org/
+  license: GPL-2.0-or-later
+  license_family: GPL
+  license_file: COPYRIGHT
+  summary: The universal markup converter
+  description: |
+    Pandoc is a Haskell library for converting from one markup format to
+    another, and a command-line tool that uses this library.
+  doc_url: http://pandoc.org/MANUAL.html
+  dev_url: https://github.com/jgm/pandoc
+  doc_source_url: https://github.com/jgm/pandoc/blob/master/MANUAL.txt
+
+extra:
+  recipe-maintainers:
+    - jankatins
+    - ocefpaf
+    - kiwi0fruit

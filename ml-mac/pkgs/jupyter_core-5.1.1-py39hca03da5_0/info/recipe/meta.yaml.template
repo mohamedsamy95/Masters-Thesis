@@ -1,0 +1,73 @@
+{% set name = "jupyter_core" %}
+{% set version = "5.1.1" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: f342d29eb6edb06f8dffa69adea987b3a9ee2b6702338a8cb6911516ea0b432d
+
+build:
+  number: 0
+  skip: True  # [py<38]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  entry_points:
+    - jupyter = jupyter_core.command:main
+    - jupyter-migrate = jupyter_core.migrate:main
+    - jupyter-troubleshoot = jupyter_core.troubleshoot:main
+
+requirements:
+  host:
+    - pip
+    - python
+    - hatchling
+    - setuptools
+    - wheel
+  run:
+    - python
+    - pywin32 >=1.0  # [win]
+    - traitlets >=5.3
+    - platformdirs >=2.5
+
+{% set skip = ["test_not_on_path", "test_path_priority"] %}
+# linux shebang lines have a length limit longer than the placeholder test prefix
+{% set skip = skip + ["test_argv0"] %}  # [linux or (win and py==310)]
+{% set skip = skip + ["tesTESTS"] %}  # [win and py==310]
+{% set skip = '-k "not (' + (skip | join(' or ')) + ')"' %}
+test:
+  requires:
+    - pytest
+    - pip
+  commands:
+    - pip check
+    - jupyter -h
+    - jupyter-migrate -h
+    - jupyter-troubleshoot --help
+    - python -m pytest -vv --pyargs jupyter_core {{ skip }}
+  imports:
+    - jupyter_core
+    - jupyter_core.utils
+    - jupyter_core.tests
+
+about:
+  home: https://jupyter.org
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: COPYING.md
+  summary: Core common functionality of Jupyter projects.
+  description: |
+    Jupyter core package. A base package on which Jupyter projects rely.
+    This package contains base application classes and configuration inherited by other projects.
+  dev_url: https://github.com/jupyter/jupyter_core
+  doc_url: https://jupyter-core.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - pelson
+    - minrk
+    - ocefpaf
+    - bollwyvl
+    - Carreau

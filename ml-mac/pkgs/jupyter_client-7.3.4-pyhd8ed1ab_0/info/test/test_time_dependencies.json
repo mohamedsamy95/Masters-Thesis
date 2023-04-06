@@ -1,0 +1,1 @@
+["pytest", "async_generator", "mock", "pip", "pytest-cov", "ipython", "ipykernel", "pytest-asyncio", "pytest-timeout"]

@@ -1,0 +1,32 @@
+{
+  "arch": null,
+  "build": "pyha770c72_1",
+  "build_number": 1,
+  "depends": [
+    "argon2-cffi",
+    "ipykernel",
+    "ipython_genutils",
+    "jinja2",
+    "jupyter_client >=5.3.4",
+    "jupyter_core >=4.6.1",
+    "nbclassic >=0.4.7",
+    "nbconvert-core >=5",
+    "nbformat",
+    "nest-asyncio >=1.5",
+    "prometheus_client",
+    "python >=3.7",
+    "pyzmq >=17",
+    "send2trash >=1.8.0",
+    "terminado >=0.8.3",
+    "tornado >=6.1",
+    "traitlets >=4.2.1"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "notebook",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1667565777321,
+  "version": "6.5.2"
+}

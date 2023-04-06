@@ -1,0 +1,15 @@
+{
+  "arch": "arm64",
+  "build": "11_3_0_hca03da5_28",
+  "build_number": 28,
+  "depends": [
+    "libgfortran5"
+  ],
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "name": "libgfortran",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1665499021664,
+  "version": "5.0.0"
+}

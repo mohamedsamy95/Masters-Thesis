@@ -1,0 +1,25 @@
+{
+  "build": "pyhd8ed1ab_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "markupsafe >=2.0",
+    "python >=3.7"
+  ],
+  "features": "",
+  "fn": "jinja2-3.1.2-pyhd8ed1ab_1.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "c8490ed5c70966d232fdd389d0dbed37",
+  "name": "jinja2",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "b045faba7130ab263db6a8fdc96b1a3de5fcf85c4a607c5f11a49e76851500b5",
+  "size": 101443,
+  "subdir": "noarch",
+  "timestamp": 1654302514195,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jinja2-3.1.2-pyhd8ed1ab_1.tar.bz2",
+  "version": "3.1.2"
+}

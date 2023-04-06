@@ -1,0 +1,99 @@
+# This file created by conda-build 3.22.0
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_49hb0490br/clone/recipe, last modified Mon Sep 26 09:04:16 2022
+# ------------------------------------------------
+
+package:
+  name: conda
+  version: 22.9.0
+source:
+  sha256: 35c924fab82e1be7a3359494ff02eab2b2d9b04004cc689e41f84edc1fb853c0
+  url: https://github.com/conda/conda/archive/22.9.0.tar.gz
+build:
+  always_include_files:
+    - bin/activate
+    - bin/conda
+    - bin/deactivate
+  number: '0'
+  string: py39hca03da5_0
+requirements:
+  build: []
+  host:
+    - ca-certificates 2022.07.19 hca03da5_0
+    - certifi 2022.9.14 py39hca03da5_0
+    - conda-package-handling 1.9.0 py39h1a28f6b_0
+    - libcxx 14.0.6 h848a8c0_0
+    - libffi 3.4.2 hc377ac9_4
+    - ncurses 6.3 h1a28f6b_3
+    - openssl 1.1.1q h1a28f6b_0
+    - pip 22.1.2 py39hca03da5_0
+    - python 3.9.13 hbdb9e5c_1
+    - readline 8.1.2 h1a28f6b_1
+    - ruamel_yaml 0.15.100 py39h1a28f6b_0
+    - setuptools 63.4.1 py39hca03da5_0
+    - sqlite 3.39.2 h1058600_0
+    - tk 8.6.12 hb8d0fd4_0
+    - toolz 0.11.2 pyhd3eb1b0_0
+    - tqdm 4.64.0 py39hca03da5_0
+    - tzdata 2022c h04d1e81_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h1a28f6b_1
+    - yaml 0.2.5 h1a28f6b_0
+    - zlib 1.2.12 h5a0b063_3
+  run:
+    - conda-package-handling >=1.3.0
+    - pycosat >=0.6.3
+    - pyopenssl >=16.2.0
+    - python >=3.9,<3.10.0a0
+    - requests >=2.20.1,<3
+    - ruamel_yaml >=0.11.14,<0.17
+    - setuptools >=31.0.1
+    - toolz >=0.8.1
+  run_constrained:
+    - conda-build >=3
+    - conda-content-trust >=0.1.1
+    - conda-env >=2.6
+    - cytoolz >=0.8.1
+test:
+  downstreams:
+    - conda-smithy
+  imports:
+    - conda
+    - conda_env
+  requires: null
+about:
+  description: 'Conda is an open source package management system and environment
+    management system for installing multiple versions of software packages and their
+    dependencies and switching easily between them. It works on Linux, OS X and Windows,
+    and was created for Python programs but can package and distribute any software.
+
+    '
+  dev_url: https://github.com/conda/conda
+  doc_url: https://conda.io/projects/conda/en/latest/
+  home: https://conda.io
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: OS-agnostic, system-level binary package and environment manager.
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 49afde8a-ceae-4a0e-abb1-e33bdcb9c989
+  recipe-maintainers:
+    - chenghlee
+    - jakirkham
+    - jezdez
+    - jjhelmus
+    - kalefranz
+    - kenodegard
+    - mbargull
+    - mcg1969
+    - msarahan
+    - mwcraig
+    - ocefpaf
+    - patricksnape
+    - pelson
+    - scopatz
+    - travishathaway
+  remote_url: git@github.com:AnacondaRecipes/conda-feedstock.git
+  sha: 92ac6eed450ce4ef3ce5585dc13a9c2a9b9ecc06

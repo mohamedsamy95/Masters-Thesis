@@ -1,0 +1,63 @@
+# This file created by conda-build 3.23.3
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Feb  1 11:49:32 2023
+# ------------------------------------------------
+
+package:
+  name: beautifulsoup4
+  version: 4.11.2
+source:
+  sha256: bc4bdda6717de5a2987436fb8d72f45dc90dd856bdfd512a1314ce90349a0106
+  url: https://pypi.io/packages/source/b/beautifulsoup4/beautifulsoup4-4.11.2.tar.gz
+build:
+  noarch: python
+  number: '0'
+  string: pyha770c72_0
+requirements:
+  build: []
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - bzip2 1.0.8 h7f98852_4
+    - ca-certificates 2022.12.7 ha878542_0
+    - ld_impl_linux-64 2.40 h41732ed_0
+    - libffi 3.4.2 h7f98852_5
+    - libgcc-ng 12.2.0 h65d4601_19
+    - libgomp 12.2.0 h65d4601_19
+    - libnsl 2.0.0 h7f98852_0
+    - libsqlite 3.40.0 h753d276_0
+    - libuuid 2.32.1 h7f98852_1000
+    - libzlib 1.2.13 h166bdaf_4
+    - ncurses 6.3 h27087fc_1
+    - openssl 3.0.7 h0b41bf4_2
+    - pip 23.0 pyhd8ed1ab_0
+    - python 3.11.0 he550d4f_1_cpython
+    - readline 8.1.2 h0f457ee_0
+    - setuptools 66.1.1 pyhd8ed1ab_0
+    - tk 8.6.12 h27826a3_0
+    - tzdata 2022g h191b570_0
+    - wheel 0.38.4 pyhd8ed1ab_0
+    - xz 5.2.6 h166bdaf_0
+  run:
+    - python >=3.6
+    - soupsieve >=1.2
+about:
+  description: 'Beautiful Soup is a library for pulling data out of HTML and XML files.
+
+    It provides ways of navigating, searching, and modifying parse trees.
+
+    '
+  dev_url: https://code.launchpad.net/beautifulsoup
+  doc_source_url: https://github.com/newvem/beautifulsoup4/blob/master/doc/source/index.rst
+  doc_url: http://beautiful-soup-4.readthedocs.io/en/latest/
+  home: http://www.crummy.com/software/BeautifulSoup/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Python library designed for screen-scraping
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - jschueller
+    - nehaljwani

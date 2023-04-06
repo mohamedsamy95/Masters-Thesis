@@ -1,0 +1,24 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.7"
+  ],
+  "features": "",
+  "fn": "traitlets-5.9.0-pyhd8ed1ab_0.conda",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "d0b4f5c87cd35ac3fb3d47b223263a64",
+  "name": "traitlets",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "343610bce6dbe8a5090500dd2e9d1706057960b3f3120ebfe0abb4a8ecbada4d",
+  "size": 98443,
+  "subdir": "noarch",
+  "timestamp": 1675110676323,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/traitlets-5.9.0-pyhd8ed1ab_0.conda",
+  "version": "5.9.0"
+}

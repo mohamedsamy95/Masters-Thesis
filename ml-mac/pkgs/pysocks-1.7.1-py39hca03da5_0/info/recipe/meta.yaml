@@ -1,0 +1,53 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /Users/ktietz/Code/oss/aggregate/pysocks-feedstock/recipe, last modified Thu May 13 11:06:01 2021
+# ------------------------------------------------
+
+package:
+  name: pysocks
+  version: 1.7.1
+source:
+  sha256: 3f8804571ebe159c380ac6de37643bb4685970655d3bba243530d6558b799aa0
+  url: https://pypi.io/packages/source/P/PySocks/PySocks-1.7.1.tar.gz
+build:
+  number: '0'
+  script: /Users/ktietz/Code/oss/ci_pkgs/pysocks_1626781349491/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/bin/python
+    -m pip install . --no-deps -vv
+  string: py39hca03da5_0
+requirements:
+  host:
+    - ca-certificates 2021.4.13 hca03da5_1
+    - certifi 2020.12.5 py39hca03da5_0
+    - libcxx 12.0.0 hf6beb65_0
+    - ncurses 6.2 hc4ed4cf_0
+    - openssl 1.1.1j h1230e6a_0
+    - pip 21.0.1 py39hca03da5_0
+    - python 3.9.5 h8196d96_5
+    - readline 8.1 h1230e6a_0
+    - setuptools 52.0.0 py39hca03da5_0
+    - sqlite 3.35.4 h9835d80_0
+    - tk 8.6.10 h6b60437_0
+    - tzdata 2021a hee11a48_0
+    - wheel 0.36.2 pyhd3eb1b0_0
+    - xz 5.2.4 h1230e6a_0
+    - zlib 1.2.11 hca03da5_3
+  run:
+    - python >=3.9,<3.10.0a0
+test:
+  imports:
+    - socks
+about:
+  dev_url: https://github.com/Anorov/PySocks
+  doc_url: https://github.com/Anorov/PySocks/blob/master/README.md
+  home: https://github.com/Anorov/PySocks
+  license: BSD 3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: A Python SOCKS client module. See https://github.com/Anorov/PySocks for
+    more information.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - ocefpaf
+    - pmlandwehr

@@ -1,0 +1,21 @@
+{
+  "arch": "arm64",
+  "build": "py39h32adebf_0",
+  "build_number": 0,
+  "depends": [
+    "ipython >=5.0",
+    "jupyter_client",
+    "python >=3.9,<3.10.0a0",
+    "python_abi 3.9.* *_cp39",
+    "pyzmq !=21",
+    "tornado >=4.2",
+    "traitlets >=4.1"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "ipykernel",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1620913220236,
+  "version": "5.5.5"
+}

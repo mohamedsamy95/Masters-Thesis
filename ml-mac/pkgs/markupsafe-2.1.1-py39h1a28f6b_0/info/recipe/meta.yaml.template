@@ -1,0 +1,61 @@
+{% set version = "2.1.1" %}
+
+package:
+  name: markupsafe
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/M/MarkupSafe/MarkupSafe-{{ version }}.tar.gz
+  sha256: 7f91197cc9e48f989d12e4e6fbc46495c446636dfc81b9ccf50bb0ec74b91d4b
+
+build:
+  number: 0
+  skip: true  # [py<37]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - python
+    - pip
+    - setuptools
+    - wheel
+  run:
+    - python
+  run_constrained:
+    - jinja2 >=3.0.0
+
+test:
+  imports:
+    - markupsafe
+  requires:
+    - pip
+  commands:
+    - pip check
+  downstreams:  # [not win]
+    # CI issues with testing downstream package astropy
+    - jinja2  # [not win]
+    - astropy  # [not win]
+
+about:
+  home: https://www.palletsprojects.com/p/markupsafe
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.rst
+  summary: Safely add untrusted strings to HTML/XML markup.
+  description: |
+      MarkupSafe implements a text object that escapes characters so it is
+      safe to use in HTML and XML. Characters that have special meanings are
+      replaced so that they display as the actual characters. This mitigates
+      injection attacks, meaning untrusted user input can safely be displayed
+      on a page.
+  doc_url: https://markupsafe.palletsprojects.com/
+  doc_source_url: https://github.com/pallets/markupsafe/blob/master/README.rst
+  dev_url: https://github.com/pallets/markupsafe
+
+extra:
+  recipe-maintainers:
+    - pelson
+    - scopatz
+    - ocefpaf

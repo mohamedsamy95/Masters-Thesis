@@ -1,0 +1,23 @@
+{
+  "build": "hc377ac9_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=12.0.0"
+  ],
+  "features": "",
+  "fn": "libffi-3.4.2-hc377ac9_2.conda",
+  "legacy_bz2_md5": "266db6076bbe561a4d1062fa0f751bdf",
+  "legacy_bz2_size": 44635,
+  "license": "MIT",
+  "md5": "2c790c6f3dbb9a08d5c24fff3cf1dbae",
+  "name": "libffi",
+  "sha256": "eb69e648a948145fe1be2072db506151c478f4b267ad4409f5afdb812145f40f",
+  "size": 42940,
+  "subdir": "osx-arm64",
+  "timestamp": 1636543698086,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libffi-3.4.2-hc377ac9_2.conda",
+  "version": "3.4.2"
+}

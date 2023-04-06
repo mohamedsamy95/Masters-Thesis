@@ -1,0 +1,79 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_6089e910-75f1-4aeb-8b74-d4234c3ff498jaixisew/clone/recipe, last modified Mon May  9 08:30:47 2022
+# ------------------------------------------------
+
+package:
+  name: openssl
+  version: 1.1.1o
+source:
+  fn: openssl-1.1.1o.tar.gz
+  sha256: 9384a2b0570dd80358841464677115df785edb941c71211f75076d72fe6b438f
+  url: https://www.openssl.org/source/openssl-1.1.1o.tar.gz
+build:
+  binary_has_prefix_files:
+    - lib/libcrypto.1.1.dylib
+    - lib/libcrypto.a
+  detect_binary_files_with_prefix: true
+  has_prefix_files:
+    - bin/c_rehash
+    - lib/pkgconfig/libcrypto.pc
+    - lib/pkgconfig/libssl.pc
+    - lib/pkgconfig/openssl.pc
+  no_link: lib/libcrypto.1.1.dylib
+  number: '0'
+  run_exports:
+    - openssl >=1.1.1o,<1.1.2a
+  string: h1a28f6b_0
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - make 4.3 h620ffc9_1
+    - patch 2.7.6 h1a28f6b_1001
+    - perl 5.34.0 h1230e6a_0
+    - tapi 1100.0.11 ha21211d_0
+    - zlib 1.2.12 h5a0b063_2
+  run:
+    - ca-certificates
+test:
+  commands:
+    - touch checksum.txt
+    - openssl sha256 checksum.txt
+    - python -c "from six.moves import urllib; urllib.request.urlopen('https://pypi.org')"
+  requires:
+    - python 3.8.*
+    - six
+about:
+  dev_url: https://github.com/openssl/openssl
+  doc_url: https://www.openssl.org/docs/man1.1.1/
+  home: https://www.openssl.org/
+  license: OpenSSL
+  license_family: Apache
+  license_file: LICENSE
+  summary: OpenSSL is an open-source implementation of the SSL and TLS protocols
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 6089e910-75f1-4aeb-8b74-d4234c3ff498
+  recipe-maintainers:
+    - carlodri
+    - chenghlee
+    - jakirkham
+    - jjhelmus
+    - msarahan
+    - ocefpaf
+    - pelson
+  remote_url: git@github.com:AnacondaRecipes/openssl-feedstock.git
+  sha: abd9238417f89a71fec7e4235982ae59ff95deac

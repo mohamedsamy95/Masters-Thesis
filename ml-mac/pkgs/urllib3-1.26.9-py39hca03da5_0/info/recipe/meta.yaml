@@ -1,0 +1,87 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_dc7bd08d-3aa9-4e45-9124-1c432b2bee1dmp2r0ell/clone/recipe, last modified Fri Apr 22 10:06:40 2022
+# ------------------------------------------------
+
+package:
+  name: urllib3
+  version: 1.26.9
+source:
+  sha256: aabaf16477806a5e1dd19aa41f8c2b7950dd3c746362d7e3223dbe6de6ac448e
+  url: https://pypi.io/packages/source/u/urllib3/urllib3-1.26.9.tar.gz
+build:
+  number: '0'
+  script: /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_dc7bd08d-3aa9-4e45-9124-1c432b2bee1dmp2r0ell/croots/recipe/urllib3_1650640006820/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac/bin/python
+    -m pip install . -vv
+  string: py39hca03da5_0
+requirements:
+  host:
+    - ca-certificates 2022.3.29 hca03da5_1
+    - certifi 2021.10.8 py39hca03da5_2
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.4.2 hc377ac9_2
+    - ncurses 6.3 h1a28f6b_2
+    - openssl 1.1.1n h1a28f6b_0
+    - pip 21.2.4 py39hca03da5_0
+    - python 3.9.12 hbdb9e5c_0
+    - readline 8.1.2 h1a28f6b_1
+    - setuptools 61.2.0 py39hca03da5_0
+    - sqlite 3.38.2 h1058600_0
+    - tk 8.6.11 hb8d0fd4_0
+    - tzdata 2022a hda174b7_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h1a28f6b_0
+    - zlib 1.2.12 h5a0b063_2
+  run:
+    - brotlipy >=0.6.0
+    - certifi
+    - cryptography >=1.3.4
+    - idna >=2.0.0
+    - pyopenssl >=0.14
+    - pysocks >=1.5.6,<2.0,!=1.5.7
+    - python >=3.9,<3.10.0a0
+test:
+  commands:
+    - pip check
+  imports:
+    - urllib3
+    - urllib3.contrib
+    - urllib3.packages
+    - urllib3.packages.backports
+    - urllib3.util
+  requires:
+    - pip
+about:
+  description: 'urllib3 is a powerful, sanity-friendly HTTP client for Python. Much
+    of the
+
+    Python ecosystem already uses urllib3. urllib3 brings many critical features
+
+    that are missing from the Python standard libraries, such as thread safety,
+
+    connection pooling, client side ssl/tls verification, support for gzip and
+
+    deflate encodings, HTTP and SOCKS proxy support, helpers for retrying requests
+
+    and dealing with HTTP redirects.
+
+    '
+  dev_url: https://github.com/urllib3/urllib3
+  doc_source_url: https://github.com/urllib3/urllib3/tree/1.26.9/docs
+  doc_url: https://urllib3.readthedocs.io/
+  home: https://urllib3.readthedocs.io/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: HTTP library with thread-safe connection pooling, file post, and more.
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: dc7bd08d-3aa9-4e45-9124-1c432b2bee1d
+  recipe-maintainers:
+    - ocefpaf
+    - pmlandwehr
+    - sethmlarson
+    - sigmavirus24
+  remote_url: git@github.com:AnacondaRecipes/urllib3-feedstock.git
+  sha: c8defa047f453724ec282251e4d654adfc42e8ef

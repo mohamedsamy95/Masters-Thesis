@@ -1,0 +1,13 @@
+{
+  "arch": "arm64",
+  "build": "hce30654_1",
+  "build_number": 1,
+  "depends": [],
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "name": "pandoc",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1666629189784,
+  "version": "2.19.2"
+}

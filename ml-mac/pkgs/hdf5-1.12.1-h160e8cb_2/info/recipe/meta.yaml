@@ -1,0 +1,148 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_06a4e5a5-40fe-40b2-97b7-ae9d7aa69f8cuisu9n7j/clone/recipe, last modified Wed Jun 15 10:25:19 2022
+# ------------------------------------------------
+
+package:
+  name: hdf5
+  version: 1.12.1
+source:
+  patches:
+    - osx_configure.patch
+  sha256: 79c66ff67e666665369396e9c90b32e238e501f345afd2234186bfb8331081ca
+  url: https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.12/hdf5-1.12.1/src/hdf5-1.12.1.tar.gz
+build:
+  ignore_run_exports:
+    - libgfortran5
+  number: '2'
+  run_exports:
+    - hdf5 >=1.12.1,<1.12.2.0a0
+  string: h160e8cb_2
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - clangxx_osx-arm64 12.0.0 h39b79ac_3
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - gfortran_impl_osx-arm64 11.2.0 h3f5584c_26
+    - gfortran_osx-arm64 11.2.0 hf112342_0
+    - gmp 6.2.1 hc377ac9_3
+    - isl 0.22.1 hc377ac9_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libgfortran 5.0.0 11_2_0_he6877d6_26
+    - libgfortran-devel_osx-arm64 11.2.0 h31830f3_26
+    - libgfortran5 11.2.0 he6877d6_26
+    - libiconv 1.16 h1a28f6b_2
+    - libllvm12 12.0.0 h12f7ac0_4
+    - libtool 2.4.6 hc377ac9_1008
+    - llvm-openmp 12.0.0 haf9daa7_1
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - lz4-c 1.9.3 hc377ac9_0
+    - make 4.3 h620ffc9_1
+    - mpc 1.1.0 h8c48613_1
+    - mpfr 4.0.2 h695f6f0_1
+    - patch 2.7.6 h1a28f6b_1001
+    - tapi 1100.0.11 ha21211d_0
+    - xz 5.2.5 h1a28f6b_1
+    - zlib 1.2.12 h5a0b063_2
+    - zstd 1.5.2 h8574219_0
+  host:
+    - c-ares 1.18.1 h1a28f6b_0
+    - ca-certificates 2022.4.26 hca03da5_0
+    - krb5 1.19.2 h3b8d789_0
+    - libcurl 7.82.0 hc6d1d07_0
+    - libcxx 12.0.0 hf6beb65_1
+    - libedit 3.1.20210910 h1a28f6b_0
+    - libev 4.33 h1a28f6b_1
+    - libgfortran 5.0.0 11_2_0_he6877d6_26
+    - libgfortran5 11.2.0 he6877d6_26
+    - libnghttp2 1.46.0 h95c9599_0
+    - libssh2 1.10.0 hf27765b_0
+    - llvm-openmp 12.0.0 haf9daa7_1
+    - ncurses 6.3 h1a28f6b_2
+    - openssl 1.1.1o h1a28f6b_0
+    - zlib 1.2.12 h5a0b063_2
+  run:
+    - libcurl >=7.82.0,<8.0a0
+    - libcxx >=12.0.0
+    - libgfortran 5.*
+    - openssl >=1.1.1o,<1.1.2a
+    - zlib >=1.2.12,<1.3.0a0
+test:
+  commands:
+    - command -v h5c++
+    - command -v h5cc
+    - command -v h5perf_serial
+    - command -v h5redeploy
+    - command -v h5fc
+    - command -v gif2h5
+    - command -v h52gif
+    - command -v h5copy
+    - command -v h5debug
+    - command -v h5diff
+    - command -v h5dump
+    - command -v h5import
+    - command -v h5jam
+    - command -v h5ls
+    - command -v h5mkgrp
+    - command -v h5repack
+    - command -v h5repart
+    - command -v h5stat
+    - command -v h5unjam
+    - test -f $PREFIX/lib/libhdf5.a
+    - test -f $PREFIX/lib/libhdf5.dylib
+    - test -f $PREFIX/lib/libhdf5_cpp.a
+    - test -f $PREFIX/lib/libhdf5_cpp.dylib
+    - test -f $PREFIX/lib/libhdf5_hl.a
+    - test -f $PREFIX/lib/libhdf5_hl.dylib
+    - test -f $PREFIX/lib/libhdf5_hl_cpp.a
+    - test -f $PREFIX/lib/libhdf5_hl_cpp.dylib
+    - otool -L $PREFIX/lib/libhdf5.dylib
+    - otool -L $PREFIX/lib/libhdf5_cpp.dylib
+    - otool -L $PREFIX/lib/libhdf5_hl.dylib
+    - otool -L $PREFIX/lib/libhdf5_hl_cpp.dylib
+  files:
+    - compound_fortran2003.f90
+    - h5_cmprss.c
+    - h5_cmprss.f90
+    - h5tutr_cmprss.cpp
+  requires:
+    - clang_osx-arm64 12.*
+    - clangxx_osx-arm64 12.*
+    - gfortran_osx-arm64 11.2.0.*
+    - pkg-config
+about:
+  description: 'HDF5 supports an unlimited variety of datatypes, and is designed for
+
+    flexible and efficient I/O and for high volume and complex data.
+
+    '
+  dev_url: https://www.hdfgroup.org/HDF5/release/obtain5.html
+  doc_url: https://www.hdfgroup.org/HDF5/doc/
+  home: https://www.hdfgroup.org/HDF5/
+  license: HDF5
+  license_family: BSD
+  license_file: COPYING
+  summary: HDF5 is a data model, library, and file format for storing and managing
+    data
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 06a4e5a5-40fe-40b2-97b7-ae9d7aa69f8c
+  recipe-maintainers:
+    - astrofrog
+    - gillins
+    - groutr
+    - jakirkham
+    - marqh
+    - msarahan
+    - ocefpaf
+  remote_url: git@github.com:AnacondaRecipes/hdf5-feedstock.git
+  sha: 3ac17ca22e7983c0222c02173bf3af1cd63f5b55

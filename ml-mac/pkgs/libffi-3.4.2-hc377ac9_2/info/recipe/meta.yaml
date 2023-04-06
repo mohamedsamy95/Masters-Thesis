@@ -1,0 +1,84 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/tmpsobjhp16/recipe, last modified Wed Nov 10 05:27:35 2021
+# ------------------------------------------------
+
+package:
+  name: libffi
+  version: 3.4.2
+source:
+  patches:
+    - 0001-arm64-changes-from-v3.3-patch.patch
+  sha256: 540fb721619a6aba3bdeef7d940d8e9e0e6d2c193595bc243241b77ff9e93620
+  url: https://github.com/libffi/libffi/releases/download/v3.4.2/libffi-3.4.2.tar.gz
+build:
+  number: '2'
+  run_exports:
+    - libffi >=3.4,<4.0a0
+  string: hc377ac9_2
+requirements:
+  build:
+    - autoconf 2.69 pl5340h1230e6a_1
+    - automake 1.16.2 pl5340hca03da5_1
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - clangxx_osx-arm64 12.0.0 h39b79ac_3
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - gettext 0.21.0 h826f4ad_0
+    - icu 68.1 hc377ac9_0
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libiconv 1.16 h1230e6a_0
+    - libllvm12 12.0.0 h12f7ac0_4
+    - libtool 2.4.6 h1230e6a_0
+    - libxml2 2.9.12 h8c5e841_0
+    - llvm-openmp 12.0.0 haf9daa7_1
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - m4 1.4.18 h1230e6a_1
+    - make 4.3 h620ffc9_1
+    - ncurses 6.3 h1a28f6b_1
+    - patch 2.7.6 h1a28f6b_1001
+    - perl 5.34.0 h1230e6a_0
+    - sed 4.8 h1a28f6b_0
+    - tapi 1100.0.11 ha21211d_0
+    - texinfo 6.8 pl5340h1a28f6b_0
+    - xz 5.2.5 h1a28f6b_0
+    - zlib 1.2.11 hca03da5_3
+  host:
+    - libcxx 12.0.0 hf6beb65_1
+  run:
+    - libcxx >=12.0.0
+test:
+  commands:
+    - test -e $PREFIX/lib/libffi${SHLIB_EXT}
+    - test -e $PREFIX/lib/libffi.a
+    - test -e $PREFIX/include/ffi.h
+    - test -e $PREFIX/include/ffitarget.h
+  requires: null
+about:
+  description: 'The libffi library provides a portable, high level programming interface
+
+    to various calling conventions. This allows a programmer to call any
+
+    function specified by a call interface description at run-time.
+
+    '
+  dev_url: https://github.com/libffi/libffi
+  doc_url: https://sourceware.org/libffi/
+  home: https://sourceware.org/libffi/
+  license: MIT
+  license_file: LICENSE
+  summary: A Portable Foreign Function Interface Library
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - isuruf
+    - scopatz
+    - stefan-balke

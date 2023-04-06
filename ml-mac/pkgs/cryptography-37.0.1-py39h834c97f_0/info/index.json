@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "py39h834c97f_0",
+  "build_number": 0,
+  "depends": [
+    "cffi >=1.12",
+    "openssl",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "license": "(BSD-3-Clause OR Apache-2.0) AND PSF-2.0 AND MIT",
+  "license_family": "BSD",
+  "name": "cryptography",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1652101239416,
+  "version": "37.0.1"
+}

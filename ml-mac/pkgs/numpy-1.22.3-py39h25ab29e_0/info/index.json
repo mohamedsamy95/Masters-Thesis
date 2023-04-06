@@ -1,0 +1,18 @@
+{
+  "arch": "arm64",
+  "build": "py39h25ab29e_0",
+  "build_number": 0,
+  "depends": [
+    "blas * openblas",
+    "libcxx >=12.0.0",
+    "libopenblas >=0.3.17,<1.0a0",
+    "numpy-base 1.22.3 py39h974a1f5_0",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "numpy",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1652801810602,
+  "version": "1.22.3"
+}

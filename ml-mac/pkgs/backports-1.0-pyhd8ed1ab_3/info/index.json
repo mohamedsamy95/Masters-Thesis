@@ -1,0 +1,15 @@
+{
+  "arch": null,
+  "build": "pyhd8ed1ab_3",
+  "build_number": 3,
+  "depends": [
+    "python >=2.7"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "backports",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1669158729416,
+  "version": "1.0"
+}

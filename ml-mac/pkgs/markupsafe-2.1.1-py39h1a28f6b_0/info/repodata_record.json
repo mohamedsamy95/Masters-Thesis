@@ -1,0 +1,27 @@
+{
+  "arch": "arm64",
+  "build": "py39h1a28f6b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [
+    "jinja2 >=3.0.0"
+  ],
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "features": "",
+  "fn": "markupsafe-2.1.1-py39h1a28f6b_0.conda",
+  "legacy_bz2_md5": "34dfd76da78de2eae95bbda390d746d6",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "48b266b2faa047309cd8f901995e5679",
+  "name": "markupsafe",
+  "platform": "darwin",
+  "sha256": "9605c51e0f801f87664eef5826c2b5f23e26e45581d40037c08b728f3427d563",
+  "size": 22083,
+  "subdir": "osx-arm64",
+  "timestamp": 1654598007056,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/markupsafe-2.1.1-py39h1a28f6b_0.conda",
+  "version": "2.1.1"
+}

@@ -1,0 +1,107 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/terminado-0.17.1.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/terminado-0.17.1.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "936ab9eb54859fe937a90cd51572f2526ad45bf6d9d93ee3498cf6f883549d2f",
+      "size_in_bytes": 5935
+    },
+    {
+      "_path": "site-packages/terminado-0.17.1.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "12fa8e426bbb47914924050289dd430e279f5a1516efd2f1a774ca15aa3320c5",
+      "size_in_bytes": 1774
+    },
+    {
+      "_path": "site-packages/terminado-0.17.1.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/terminado-0.17.1.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "35a2e68071d6fdff634efbffc1187dbdc2bb73b10af68e5fc2c21730ece81a03",
+      "size_in_bytes": 87
+    },
+    {
+      "_path": "site-packages/terminado-0.17.1.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "d5c254a31e3dd219d93114cc972a4fc784feea3389a025a00c1699decc8ef9ed",
+      "size_in_bytes": 97
+    },
+    {
+      "_path": "site-packages/terminado-0.17.1.dist-info/licenses/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "2b7b16c8e8c45835901ab0a83525c94e434ca1e77e3fbe5ab9214e42080539b4",
+      "size_in_bytes": 1514
+    },
+    {
+      "_path": "site-packages/terminado/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "4c6f0b6c3da4d99a83943248c61eeaf153a51fdd225f01ba297f644155231060",
+      "size_in_bytes": 508
+    },
+    {
+      "_path": "site-packages/terminado/_static/terminado.js",
+      "path_type": "hardlink",
+      "sha256": "182a0c22e1ac956589528de0a7ef9d12c9f3d153d3222ff995a0bf72e84f6664",
+      "size_in_bytes": 1114
+    },
+    {
+      "_path": "site-packages/terminado/_version.py",
+      "path_type": "hardlink",
+      "sha256": "9abc0193264d70ca30306e3e2ac951bee5a3953db17659d60d25836442b6ef4b",
+      "size_in_bytes": 23
+    },
+    {
+      "_path": "site-packages/terminado/management.py",
+      "path_type": "hardlink",
+      "sha256": "cbe7e8480a0c289c9fa4294a697e92603738885af94635646f737b68b21575a7",
+      "size_in_bytes": 13889
+    },
+    {
+      "_path": "site-packages/terminado/py.typed",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/terminado/tests/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/terminado/tests/basic_test.py",
+      "path_type": "hardlink",
+      "sha256": "39b6c6a6cbe2a9dd969118e4de1da53a9b9d497d3c30a7da8032f47726f019fc",
+      "size_in_bytes": 11576
+    },
+    {
+      "_path": "site-packages/terminado/uimod_embed.js",
+      "path_type": "hardlink",
+      "sha256": "0361993ac1f20d61380b28cd919e511aff080ebe2b01becbbe05afb17a44bbcd",
+      "size_in_bytes": 785
+    },
+    {
+      "_path": "site-packages/terminado/uimodule.py",
+      "path_type": "hardlink",
+      "sha256": "bf318bbb8ceb12a602ed4c6b70c3fcf5b0373be4fca838d5402f4c1af026bfcb",
+      "size_in_bytes": 1003
+    },
+    {
+      "_path": "site-packages/terminado/websocket.py",
+      "path_type": "hardlink",
+      "sha256": "b50468dd491e957e8848ec584169b4fe68dd4a1cc0e7bf11e14635a82d513689",
+      "size_in_bytes": 5047
+    }
+  ],
+  "paths_version": 1
+}

@@ -1,0 +1,21 @@
+{
+  "arch": "arm64",
+  "build": "h27ca646_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "libsodium-1.0.18-h27ca646_1.tar.bz2",
+  "license": "ISC",
+  "md5": "90859688dbca4735b74c02af14c4c793",
+  "name": "libsodium",
+  "platform": "darwin",
+  "sha256": "1d95fe5e5e6a0700669aab454b2a32f97289c9ed8d1f7667c2ba98327a6f05bc",
+  "size": 324912,
+  "subdir": "osx-arm64",
+  "timestamp": 1605135878892,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libsodium-1.0.18-h27ca646_1.tar.bz2",
+  "version": "1.0.18"
+}

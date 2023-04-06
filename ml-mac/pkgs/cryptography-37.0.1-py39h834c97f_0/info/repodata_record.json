@@ -1,0 +1,26 @@
+{
+  "build": "py39h834c97f_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "cffi >=1.12",
+    "openssl",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "features": "",
+  "fn": "cryptography-37.0.1-py39h834c97f_0.conda",
+  "legacy_bz2_md5": "526ea83d2494a2306197d24a1120289d",
+  "legacy_bz2_size": 1276491,
+  "license": "(BSD-3-Clause OR Apache-2.0) AND PSF-2.0 AND MIT",
+  "license_family": "BSD",
+  "md5": "344bca35bcd3cd58ce8a6bbd2a009580",
+  "name": "cryptography",
+  "sha256": "a685f05c5a1797054e6e72108a4b6dbca3bfd3ab8959b81273ab7284247cf0e9",
+  "size": 1099303,
+  "subdir": "osx-arm64",
+  "timestamp": 1652101239416,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cryptography-37.0.1-py39h834c97f_0.conda",
+  "version": "37.0.1"
+}

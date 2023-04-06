@@ -1,0 +1,67 @@
+{
+  "build": "hc377ac9_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=12.0.0"
+  ],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/libffi-3.4.2-hc377ac9_2",
+  "features": "",
+  "files": [
+    "include/ffi.h",
+    "include/ffitarget.h",
+    "lib/libffi.7.dylib",
+    "lib/libffi.8.dylib",
+    "lib/libffi.a",
+    "lib/libffi.dylib",
+    "lib/pkgconfig/libffi.pc",
+    "share/info/libffi.info",
+    "share/man/man3/ffi.3",
+    "share/man/man3/ffi_call.3",
+    "share/man/man3/ffi_prep_cif.3",
+    "share/man/man3/ffi_prep_cif_var.3"
+  ],
+  "fn": "libffi-3.4.2-hc377ac9_2.conda",
+  "legacy_bz2_md5": "266db6076bbe561a4d1062fa0f751bdf",
+  "legacy_bz2_size": 44635,
+  "license": "MIT",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/libffi-3.4.2-hc377ac9_2",
+    "type": 1
+  },
+  "md5": "2c790c6f3dbb9a08d5c24fff3cf1dbae",
+  "name": "libffi",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/libffi-3.4.2-hc377ac9_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libffi.8.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/builder/miniconda3/envs/prefect/conda-bld/libffi_1636543661811/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "1111707a5d4b6380c06af39815698c7d77290c5fe3eb91a89c09252edaa25982",
+        "sha256_in_prefix": "084471b55a09b7d5d7597df7c6f50437129a8d83b6bd4c8b1e8ca2520782feb3",
+        "size_in_bytes": 120496
+      },
+      {
+        "_path": "lib/pkgconfig/libffi.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/builder/miniconda3/envs/prefect/conda-bld/libffi_1636543661811/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "88f1c87103bd34bdf35c0593f5e2400343f1d6efef10207bd4bfb432b953b471",
+        "sha256_in_prefix": "7679dff5ebb42e76ab52bff3469ca9856ecac12b85b740c5f4370edbc169b77f",
+        "size_in_bytes": 756
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "libffi==3.4.2=hc377ac9_2",
+  "sha256": "eb69e648a948145fe1be2072db506151c478f4b267ad4409f5afdb812145f40f",
+  "size": 42940,
+  "subdir": "osx-arm64",
+  "timestamp": 1636543698086,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libffi-3.4.2-hc377ac9_2.conda",
+  "version": "3.4.2"
+}

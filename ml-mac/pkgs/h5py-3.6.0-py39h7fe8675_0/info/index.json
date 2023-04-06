@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "py39h7fe8675_0",
+  "build_number": 0,
+  "depends": [
+    "hdf5 >=1.12.1,<1.12.2.0a0",
+    "numpy >=1.19.5,<2.0a0",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "h5py",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1637162821813,
+  "version": "3.6.0"
+}

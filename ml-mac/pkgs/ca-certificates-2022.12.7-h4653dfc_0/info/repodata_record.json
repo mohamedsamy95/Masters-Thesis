@@ -1,0 +1,21 @@
+{
+  "arch": "arm64",
+  "build": "h4653dfc_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "ca-certificates-2022.12.7-h4653dfc_0.conda",
+  "license": "ISC",
+  "md5": "7dc111916edc905957b7417a247583b6",
+  "name": "ca-certificates",
+  "platform": "darwin",
+  "sha256": "a9634dc719fc9cd4c91cf8ad3167532e59051cace3e90ef2ba305a41c316784a",
+  "size": 145869,
+  "subdir": "osx-arm64",
+  "timestamp": 1670457907902,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/ca-certificates-2022.12.7-h4653dfc_0.conda",
+  "version": "2022.12.7"
+}

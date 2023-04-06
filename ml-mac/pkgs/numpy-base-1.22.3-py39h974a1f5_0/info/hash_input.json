@@ -1,0 +1,13 @@
+{
+  "only_build_numpy_base": "no",
+  "c_compiler": "clang",
+  "cxx_compiler_version": "12",
+  "CONDA_BUILD_SYSROOT": "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk",
+  "channel_targets": "defaults",
+  "openblas": "0.3.17",
+  "target_platform": "osx-arm64",
+  "c_compiler_version": "12",
+  "numpy": "1.19",
+  "cxx_compiler": "clangxx",
+  "blas_impl": "openblas"
+}

@@ -1,0 +1,30 @@
+{
+  "arch": "arm64",
+  "build": "hc6d1d07_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "krb5 >=1.19.2,<1.20.0a0",
+    "libnghttp2 >=1.46.0,<2.0a0",
+    "libssh2 >=1.10.0,<2.0a0",
+    "openssl >=1.1.1q,<1.1.2a",
+    "zlib >=1.2.12,<1.3.0a0"
+  ],
+  "features": "",
+  "fn": "libcurl-7.84.0-hc6d1d07_0.conda",
+  "legacy_bz2_md5": "d04f486e639f2623beaef18740c63a2c",
+  "legacy_bz2_size": 318385,
+  "license": "curl",
+  "license_family": "MIT",
+  "md5": "3eb12ba99b06df83f31943ec237620d0",
+  "name": "libcurl",
+  "platform": "darwin",
+  "sha256": "b235f7a1713f2e4255aa7bb4b65f4abb7022a73c887e26cc53fd48ba0e839794",
+  "size": 299330,
+  "subdir": "osx-arm64",
+  "timestamp": 1659041692462,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libcurl-7.84.0-hc6d1d07_0.conda",
+  "version": "7.84.0"
+}

@@ -1,0 +1,30 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "attrs >=17.4.0",
+    "importlib-metadata",
+    "importlib_resources >=1.4.0",
+    "pkgutil-resolve-name >=1.3.10",
+    "pyrsistent !=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0",
+    "python >=3.7",
+    "typing_extensions"
+  ],
+  "features": "",
+  "fn": "jsonschema-4.17.3-pyhd8ed1ab_0.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "723268a468177cd44568eb8f794e0d80",
+  "name": "jsonschema",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "4f68a23430d1afc5c9b41c46fbac0ade33c0bf57a293c646bfdd6dc65350eada",
+  "size": 70487,
+  "subdir": "noarch",
+  "timestamp": 1669810556169,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jsonschema-4.17.3-pyhd8ed1ab_0.conda",
+  "version": "4.17.3"
+}

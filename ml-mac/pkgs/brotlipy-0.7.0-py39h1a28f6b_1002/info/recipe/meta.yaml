@@ -1,0 +1,74 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /Users/ktietz/demo/src/aggregate/brotlipy-feedstock/recipe, last modified Sat Aug  7 09:28:37 2021
+# ------------------------------------------------
+
+package:
+  name: brotlipy
+  version: 0.7.0
+source:
+  fn: brotlipy-0.7.0.tar.gz
+  sha256: 36def0b859beaf21910157b4c33eb3b06d8ce459c942102f16988cca6ea164df
+  url: https://pypi.io/packages/source/b/brotlipy/brotlipy-0.7.0.tar.gz
+build:
+  number: '1002'
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+  string: py39h1a28f6b_1002
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - tapi 1100.0.11 ha21211d_0
+    - zlib 1.2.11 hca03da5_3
+  host:
+    - ca-certificates 2021.7.5 hca03da5_1
+    - certifi 2021.5.30 py39hca03da5_1
+    - cffi 1.14.6 py39h1a28f6b_0
+    - expat 2.4.1 hc377ac9_2
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.3 hc377ac9_2
+    - libiconv 1.16 h1230e6a_0
+    - ncurses 6.2 hc4ed4cf_0
+    - openssl 1.1.1j h1230e6a_0
+    - pip 21.2.4 py39hca03da5_0
+    - pycparser 2.20 py_2
+    - python 3.9.6 hc70090a_5
+    - readline 8.1 h1a28f6b_0
+    - setuptools 52.0.0 py39hca03da5_1
+    - sqlite 3.36.0 h1058600_0
+    - tk 8.6.10 hb8d0fd4_0
+    - tzdata 2021a h5d7bf9c_0
+    - wheel 0.37.0 pyhd3eb1b0_1
+    - xz 5.2.5 h1a28f6b_0
+    - zlib 1.2.11 hca03da5_3
+  run:
+    - cffi >=1.0.0
+    - python >=3.9,<3.10.0a0
+test:
+  imports:
+    - brotli
+about:
+  dev_url: https://github.com/python-hyper/brotlipy
+  home: https://github.com/python-hyper/brotlipy
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Python bindings to the Brotli compression library
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - astaric
+    - isuruf
+    - primozgodec

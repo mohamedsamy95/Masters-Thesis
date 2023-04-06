@@ -1,0 +1,73 @@
+{% set name = "Jinja2" %}
+{% set version = "3.1.2" %}
+{% set sha256 = "31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  host:
+    - pip
+    - python >=3.7
+  run:
+    - markupsafe >=2.0
+    - python >=3.7
+
+test:
+  imports:
+    - jinja2
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: https://palletsprojects.com/p/jinja/
+  license: BSD-3-Clause
+  license_file: LICENSE.rst
+  summary: A very fast and expressive template engine.
+  description: |
+    Jinja is a fast, expressive, extensible templating engine. Special
+    placeholders in the template allow writing code similar to Python
+    syntax. Then the template is passed data to render the final document.
+
+    It includes:
+
+    -   Template inheritance and inclusion.
+    -   Define and import macros within templates.
+    -   HTML templates can use autoescaping to prevent XSS from untrusted
+        user input.
+    -   A sandboxed environment can safely render untrusted templates.
+    -   AsyncIO support for generating templates and calling async
+        functions.
+    -   I18N support with Babel.
+    -   Templates are compiled to optimized Python code just-in-time and
+        cached, or can be compiled ahead-of-time.
+    -   Exceptions point to the correct line in templates to make debugging
+        easier.
+    -   Extensible filters, tests, functions, and even syntax.
+
+    Jinja's philosophy is that while application logic belongs in Python if
+    possible, it shouldn't make the template designer's job difficult by
+    restricting functionality too much.
+  doc_url: https://jinja.palletsprojects.com/
+  dev_url: https://github.com/pallets/jinja/
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - msarahan
+    - scopatz
+    - nehaljwani
+    - xylar

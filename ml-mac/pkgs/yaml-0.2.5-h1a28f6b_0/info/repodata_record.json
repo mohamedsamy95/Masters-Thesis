@@ -1,0 +1,21 @@
+{
+  "build": "h1a28f6b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "yaml-0.2.5-h1a28f6b_0.conda",
+  "legacy_bz2_md5": "990ccbdae7ddeea76e2bf0546d4c6369",
+  "legacy_bz2_size": 88367,
+  "license": "MIT",
+  "md5": "23a9bda10db68f27fac5c379466c98b7",
+  "name": "yaml",
+  "sha256": "d4c5f11b4b9cb372f491caa39fcd28b426aa113cf1232775072ca6385e2fd87c",
+  "size": 73088,
+  "subdir": "osx-arm64",
+  "timestamp": 1629137313522,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/yaml-0.2.5-h1a28f6b_0.conda",
+  "version": "0.2.5"
+}

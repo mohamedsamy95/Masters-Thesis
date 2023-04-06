@@ -1,0 +1,13 @@
+{
+  "_etag": "W/\"bd18071599942dd824e1ec40e9d10873\"",
+  "info": {
+    "subdir": "osx-arm64"
+  },
+  "_url": "https://repo.anaconda.com/pkgs/pro/osx-arm64",
+  "_cache_control": "public, max-age=30",
+  "_mod": "Mon, 07 Jan 2019 15:22:15 GMT",
+  "repodata_version": 1,
+  "packages.conda": {},
+  "removed": [],
+  "packages": {}
+}

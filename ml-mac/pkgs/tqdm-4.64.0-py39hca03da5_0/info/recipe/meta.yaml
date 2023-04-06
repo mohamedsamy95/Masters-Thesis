@@ -1,0 +1,79 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_d8374dd1-2388-4771-b0ef-a205a18076f0p40h0nwh/clone/recipe, last modified Mon Apr 25 07:51:15 2022
+# ------------------------------------------------
+
+package:
+  name: tqdm
+  version: 4.64.0
+source:
+  sha256: 40be55d30e200777a307a7585aee69e4eabb46b4ec6a4b4a5f2d9f11e7d5408d
+  url: https://pypi.io/packages/source/t/tqdm/tqdm-4.64.0.tar.gz
+build:
+  entry_points:
+    - tqdm = tqdm.cli:main
+  number: '0'
+  script: /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_d8374dd1-2388-4771-b0ef-a205a18076f0p40h0nwh/croots/recipe/tqdm_1650891080348/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/bin/python
+    -m pip install . --no-deps -vv
+  string: py39hca03da5_0
+requirements:
+  host:
+    - ca-certificates 2022.3.29 hca03da5_1
+    - certifi 2021.10.8 py39hca03da5_2
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.4.2 hc377ac9_2
+    - ncurses 6.3 h1a28f6b_2
+    - openssl 1.1.1n h1a28f6b_0
+    - packaging 21.3 pyhd3eb1b0_0
+    - pip 21.2.4 py39hca03da5_0
+    - pyparsing 3.0.4 pyhd3eb1b0_0
+    - python 3.9.12 hbdb9e5c_0
+    - readline 8.1.2 h1a28f6b_1
+    - setuptools 61.2.0 py39hca03da5_0
+    - setuptools-scm 6.3.2 pyhd3eb1b0_0
+    - setuptools_scm 6.3.2 hd3eb1b0_0
+    - sqlite 3.38.2 h1058600_0
+    - tk 8.6.11 hb8d0fd4_0
+    - toml 0.10.2 pyhd3eb1b0_0
+    - tomli 1.2.2 pyhd3eb1b0_0
+    - tzdata 2022a hda174b7_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h1a28f6b_0
+    - zlib 1.2.12 h5a0b063_2
+  run:
+    - python >=3.9,<3.10.0a0
+test:
+  commands:
+    - pip check
+    - tqdm --help
+    - tqdm -v
+    - pytest -k "not tests_perf"
+  imports:
+    - tqdm
+  requires:
+    - pip
+    - pytest
+    - pytest-asyncio
+    - pytest-timeout
+  source_files:
+    - pyproject.toml
+    - setup.cfg
+    - tests
+about:
+  dev_url: https://github.com/tqdm/tqdm
+  doc_source_url: https://github.com/tqdm/tqdm/blob/master/README.rst
+  doc_url: https://github.com/tqdm/tqdm#tqdm
+  home: https://pypi.python.org/pypi/tqdm
+  license: MPL-2.0 AND MIT
+  license_family: MOZILLA
+  license_file: LICENCE
+  summary: A Fast, Extensible Progress Meter
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: d8374dd1-2388-4771-b0ef-a205a18076f0
+  recipe-maintainers:
+    - casperdcl
+    - pmlandwehr
+  remote_url: git@github.com:AnacondaRecipes/tqdm-feedstock.git
+  sha: a6349b326668ba5b2bcab73d016f3288ee6fb153

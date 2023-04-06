@@ -1,0 +1,20 @@
+{
+  "arch": "arm64",
+  "build": "py39h95c9599_0",
+  "build_number": 0,
+  "depends": [
+    "c-ares >=1.17.1,<2.0a0",
+    "libcxx >=12.0.0",
+    "openssl >=1.1.1j,<1.1.2a",
+    "python >=3.9,<3.10.0a0",
+    "six >=1.5.2",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "name": "grpcio",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1637592438610,
+  "version": "1.42.0"
+}

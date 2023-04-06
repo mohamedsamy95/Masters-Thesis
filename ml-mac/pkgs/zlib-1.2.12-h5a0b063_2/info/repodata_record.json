@@ -1,0 +1,22 @@
+{
+  "build": "h5a0b063_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "zlib-1.2.12-h5a0b063_2.conda",
+  "legacy_bz2_md5": "863a2f99486071c63d3ace74fc30a5a7",
+  "legacy_bz2_size": 102741,
+  "license": "Zlib",
+  "license_family": "Other",
+  "md5": "5a9ad84c3e0002fbe11ae0c0ac3c776f",
+  "name": "zlib",
+  "sha256": "c6ceb6cf36ea96eb1d6885a3ae53336b28f0bd933eb2afbee8bec4471d547b02",
+  "size": 83650,
+  "subdir": "osx-arm64",
+  "timestamp": 1650637722446,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/zlib-1.2.12-h5a0b063_2.conda",
+  "version": "1.2.12"
+}

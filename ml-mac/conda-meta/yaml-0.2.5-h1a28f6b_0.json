@@ -1,0 +1,49 @@
+{
+  "build": "h1a28f6b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/yaml-0.2.5-h1a28f6b_0",
+  "features": "",
+  "files": [
+    "include/yaml.h",
+    "lib/libyaml-0.2.dylib",
+    "lib/libyaml.a",
+    "lib/libyaml.dylib",
+    "lib/pkgconfig/yaml-0.1.pc"
+  ],
+  "fn": "yaml-0.2.5-h1a28f6b_0.conda",
+  "legacy_bz2_md5": "990ccbdae7ddeea76e2bf0546d4c6369",
+  "legacy_bz2_size": 88367,
+  "license": "MIT",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/yaml-0.2.5-h1a28f6b_0",
+    "type": 1
+  },
+  "md5": "23a9bda10db68f27fac5c379466c98b7",
+  "name": "yaml",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/yaml-0.2.5-h1a28f6b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/pkgconfig/yaml-0.1.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/ktietz/demo/mc3/conda-bld/yaml_1629137271902/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "e18011231bd69e1de1f1a354392a4b08eebab6c2a14e8a147664a82865577cda",
+        "sha256_in_prefix": "14cf71fd60896d11b2f301abe955835e7fb1d7edb6bee71a04ad1aee475879d6",
+        "size_in_bytes": 463
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "yaml==0.2.5=h1a28f6b_0",
+  "sha256": "d4c5f11b4b9cb372f491caa39fcd28b426aa113cf1232775072ca6385e2fd87c",
+  "size": 73088,
+  "subdir": "osx-arm64",
+  "timestamp": 1629137313522,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/yaml-0.2.5-h1a28f6b_0.conda",
+  "version": "0.2.5"
+}

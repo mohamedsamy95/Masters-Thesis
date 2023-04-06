@@ -1,0 +1,132 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_5871d1ea-0250-4cd7-ac89-4b1e60514f5daqk8t0ow/clone/recipe, last modified Mon May  9 07:58:42 2022
+# ------------------------------------------------
+
+package:
+  name: cryptography
+  version: 37.0.1
+source:
+  sha256: d610d0ee14dd9109006215c7c0de15eee91230b70a9bce2263461cf7c3720b83
+  url: https://pypi.io/packages/source/c/cryptography/cryptography-37.0.1.tar.gz
+build:
+  number: '0'
+  script: /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_5871d1ea-0250-4cd7-ac89-4b1e60514f5daqk8t0ow/croots/recipe/cryptography_1652101128666/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+    -m pip install . -vv
+  string: py39h834c97f_0
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - clangxx_osx-arm64 12.0.0 h39b79ac_3
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - rust 1.56.0 h1a28f6b_0
+    - rust_osx-arm64 1.46.0 hc4ed4cf_0
+    - tapi 1100.0.11 ha21211d_0
+    - zlib 1.2.12 h5a0b063_2
+  host:
+    - ca-certificates 2022.4.26 hca03da5_0
+    - certifi 2021.10.8 py39hca03da5_2
+    - cffi 1.15.0 py39h22df2f2_1
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.4.2 hc377ac9_2
+    - ncurses 6.3 h1a28f6b_2
+    - openssl 1.1.1n h1a28f6b_0
+    - pip 21.2.4 py39hca03da5_0
+    - pycparser 2.21 pyhd3eb1b0_0
+    - python 3.9.12 hbdb9e5c_0
+    - readline 8.1.2 h1a28f6b_1
+    - semantic_version 2.8.5 pyhd3eb1b0_0
+    - setuptools 61.2.0 py39hca03da5_0
+    - setuptools-rust 0.12.1 pyhd3eb1b0_0
+    - sqlite 3.38.3 h1058600_0
+    - tk 8.6.11 hb8d0fd4_1
+    - toml 0.10.2 pyhd3eb1b0_0
+    - tzdata 2022a hda174b7_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h1a28f6b_1
+    - zlib 1.2.12 h5a0b063_2
+  run:
+    - cffi >=1.12
+    - openssl
+    - python >=3.9,<3.10.0a0
+test:
+  commands:
+    - pip check
+    - pytest -n auto -k "not (test_der_x509_certificate_extensions[x509/PKITS_data/certs/ValidcRLIssuerTest28EE.crt]
+      or test_x509_csr_extensions or test_no_leak_free or test_no_leak_no_malloc or
+      test_leak or test_load_pkcs12_key_and_certificates[pkcs12/cert-key-aes256cbc.p12]
+      or test_create_certificate_with_extensions or test_ec_derive_private_key or
+      test_ec_private_numbers_private_key or test_create_ocsp_request or test_write_pkcs12_key_and_certificates
+      or test_errors or test_load_pkcs12_key_and_certificates[pkcs12/cert-aes256cbc-no-key.p12]
+      or test_ec_private_numbers_private_key or test_pem_x509_certificate_extensions[x509/cryptography.io.pem]
+      or test_create_crl_with_idp or test_no_leak_gc or test_x25519_pubkey_from_private_key)"
+  imports:
+    - cryptography
+    - cryptography.fernet
+    - cryptography.hazmat
+    - cryptography.hazmat.backends
+    - cryptography.hazmat.backends.openssl
+    - cryptography.hazmat.bindings
+    - cryptography.hazmat.bindings.openssl
+    - cryptography.hazmat.primitives
+    - cryptography.hazmat.primitives.asymmetric
+    - cryptography.hazmat.primitives.ciphers
+    - cryptography.hazmat.primitives.kdf
+    - cryptography.hazmat.primitives.twofactor
+    - cryptography.x509
+  requires:
+    - cryptography-vectors 37.0.1.*
+    - hypothesis >=1.11.4,!=3.79.2
+    - iso8601
+    - pip
+    - pretend
+    - pytest >=6.2.0
+    - pytest-benchmark
+    - pytest-subtests
+    - pytest-xdist
+    - pytz
+  source_files:
+    - tests
+about:
+  description: 'Cryptography is a package which provides cryptographic recipes and
+
+    primitives to Python developers. Our goal is for it to be your
+
+    "cryptographic standard library". It supports Python 3.6+ and PyPy3 7.2+.
+
+    cryptography includes both high level recipes and low level interfaces to
+
+    common cryptographic algorithms such as symmetric ciphers, message digests,
+
+    and key derivation functions.
+
+    '
+  dev_url: https://github.com/pyca/cryptography
+  doc_source_url: https://github.com/pyca/cryptography/blob/master/docs/index.rst
+  doc_url: https://cryptography.io/en/37.0.1/
+  home: https://github.com/pyca/cryptography
+  license: (BSD-3-Clause OR Apache-2.0) AND PSF-2.0 AND MIT
+  license_family: BSD
+  license_file: LICENSE
+  summary: Provides cryptographic recipes and primitives to Python developers
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 5871d1ea-0250-4cd7-ac89-4b1e60514f5d
+  recipe-maintainers:
+    - chenghlee
+    - jakirkham
+    - ocefpaf
+  remote_url: git@github.com:AnacondaRecipes/cryptography-feedstock.git
+  sha: 2fe34691fb01e6da37f2e18923e3e8a9ed4ef294

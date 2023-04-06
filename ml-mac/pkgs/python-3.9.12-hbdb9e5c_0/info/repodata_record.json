@@ -1,0 +1,33 @@
+{
+  "build": "hbdb9e5c_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=12.0.0",
+    "libffi >=3.3,<4.0a0",
+    "ncurses >=6.3,<7.0a0",
+    "openssl >=1.1.1n,<1.1.2a",
+    "readline >=8.1.2,<9.0a0",
+    "sqlite >=3.38.2,<4.0a0",
+    "tk >=8.6.11,<8.7.0a0",
+    "tzdata",
+    "xz >=5.2.5,<6.0a0",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "features": "",
+  "fn": "python-3.9.12-hbdb9e5c_0.conda",
+  "legacy_bz2_md5": "0c7d763301630cfb849959b52fda685b",
+  "legacy_bz2_size": 13229067,
+  "license": "PSF-2.0",
+  "license_family": "PSF",
+  "md5": "6d4e471648e21dd0dadd853bf54d8a28",
+  "name": "python",
+  "sha256": "ab32998dc7fdd5e8e756140aac58c47eaacba3a5ecf3b90dbbbe27de14106f62",
+  "size": 10673996,
+  "subdir": "osx-arm64",
+  "timestamp": 1649141750593,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/python-3.9.12-hbdb9e5c_0.conda",
+  "version": "3.9.12"
+}

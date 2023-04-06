@@ -1,0 +1,26 @@
+{
+  "arch": "arm64",
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/apple/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "grpcio >=1.37.0,<2.0",
+    "h5py >=3.6.0,<3.7",
+    "numpy >=1.22.3,<1.23.0",
+    "python"
+  ],
+  "features": "",
+  "fn": "tensorflow-deps-2.9.0-0.tar.bz2",
+  "license": "Apache2",
+  "license_family": "Apache",
+  "md5": "dd24926a022491219236042e670d138f",
+  "name": "tensorflow-deps",
+  "platform": "darwin",
+  "size": 2601,
+  "subdir": "osx-arm64",
+  "timestamp": 1652917809632,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/apple/osx-arm64/tensorflow-deps-2.9.0-0.tar.bz2",
+  "version": "2.9.0"
+}

@@ -1,0 +1,28 @@
+{
+  "arch": "arm64",
+  "build": "py39h7fe8675_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "hdf5 >=1.12.1,<1.12.2.0a0",
+    "numpy >=1.19.5,<2.0a0",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "features": "",
+  "fn": "h5py-3.6.0-py39h7fe8675_0.conda",
+  "legacy_bz2_md5": "25c85e5c609ecbadbd9299669d43c61b",
+  "legacy_bz2_size": 1212602,
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "6a464d618be7cc28bb2776ccd4e82ed8",
+  "name": "h5py",
+  "platform": "darwin",
+  "sha256": "5a731a24ab02e3c6063806f6b505187b2db300cbc7067594920b701e42c6f258",
+  "size": 996145,
+  "subdir": "osx-arm64",
+  "timestamp": 1637162821813,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/h5py-3.6.0-py39h7fe8675_0.conda",
+  "version": "3.6.0"
+}

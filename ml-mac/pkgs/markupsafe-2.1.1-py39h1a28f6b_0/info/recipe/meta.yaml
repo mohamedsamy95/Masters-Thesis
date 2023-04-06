@@ -1,0 +1,95 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_12c133f5-0720-4727-9c18-599a3af825723lzwham3/clone/recipe, last modified Tue Jun  7 05:31:00 2022
+# ------------------------------------------------
+
+package:
+  name: markupsafe
+  version: 2.1.1
+source:
+  sha256: 7f91197cc9e48f989d12e4e6fbc46495c446636dfc81b9ccf50bb0ec74b91d4b
+  url: https://pypi.io/packages/source/M/MarkupSafe/MarkupSafe-2.1.1.tar.gz
+build:
+  number: '0'
+  script: /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_12c133f5-0720-4727-9c18-599a3af825723lzwham3/croots/recipe/markupsafe_1654597866058/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p/bin/python
+    -m pip install . --no-deps -vv
+  string: py39h1a28f6b_0
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - tapi 1100.0.11 ha21211d_0
+    - zlib 1.2.12 h5a0b063_2
+  host:
+    - ca-certificates 2022.4.26 hca03da5_0
+    - certifi 2022.5.18.1 py39hca03da5_0
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.4.2 hc377ac9_2
+    - ncurses 6.3 h1a28f6b_2
+    - openssl 1.1.1o h1a28f6b_0
+    - pip 21.2.4 py39hca03da5_0
+    - python 3.9.12 hbdb9e5c_1
+    - readline 8.1.2 h1a28f6b_1
+    - setuptools 61.2.0 py39hca03da5_0
+    - sqlite 3.38.3 h1058600_0
+    - tk 8.6.12 hb8d0fd4_0
+    - tzdata 2022a hda174b7_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h1a28f6b_1
+    - zlib 1.2.12 h5a0b063_2
+  run:
+    - python >=3.9,<3.10.0a0
+  run_constrained:
+    - jinja2 >=3.0.0
+test:
+  commands:
+    - pip check
+  downstreams:
+    - astropy
+    - jinja2
+  imports:
+    - markupsafe
+  requires:
+    - pip
+about:
+  description: 'MarkupSafe implements a text object that escapes characters so it
+    is
+
+    safe to use in HTML and XML. Characters that have special meanings are
+
+    replaced so that they display as the actual characters. This mitigates
+
+    injection attacks, meaning untrusted user input can safely be displayed
+
+    on a page.
+
+    '
+  dev_url: https://github.com/pallets/markupsafe
+  doc_source_url: https://github.com/pallets/markupsafe/blob/master/README.rst
+  doc_url: https://markupsafe.palletsprojects.com/
+  home: https://www.palletsprojects.com/p/markupsafe
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.rst
+  summary: Safely add untrusted strings to HTML/XML markup.
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 12c133f5-0720-4727-9c18-599a3af82572
+  recipe-maintainers:
+    - ocefpaf
+    - pelson
+    - scopatz
+  remote_url: git@github.com:AnacondaRecipes/markupsafe-feedstock.git
+  sha: 139a4299ceffa73fda598a10c7cace4585f4f5d5

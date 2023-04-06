@@ -1,0 +1,299 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/importlib_resources-5.10.2.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/importlib_resources-5.10.2.dist-info/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size_in_bytes": 11358
+    },
+    {
+      "_path": "site-packages/importlib_resources-5.10.2.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "5e8e67b404ef0d85317665bcb6bf24c6d7dd88e0bdf3cf663a4f8b1352ed65f2",
+      "size_in_bytes": 4111
+    },
+    {
+      "_path": "site-packages/importlib_resources-5.10.2.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "98c0a9ae5eb52c31b853cc590b545e4a1a3ac8b7e0d3503fb46e19b49a64bbad",
+      "size_in_bytes": 6739
+    },
+    {
+      "_path": "site-packages/importlib_resources-5.10.2.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources-5.10.2.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+      "size_in_bytes": 92
+    },
+    {
+      "_path": "site-packages/importlib_resources-5.10.2.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "ad1e671622e07ea576627de99332766d431baf12ef8b8f7dc1ecb21ddcfeb4ca",
+      "size_in_bytes": 115
+    },
+    {
+      "_path": "site-packages/importlib_resources-5.10.2.dist-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "7c72231d4d46670023bdcc9da6652752b4e76ef7625a31b83845592bc6f2d134",
+      "size_in_bytes": 20
+    },
+    {
+      "_path": "site-packages/importlib_resources/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "7af3e6d7690b818a939bea5bce6eb46cebae9ae993f08a41356169d2e332af31",
+      "size_in_bytes": 506
+    },
+    {
+      "_path": "site-packages/importlib_resources/_adapters.py",
+      "path_type": "hardlink",
+      "sha256": "a39d6d3f686956da213f7de0498c809063692df60306ac7162c69dca24598b51",
+      "size_in_bytes": 4504
+    },
+    {
+      "_path": "site-packages/importlib_resources/_common.py",
+      "path_type": "hardlink",
+      "sha256": "8d20b8c5f2dd70c35bb5b587b69cdb16435ad16ee4bdffff9ec627d780bf0045",
+      "size_in_bytes": 5457
+    },
+    {
+      "_path": "site-packages/importlib_resources/_compat.py",
+      "path_type": "hardlink",
+      "sha256": "75269d17a58fb7c3303aa4a6fcd20e40f870e31d2268c6135b18be5d2f77a7b3",
+      "size_in_bytes": 2923
+    },
+    {
+      "_path": "site-packages/importlib_resources/_itertools.py",
+      "path_type": "hardlink",
+      "sha256": "582749d46b3f90d170284372206ed33b4638df82160aed338d5552b126d9c14f",
+      "size_in_bytes": 884
+    },
+    {
+      "_path": "site-packages/importlib_resources/_legacy.py",
+      "path_type": "hardlink",
+      "sha256": "d1329d662c712d603ec70b40670e07729a899a3e17a6bc7566472dcb48134596",
+      "size_in_bytes": 3481
+    },
+    {
+      "_path": "site-packages/importlib_resources/abc.py",
+      "path_type": "hardlink",
+      "sha256": "21caf6209d90b47eefbc007dbc2e56449f4a068683c896bb294b3c31cb913b3a",
+      "size_in_bytes": 5140
+    },
+    {
+      "_path": "site-packages/importlib_resources/py.typed",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/readers.py",
+      "path_type": "hardlink",
+      "sha256": "3d9b22e6a69caf6427dca1f0e2ac371a6d4cceb05b94f1e84dd8ea8c7ec4296c",
+      "size_in_bytes": 3581
+    },
+    {
+      "_path": "site-packages/importlib_resources/simple.py",
+      "path_type": "hardlink",
+      "sha256": "d3fff64d0053428aa46a362634fb751f11117117804fa6e854a240df6f29af4e",
+      "size_in_bytes": 2576
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/_compat.py",
+      "path_type": "hardlink",
+      "sha256": "613481d14d51f680039e1e86ad070e0a0a23c5c17f37a1f52e497298459ff524",
+      "size_in_bytes": 708
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/_path.py",
+      "path_type": "hardlink",
+      "sha256": "c99c96b10cc9650d59f00440c5692301d69556c8e5cf2ab13b4aa3054a1f27c3",
+      "size_in_bytes": 1039
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data01/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data01/binary.file",
+      "path_type": "hardlink",
+      "sha256": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+      "size_in_bytes": 4
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data01/subdirectory/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data01/subdirectory/binary.file",
+      "path_type": "hardlink",
+      "sha256": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+      "size_in_bytes": 4
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data01/utf-16.file",
+      "path_type": "hardlink",
+      "sha256": "b79abdaa1c57d2b62a22d04e33c0f7ca5c06f911eb9ce62d7932ed42beac17b8",
+      "size_in_bytes": 44
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data01/utf-8.file",
+      "path_type": "hardlink",
+      "sha256": "9305a0606e3243e645d97fd603ae848d83e6c49467fb0f1a48e892f5ef2d2986",
+      "size_in_bytes": 20
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data02/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data02/one/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data02/one/resource1.txt",
+      "path_type": "hardlink",
+      "sha256": "d747e529a73b73e5d7173277b7e001e4c263941cbffdd499bcf13f74e9b6aba5",
+      "size_in_bytes": 13
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data02/two/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/data02/two/resource2.txt",
+      "path_type": "hardlink",
+      "sha256": "96dda36cddd3327f5088528cf37d97dfd6d4ffad94a6d0dd524a18ce4bc46e5d",
+      "size_in_bytes": 13
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/namespacedata01/binary.file",
+      "path_type": "hardlink",
+      "sha256": "054edec1d0211f624fed0cbca9d4f9400b0e491c43742af2c5b0abebf0c990d8",
+      "size_in_bytes": 4
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/namespacedata01/utf-16.file",
+      "path_type": "hardlink",
+      "sha256": "b79abdaa1c57d2b62a22d04e33c0f7ca5c06f911eb9ce62d7932ed42beac17b8",
+      "size_in_bytes": 44
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/namespacedata01/utf-8.file",
+      "path_type": "hardlink",
+      "sha256": "9305a0606e3243e645d97fd603ae848d83e6c49467fb0f1a48e892f5ef2d2986",
+      "size_in_bytes": 20
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/test_compatibilty_files.py",
+      "path_type": "hardlink",
+      "sha256": "35691b22cca523c5b3dc3c2cc68d6ab93e1923a4e85c50369a88c21ba0f3bb1c",
+      "size_in_bytes": 3260
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/test_contents.py",
+      "path_type": "hardlink",
+      "sha256": "5755df93796a4c376f52c66e575f0a9dd7f4093fed90cda8108c24f55bf4ae18",
+      "size_in_bytes": 968
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/test_files.py",
+      "path_type": "hardlink",
+      "sha256": "d58f1d6be834c4e40bcee4440d852245cfea85696f14d7b2756fe6507ee5d79c",
+      "size_in_bytes": 3251
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/test_open.py",
+      "path_type": "hardlink",
+      "sha256": "a6612076b48574cf372fa171b51f14fd14fd05f237259e2c9c698cfd96487a06",
+      "size_in_bytes": 2565
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/test_path.py",
+      "path_type": "hardlink",
+      "sha256": "c6f3ed78d03e50a6af0e12a02e0ad0b974b1296607ed0e2748d0d57c15fde46b",
+      "size_in_bytes": 2103
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/test_read.py",
+      "path_type": "hardlink",
+      "sha256": "13262fa4727fec5e0bb97d8453f73911eac80507d184e16688847b2ce7396391",
+      "size_in_bytes": 2408
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/test_reader.py",
+      "path_type": "hardlink",
+      "sha256": "9cf86575b60fab77d7a10b34640b9be1ab63869da580dc8b36fd86d6983a020c",
+      "size_in_bytes": 4480
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/test_resource.py",
+      "path_type": "hardlink",
+      "sha256": "10ca1aaf14c41dcaeaf11e352d00ec9dd206f0876d9b823f2e937c0d8a47b53d",
+      "size_in_bytes": 8478
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/update-zips.py",
+      "path_type": "hardlink",
+      "sha256": "c7e4ab3b9bfcee22cb50c5f279fc43c007778a602cfec948f78b0b5af27a378d",
+      "size_in_bytes": 1417
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/util.py",
+      "path_type": "hardlink",
+      "sha256": "011025c59e3bc02fa5811ecf1a59a00688b81e7873732903e48b36f930306342",
+      "size_in_bytes": 4873
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/zipdata01/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/zipdata01/ziptestdata.zip",
+      "path_type": "hardlink",
+      "sha256": "cf939fe1db2fdd3d2dfb8e81d0cb15871961b0f18ccf6f1a5212435a98f7fe86",
+      "size_in_bytes": 876
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/zipdata02/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/importlib_resources/tests/zipdata02/ziptestdata.zip",
+      "path_type": "hardlink",
+      "sha256": "c9d23efe3fb1810eed0f1a81a7d7233aa5c11b1529e9905bc1526ee978fe9eb6",
+      "size_in_bytes": 698
+    }
+  ],
+  "paths_version": 1
+}

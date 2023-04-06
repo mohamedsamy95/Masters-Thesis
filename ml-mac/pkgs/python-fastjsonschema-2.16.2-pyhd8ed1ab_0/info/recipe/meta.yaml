@@ -1,0 +1,80 @@
+# This file created by conda-build 3.22.0
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Sep 19 20:31:16 2022
+# ------------------------------------------------
+
+package:
+  name: python-fastjsonschema
+  version: 2.16.2
+source:
+  - folder: dist
+    sha256: 01e366f25d9047816fe3d288cbfc3e10541daf0af2044763f3d0ade42476da18
+    url: https://pypi.io/packages/source/f/fastjsonschema/fastjsonschema-2.16.2.tar.gz
+  - folder: src
+    sha256: 552e8b07a076f4628e9a3c78f040ed673bed9b5b860d3cb51b323da50e2e3d47
+    url: https://github.com/horejsek/python-fastjsonschema/archive/v2.16.2.tar.gz
+build:
+  noarch: python
+  number: '0'
+  script: cd dist && /home/conda/feedstock_root/build_artifacts/python-fastjsonschema_1663619548554/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+    -m pip install . -vv
+  string: pyhd8ed1ab_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - bzip2 1.0.8 h7f98852_4
+    - ca-certificates 2022.9.14 ha878542_0
+    - ld_impl_linux-64 2.36.1 hea4e1c9_2
+    - libffi 3.4.2 h7f98852_5
+    - libgcc-ng 12.1.0 h8d9b700_16
+    - libgomp 12.1.0 h8d9b700_16
+    - libnsl 2.0.0 h7f98852_0
+    - libsqlite 3.39.3 h753d276_0
+    - libuuid 2.32.1 h7f98852_1000
+    - libzlib 1.2.12 h166bdaf_3
+    - ncurses 6.3 h27087fc_1
+    - openssl 3.0.5 h166bdaf_2
+    - pip 22.2.2 pyhd8ed1ab_0
+    - python 3.10.6 ha86cf86_0_cpython
+    - readline 8.1.2 h0f457ee_0
+    - setuptools 65.3.0 pyhd8ed1ab_1
+    - tk 8.6.12 h27826a3_0
+    - tzdata 2022c h191b570_0
+    - wheel 0.37.1 pyhd8ed1ab_0
+    - xz 5.2.6 h166bdaf_0
+  run:
+    - python >=3.3
+test:
+  commands:
+    - cd src && cd tests && pytest -vv --cov fastjsonschema -k "not (compile_to_code_ipv6_regex
+      or compile_to_code_custom_format_with_refs)" --cov-report term-missing:skip-covered
+      --no-cov-on-fail --cov-fail-under 84
+  imports:
+    - fastjsonschema
+  requires:
+    - pytest-benchmark
+    - pytest-cov
+  source_files:
+    - src/tests
+about:
+  description: 'fastjsonschema implements validation of JSON documents by JSON schema.
+    The
+
+    library implements JSON schema drafts 04, 06 and 07. The main purpose is to
+
+    have a really fast implementation.
+
+    '
+  doc_source_url: https://github.com/horejsek/python-fastjsonschema/tree/master/docs
+  doc_url: https://horejsek.github.io/python-fastjsonschema
+  home: https://github.com/horejsek/python-fastjsonschema
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: src/LICENSE
+  summary: Fastest Python implementation of JSON schema
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - bollwyvl

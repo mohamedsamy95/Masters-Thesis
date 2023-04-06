@@ -1,0 +1,90 @@
+# This file created by conda-build 3.22.0
+# ------------------------------------------------
+
+package:
+  name: llvm-openmp
+  version: 14.0.6
+source:
+  folder: llvm-project
+  sha256: 8b3cfd7bc695bd6cea0f37f53f0981f34f87496e79e2529874fd03a2f9dd3a8a
+  url: https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.6/llvm-project-14.0.6.src.tar.xz
+build:
+  ignore_run_exports:
+    - _openmp_mutex
+    - libgcc-ng
+    - libstdcxx-ng
+  number: 0
+  run_exports:
+    strong:
+      - llvm-openmp >=14.0.6
+  string: hc6e5704_0
+requirements:
+  build:
+    - bzip2 1.0.8 h620ffc9_4
+    - c-ares 1.18.1 h1a28f6b_0
+    - ca-certificates 2022.07.19 hca03da5_0
+    - clang_bootstrap_osx-arm64 12.0.0 ha993bc6_3
+    - cmake 3.22.1 hae769c0_0
+    - expat 2.4.4 hc377ac9_0
+    - krb5 1.19.2 h3b8d789_0
+    - libcurl 7.84.0 hc6d1d07_0
+    - libcxx 14.0.6 h848a8c0_0
+    - libedit 3.1.20210910 h1a28f6b_0
+    - libev 4.33 h1a28f6b_1
+    - libnghttp2 1.46.0 h95c9599_0
+    - libssh2 1.10.0 hf27765b_0
+    - libuv 1.39.0 h1a28f6b_0
+    - lz4-c 1.9.3 hc377ac9_0
+    - make 4.3 h620ffc9_1
+    - ncurses 6.3 h1a28f6b_3
+    - openssl 1.1.1q h1a28f6b_0
+    - perl 5.34.0 h1230e6a_0
+    - rhash 1.4.1 hf27765b_1
+    - xz 5.2.5 h1a28f6b_1
+    - zlib 1.2.12 h5a0b063_2
+    - zstd 1.5.2 h8574219_0
+  host:
+    - libcxx 14.0.6 h848a8c0_0
+    - libffi 3.4.2 hc377ac9_4
+    - libllvm14 14.0.6 h4b41812_0
+    - llvm-tools 14.0.6 h12f7ac0_0
+    - llvmdev 14.0.6 h12f7ac0_0
+    - zlib 1.2.12 h5a0b063_2
+  run: []
+  run_constrained:
+    - openmp 14.0.6|14.0.6.*
+test:
+  commands:
+    - test -f $PREFIX/lib/libomp.dylib
+    - test -f $PREFIX/include/omp.h
+    - $PREFIX/bin/clang -v -fopenmp -I$PREFIX/include -L$PREFIX/lib -Wl,-rpath,$PREFIX/lib
+      omp_hello.c -o omp_hello
+    - ./omp_hello
+  files:
+    - omp_hello.c
+  requires:
+    - clang_bootstrap_osx-arm64 *
+    - clangxx
+about:
+  dev_url: https://github.com/llvm/llvm-project
+  doc_url: https://llvm.org/docs/
+  home: https://openmp.llvm.org/
+  license: Apache-2.0 WITH LLVM-exception
+  license_family: Apache
+  license_file: openmp/LICENSE.TXT
+  summary: The OpenMP API supports multi-platform shared-memory parallel programming
+    in C/C++ and Fortran.
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 86755b05-3af1-4cc3-9eef-5dc9b1b6d20b
+  recipe-maintainers:
+    - beckermr
+    - h-vetinari
+    - inducer
+    - isuruf
+    - jakirkham
+    - katietz
+    - yesimon
+  remote_url: git@github.com:AnacondaRecipes/openmp-feedstock.git
+  sha: 3c465be8f8750e6dfd0783f484772dd7ebb40558

@@ -1,0 +1,24 @@
+# This file created by conda-build 3.21.6
+# meta.yaml template originally from:
+# ------------------------------------------------
+
+package:
+  name: tensorflow-deps
+  version: 2.9.0
+build:
+  number: '0'
+  string: '0'
+requirements:
+  build: []
+  run:
+    - grpcio >=1.37.0,<2.0
+    - h5py >=3.6.0,<3.7
+    - numpy >=1.22.3,<1.23.0
+    - python
+about:
+  license: Apache2
+  license_family: Apache
+  summary: Metapackage for installing dependencies of TensorFlow
+extra:
+  copy_test_source_files: true
+  final: true

@@ -1,0 +1,5 @@
+{
+  "target_platform": "osx-arm64",
+  "channel_targets": "defaults",
+  "gfortran_version": "11.3.0"
+}

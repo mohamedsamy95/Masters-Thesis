@@ -1,0 +1,17 @@
+{
+  "arch": null,
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "nbconvert-core 7.2.9 pyhd8ed1ab_0",
+    "nbconvert-pandoc 7.2.9 pyhd8ed1ab_0",
+    "python >=3.7"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "nbconvert",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1674590521535,
+  "version": "7.2.9"
+}

@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "py39h22df2f2_1",
+  "build_number": 1,
+  "depends": [
+    "libffi >=3.3",
+    "pycparser",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "cffi",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1642701219423,
+  "version": "1.15.0"
+}

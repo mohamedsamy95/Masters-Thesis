@@ -1,0 +1,22 @@
+{
+  "build": "hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "ca-certificates-2022.4.26-hca03da5_0.conda",
+  "legacy_bz2_md5": "eb893b08af18f8e903bb8be5ce2ed56d",
+  "legacy_bz2_size": 129908,
+  "license": "MPL-2.0",
+  "license_family": "Other",
+  "md5": "dfdbee7a53d5a5a2385f083e31495e9f",
+  "name": "ca-certificates",
+  "sha256": "808e90dbab6e5b7591fc00fefcbf065c5d158db42ec4b3ff6262da3fa18eefaf",
+  "size": 122566,
+  "subdir": "osx-arm64",
+  "timestamp": 1651525168901,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/ca-certificates-2022.4.26-hca03da5_0.conda",
+  "version": "2022.4.26"
+}

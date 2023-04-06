@@ -1,0 +1,85 @@
+{% set name = "openmp" %}
+{% set version = "14.0.6" %}
+{% set sha256 = "8b3cfd7bc695bd6cea0f37f53f0981f34f87496e79e2529874fd03a2f9dd3a8a" %}
+{% set openmp_ver = "4.5" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/llvm/llvm-project/releases/download/llvmorg-{{ version.replace(".rc", "-rc") }}/llvm-project-{{ version.replace(".rc", "rc") }}.src.tar.xz
+  sha256: {{ sha256 }}
+  # name folder for easier deletion; we do the equivalent of downloading
+  # the subproject sources, so the work folder then has openmp in it;
+  # for details see build scripts
+  folder: llvm-project
+
+build:
+  number: 0
+  skip: True  # [win and vc<14]
+  skip: True  # [linux and s390x]
+
+outputs:
+  - name: llvm-openmp
+    script: build-llvm-openmp.sh  # [not win]
+    script: bld-llvm-openmp.bat  # [win]
+    build:
+      ignore_run_exports:
+        - libgcc-ng
+        - libstdcxx-ng
+        - _openmp_mutex
+      run_exports:
+        strong:
+          - {{ pin_subpackage("llvm-openmp", max_pin=None) }}
+          - _openmp_mutex >={{ openmp_ver }}  # [linux]
+          - _openmp_mutex * *_llvm            # [linux]
+    requirements:
+      build:
+        - {{ compiler('cxx') }}
+        - clang  # [win]
+        - cmake
+        - make   # [unix]
+        - perl
+        - ninja  # [win]
+      host:
+        - llvmdev {{ version }}|{{ version }}.*
+        - zlib   # [linux]
+      run_constrained:
+        - openmp {{ version }}|{{ version }}.*
+    test:
+      requires:
+        - clangxx
+        - {{ compiler('cxx') }}
+      commands:
+        - if not exist %LIBRARY_BIN%\\libomp.dll exit 1   # [win]
+        - test -f $PREFIX/lib/libomp.so                   # [linux]
+        - test -f $PREFIX/lib/libomp.dylib                # [osx]
+        - if not exist %LIBRARY_LIB%\\libomp.lib exit 1   # [win]
+        - if not exist %LIBRARY_INC%\\omp.h exit 1        # [win]
+        - test -f $PREFIX/include/omp.h                   # [unix]
+        - $PREFIX/bin/clang -v -fopenmp -I$PREFIX/include -L$PREFIX/lib -Wl,-rpath,$PREFIX/lib omp_hello.c -o omp_hello  # [not win]
+        - '%LIBRARY_BIN%\clang -v -fopenmp -I%LIBRARY_INC% -L%LIBRARY_LIB% omp_hello.c -o omp_hello.exe'   # [win]
+        - ./omp_hello            # [unix]
+        - '%cd%\omp_hello.exe'   # [win]
+      files:
+        - omp_hello.c
+
+about:
+  home: https://openmp.llvm.org/
+  license: Apache-2.0 WITH LLVM-exception
+  license_file: openmp/LICENSE.TXT
+  dev_url: https://github.com/llvm/llvm-project
+  doc_url: https://llvm.org/docs/
+  license_family: Apache
+  summary: The OpenMP API supports multi-platform shared-memory parallel programming in C/C++ and Fortran.
+
+extra:
+  recipe-maintainers:
+    - inducer
+    - jakirkham
+    - yesimon
+    - isuruf
+    - beckermr
+    - katietz
+    - h-vetinari

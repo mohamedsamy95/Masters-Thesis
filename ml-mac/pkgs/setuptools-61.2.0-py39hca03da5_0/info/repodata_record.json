@@ -1,0 +1,25 @@
+{
+  "build": "py39hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "certifi >=2016.9.26",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "features": "",
+  "fn": "setuptools-61.2.0-py39hca03da5_0.conda",
+  "legacy_bz2_md5": "3b959c0b0b330b680d7fcccdbbb2b380",
+  "legacy_bz2_size": 1334092,
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "d2f5d5926f27148e6a2c82f18ef2ac6e",
+  "name": "setuptools",
+  "sha256": "0c84208762c7e08008dba8da850ff00b3ffa47b5487bdebce666fd48e8f45aea",
+  "size": 1035634,
+  "subdir": "osx-arm64",
+  "timestamp": 1649230450695,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/setuptools-61.2.0-py39hca03da5_0.conda",
+  "version": "61.2.0"
+}

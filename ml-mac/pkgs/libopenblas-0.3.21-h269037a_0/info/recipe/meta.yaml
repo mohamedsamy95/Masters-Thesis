@@ -1,0 +1,91 @@
+# This file created by conda-build 3.22.0
+# ------------------------------------------------
+
+package:
+  name: libopenblas
+  version: 0.3.21
+source:
+  fn: openblas-0.3.21.tar.gz
+  patches:
+    - 0001-gfortran11.2_workaround_issue3753.patch
+  sha256: f36ba3d7a60e7c8bcc54cd9aaa9b1223dd42eaf02c811791c37e8ca707c241ca
+  url: https://github.com/xianyi/OpenBLAS/archive/v0.3.21.tar.gz
+build:
+  missing_dso_whitelist: null
+  noarch: false
+  noarch_python: false
+  number: '0'
+  string: h269037a_0
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_25
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - clangxx_osx-arm64 12.0.0 h39b79ac_3
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - gfortran_impl_osx-arm64 11.2.0 h3f5584c_26
+    - gfortran_osx-arm64 11.2.0 hf112342_0
+    - gmp 6.2.1 hc377ac9_3
+    - isl 0.22.1 hc377ac9_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 14.0.6 h848a8c0_0
+    - libffi 3.4.2 hc377ac9_4
+    - libgfortran 5.0.0 11_2_0_he6877d6_26
+    - libgfortran-devel_osx-arm64 11.2.0 h31830f3_26
+    - libgfortran5 11.2.0 he6877d6_26
+    - libiconv 1.16 h1a28f6b_2
+    - libllvm12 12.0.0 h12f7ac0_4
+    - libllvm14 14.0.6 h4b41812_0
+    - llvm-openmp 14.0.6 hc6e5704_0
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - lz4-c 1.9.3 hc377ac9_0
+    - mpc 1.1.0 h8c48613_1
+    - mpfr 4.0.2 h695f6f0_1
+    - tapi 1100.0.11 h8754e6a_1
+    - xz 5.2.6 h1a28f6b_0
+    - zlib 1.2.12 h5a0b063_3
+    - zstd 1.5.2 h8574219_0
+  host:
+    - libcxx 14.0.6 h848a8c0_0
+    - libgfortran 5.0.0 11_2_0_he6877d6_26
+    - libgfortran5 11.2.0 he6877d6_26
+    - llvm-openmp 14.0.6 hc6e5704_0
+  run:
+    - libcxx >=12.0.0
+    - libgfortran 5.*
+    - libgfortran5 >=11.2.0
+test:
+  commands:
+    - python -c "import ctypes; ctypes.cdll['${PREFIX}/lib/libopenblas${SHLIB_EXT}']"
+  requires:
+    - python
+about:
+  description: OpenBLAS is based on GotoBLAS2 1.13 BSD version.
+  dev_url: https://github.com/xianyi/OpenBLAS
+  doc_source_url: https://github.com/xianyi/OpenBLAS/blob/develop/README.md
+  doc_url: https://www.openblas.net/
+  home: https://www.openblas.net/
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: An Optimized BLAS library
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: ffbe7094-ec56-4dd5-83af-3a5b5974c545
+  recipe-maintainers:
+    - beckermr
+    - chenghlee
+    - gillins
+    - groutr
+    - isuruf
+    - jakirkham
+    - jschueller
+    - msarahan
+  remote_url: git@github.com:AnacondaRecipes/openblas-feedstock.git
+  sha: 0bff099d29844fa94578d816e93b3db4cb7f0d67

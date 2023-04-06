@@ -1,0 +1,50 @@
+{
+  "build": "py39h1a28f6b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/pycosat-0.6.3-py39h1a28f6b_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/__pycache__/test_pycosat.cpython-39.pyc",
+    "lib/python3.9/site-packages/pycosat-0.6.3-py3.9.egg-info",
+    "lib/python3.9/site-packages/pycosat.cpython-39-darwin.so",
+    "lib/python3.9/site-packages/test_pycosat.py"
+  ],
+  "fn": "pycosat-0.6.3-py39h1a28f6b_0.conda",
+  "legacy_bz2_md5": "0a019cecea767f30020bfd6e225ba6c9",
+  "legacy_bz2_size": 110379,
+  "license": "MIT",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/pycosat-0.6.3-py39h1a28f6b_0",
+    "type": 1
+  },
+  "md5": "102e0111201f3d7158cd8bee9cd876b3",
+  "name": "pycosat",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/pycosat-0.6.3-py39h1a28f6b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.9/site-packages/pycosat.cpython-39-darwin.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/ktietz/demo/mc3/conda-bld/pycosat_1629723314094/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+        "sha256": "99124ec0e9ff7f0f86dc369f04fc70ef51251f2d61550682ec7477c6592ba96a",
+        "sha256_in_prefix": "2454d830c7919d92bb69faf2a63017b6bd5b8bda5498ece9f179ed206bbebcb6",
+        "size_in_bytes": 142000
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "pycosat==0.6.3=py39h1a28f6b_0",
+  "sha256": "f7c856d51e710d71f618f75c4c98fa081cb97f1f8b94a1695423f684010aa105",
+  "size": 81545,
+  "subdir": "osx-arm64",
+  "timestamp": 1629723366831,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pycosat-0.6.3-py39h1a28f6b_0.conda",
+  "version": "0.6.3"
+}

@@ -1,0 +1,34 @@
+{
+  "build": "py39hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [
+    "conda-build >=3",
+    "conda-env >=2.6",
+    "conda-content-trust >=0.1.1",
+    "cytoolz >=0.8.1"
+  ],
+  "depends": [
+    "conda-package-handling >=1.3.0",
+    "pycosat >=0.6.3",
+    "pyopenssl >=16.2.0",
+    "python >=3.9,<3.10.0a0",
+    "requests >=2.18.4,<3",
+    "ruamel_yaml >=0.11.14,<0.17",
+    "setuptools >=31.0.1"
+  ],
+  "features": "",
+  "fn": "conda-4.12.0-py39hca03da5_0.conda",
+  "legacy_bz2_md5": "02b633cca8b86cf619ebe43f8ca4dac3",
+  "legacy_bz2_size": 17725828,
+  "license": "BSD-3-Clause",
+  "md5": "0b03566f7bb7515eddc1372c652f86f6",
+  "name": "conda",
+  "sha256": "763894cb48e7f1ced384fda8987f15fd876b6d11bdbd17e794a55e780e35e4e8",
+  "size": 15144598,
+  "subdir": "osx-arm64",
+  "timestamp": 1647366524876,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/conda-4.12.0-py39hca03da5_0.conda",
+  "version": "4.12.0"
+}

@@ -1,0 +1,30 @@
+{
+  "arch": "arm64",
+  "build": "py39h974a1f5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [
+    "numpy 1.22.3 py39h25ab29e_0"
+  ],
+  "depends": [
+    "blas * openblas",
+    "libcxx >=12.0.0",
+    "libopenblas >=0.3.17,<1.0a0",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "features": "",
+  "fn": "numpy-base-1.22.3-py39h974a1f5_0.conda",
+  "legacy_bz2_md5": "00fced2d07d02ffef0d6378fb1dae193",
+  "legacy_bz2_size": 6067353,
+  "license": "BSD-3-Clause",
+  "md5": "2bbb70348ad94df6f40d9fccfa58a871",
+  "name": "numpy-base",
+  "platform": "darwin",
+  "sha256": "83a2629e1c83937fd7790930cf7508faea3138b4ca6803bfe465c8f65cf20293",
+  "size": 4815822,
+  "subdir": "osx-arm64",
+  "timestamp": 1652801779788,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/numpy-base-1.22.3-py39h974a1f5_0.conda",
+  "version": "1.22.3"
+}

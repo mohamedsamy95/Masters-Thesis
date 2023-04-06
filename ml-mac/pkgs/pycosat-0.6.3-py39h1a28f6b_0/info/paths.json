@@ -1,0 +1,31 @@
+{
+  "paths": [
+    {
+      "_path": "lib/python3.9/site-packages/__pycache__/test_pycosat.cpython-39.pyc",
+      "path_type": "hardlink",
+      "sha256": "eb1054f54a0043c700743e314917e3e2ddf00c9255c45cbd2d765f77125b975e",
+      "size_in_bytes": 13941
+    },
+    {
+      "_path": "lib/python3.9/site-packages/pycosat-0.6.3-py3.9.egg-info",
+      "path_type": "hardlink",
+      "sha256": "29222b460de7756db6052f43e4ddb2ef3c58755a02d016fb6a5497f823818c96",
+      "size_in_bytes": 6371
+    },
+    {
+      "_path": "lib/python3.9/site-packages/pycosat.cpython-39-darwin.so",
+      "file_mode": "binary",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/Users/ktietz/demo/mc3/conda-bld/pycosat_1629723314094/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+      "sha256": "99124ec0e9ff7f0f86dc369f04fc70ef51251f2d61550682ec7477c6592ba96a",
+      "size_in_bytes": 142000
+    },
+    {
+      "_path": "lib/python3.9/site-packages/test_pycosat.py",
+      "path_type": "hardlink",
+      "sha256": "f7bcef178eabacb9c477ba20b88e8646ade28c86c23ed9327eecc8144777d8b2",
+      "size_in_bytes": 8806
+    }
+  ],
+  "paths_version": 1
+}

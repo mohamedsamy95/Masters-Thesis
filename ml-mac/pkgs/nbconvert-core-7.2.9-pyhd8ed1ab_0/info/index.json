@@ -1,0 +1,36 @@
+{
+  "arch": null,
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "constrains": [
+    "pyppeteer >=1,<1.1",
+    "nbconvert =7.2.9=*_0",
+    "pandoc >=1.12.1"
+  ],
+  "depends": [
+    "beautifulsoup4",
+    "bleach",
+    "defusedxml",
+    "entrypoints >=0.2.2",
+    "jinja2 >=3.0",
+    "jupyter_core >=4.7",
+    "jupyterlab_pygments",
+    "markupsafe >=2.0",
+    "mistune >=2.0.3,<3",
+    "nbclient >=0.5.0",
+    "nbformat >=5.1",
+    "packaging",
+    "pandocfilters >=1.4.1",
+    "pygments >=2.4.1",
+    "python >=3.7",
+    "tinycss2",
+    "traitlets >=5.0"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "nbconvert-core",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1674590482686,
+  "version": "7.2.9"
+}

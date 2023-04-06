@@ -1,0 +1,11 @@
+{
+  "paths": [
+    {
+      "_path": "bin/pandoc",
+      "path_type": "hardlink",
+      "sha256": "054e435dae2e9f290e07b73f96371dc1e573239b0c424afdb01eb0b7a4eac031",
+      "size_in_bytes": 121831144
+    }
+  ],
+  "paths_version": 1
+}

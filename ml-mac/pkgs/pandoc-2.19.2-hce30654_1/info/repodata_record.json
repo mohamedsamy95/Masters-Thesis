@@ -1,0 +1,22 @@
+{
+  "arch": "arm64",
+  "build": "hce30654_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "pandoc-2.19.2-hce30654_1.tar.bz2",
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "md5": "0503c9d6f2633bee5976d84f91c8050d",
+  "name": "pandoc",
+  "platform": "darwin",
+  "sha256": "46d641abcb0827c66120d97beda66f10ba3eae52d0d93e4487ee3d298831e6a6",
+  "size": 18541972,
+  "subdir": "osx-arm64",
+  "timestamp": 1666629189784,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pandoc-2.19.2-hce30654_1.tar.bz2",
+  "version": "2.19.2"
+}

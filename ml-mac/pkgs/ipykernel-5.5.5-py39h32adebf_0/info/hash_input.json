@@ -1,0 +1,7 @@
+{
+  "python": "3.9.* *_cpython",
+  "channel_targets": "conda-forge main",
+  "numpy": "1.19",
+  "build_platform": "osx-64",
+  "target_platform": "osx-arm64"
+}

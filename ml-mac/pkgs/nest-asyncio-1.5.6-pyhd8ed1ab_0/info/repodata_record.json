@@ -1,0 +1,24 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.5"
+  ],
+  "features": "",
+  "fn": "nest-asyncio-1.5.6-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "7b868f21adde0d9b8b38f9c16836589b",
+  "name": "nest-asyncio",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "594d240d8be933b6e47b78b786269cc89ffa34874544d9dbed1c6afc9213869b",
+  "size": 9739,
+  "subdir": "noarch",
+  "timestamp": 1664685092387,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.5.6-pyhd8ed1ab_0.tar.bz2",
+  "version": "1.5.6"
+}

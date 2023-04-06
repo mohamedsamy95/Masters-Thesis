@@ -1,0 +1,41 @@
+{
+  "paths": [
+    {
+      "_path": "lib/libblas.dylib",
+      "path_type": "softlink",
+      "sha256": "41130cdc4744b91013f33a545f381d54666b4314e28ca0d1d12132e693edd9b6",
+      "size_in_bytes": 23144528
+    },
+    {
+      "_path": "lib/libcblas.dylib",
+      "path_type": "softlink",
+      "sha256": "41130cdc4744b91013f33a545f381d54666b4314e28ca0d1d12132e693edd9b6",
+      "size_in_bytes": 23144528
+    },
+    {
+      "_path": "lib/liblapack.dylib",
+      "path_type": "softlink",
+      "sha256": "41130cdc4744b91013f33a545f381d54666b4314e28ca0d1d12132e693edd9b6",
+      "size_in_bytes": 23144528
+    },
+    {
+      "_path": "lib/libopenblas.0.dylib",
+      "path_type": "softlink",
+      "sha256": "3d7d06067a59d69febeb1629e7882ecc377589a4d81f60d18e330decf039660b",
+      "size_in_bytes": 23144560
+    },
+    {
+      "_path": "lib/libopenblas.dylib",
+      "path_type": "hardlink",
+      "sha256": "41130cdc4744b91013f33a545f381d54666b4314e28ca0d1d12132e693edd9b6",
+      "size_in_bytes": 23144528
+    },
+    {
+      "_path": "lib/libopenblasp-r0.3.21.dylib",
+      "path_type": "hardlink",
+      "sha256": "3d7d06067a59d69febeb1629e7882ecc377589a4d81f60d18e330decf039660b",
+      "size_in_bytes": 23144560
+    }
+  ],
+  "paths_version": 1
+}

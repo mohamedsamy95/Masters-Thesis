@@ -5,3 +5,5 @@ lib
 share
 pyvenv.cfg
 .DS_Store
+#Dataset
+__pycache__

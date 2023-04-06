@@ -1,0 +1,128 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.7"
+  ],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/zipp-3.13.0-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/zipp-3.13.0.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/zipp-3.13.0.dist-info/LICENSE",
+    "lib/python3.9/site-packages/zipp-3.13.0.dist-info/METADATA",
+    "lib/python3.9/site-packages/zipp-3.13.0.dist-info/RECORD",
+    "lib/python3.9/site-packages/zipp-3.13.0.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/zipp-3.13.0.dist-info/WHEEL",
+    "lib/python3.9/site-packages/zipp-3.13.0.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/zipp-3.13.0.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/zipp/__init__.py",
+    "lib/python3.9/site-packages/zipp/py310compat.py",
+    "lib/python3.9/site-packages/zipp/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/zipp/__pycache__/py310compat.cpython-39.pyc"
+  ],
+  "fn": "zipp-3.13.0-pyhd8ed1ab_0.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/zipp-3.13.0-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "41b09d997939e83b231c4557a90c3b13",
+  "name": "zipp",
+  "noarch": "python",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/zipp-3.13.0-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/zipp-3.13.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/zipp-3.13.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8",
+        "sha256_in_prefix": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8",
+        "size_in_bytes": 1050
+      },
+      {
+        "_path": "site-packages/zipp-3.13.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "308df01aed7551dd0c9997254582fc25f6e25c69e124e678a5d965e75c23b341",
+        "sha256_in_prefix": "308df01aed7551dd0c9997254582fc25f6e25c69e124e678a5d965e75c23b341",
+        "size_in_bytes": 3742
+      },
+      {
+        "_path": "site-packages/zipp-3.13.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "ef86dbd3f171c2ac5605010b3e359f12242176506349f6e558949623d11deefa",
+        "sha256_in_prefix": "ef86dbd3f171c2ac5605010b3e359f12242176506349f6e558949623d11deefa",
+        "size_in_bytes": 890
+      },
+      {
+        "_path": "site-packages/zipp-3.13.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/zipp-3.13.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+        "sha256_in_prefix": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/zipp-3.13.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "319f5ead9231a3b8bae206177a68c068a23797012604e3e2ef56fe4b4f6ec953",
+        "sha256_in_prefix": "319f5ead9231a3b8bae206177a68c068a23797012604e3e2ef56fe4b4f6ec953",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "site-packages/zipp-3.13.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "8806dda121df686a817d56f65ee47d26a4901c2a0eb0eb46eb2f42fcb4a9a85c",
+        "sha256_in_prefix": "8806dda121df686a817d56f65ee47d26a4901c2a0eb0eb46eb2f42fcb4a9a85c",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/zipp/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9b53153adac57ead55b9c8e558dc116e506cbe461a518ae8629eed0d70b1e670",
+        "sha256_in_prefix": "9b53153adac57ead55b9c8e558dc116e506cbe461a518ae8629eed0d70b1e670",
+        "size_in_bytes": 10531
+      },
+      {
+        "_path": "site-packages/zipp/py310compat.py",
+        "path_type": "hardlink",
+        "sha256": "1d01b821ff9e239bf8453f3651a824ecfb8bb1b9c9ec72a08f4690286440a7c3",
+        "sha256_in_prefix": "1d01b821ff9e239bf8453f3651a824ecfb8bb1b9c9ec72a08f4690286440a7c3",
+        "size_in_bytes": 309
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zipp/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/zipp/__pycache__/py310compat.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "0a9a545b8dc46c847658ebfa636257ea5993a355419c1d3b2f14810730ee0a82",
+  "size": 17397,
+  "subdir": "noarch",
+  "timestamp": 1675982757181,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/zipp-3.13.0-pyhd8ed1ab_0.conda",
+  "version": "3.13.0"
+}

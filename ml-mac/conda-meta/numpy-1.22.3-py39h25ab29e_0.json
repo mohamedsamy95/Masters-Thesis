@@ -1,0 +1,39 @@
+{
+  "build": "py39h25ab29e_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "blas * openblas",
+    "libcxx >=12.0.0",
+    "libopenblas >=0.3.17,<1.0a0",
+    "numpy-base 1.22.3 py39h974a1f5_0",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/numpy-1.22.3-py39h25ab29e_0",
+  "features": "",
+  "files": [],
+  "fn": "numpy-1.22.3-py39h25ab29e_0.conda",
+  "legacy_bz2_md5": "7c80ee34c22620f29ba8e9c5e9cf31ff",
+  "legacy_bz2_size": 10740,
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/numpy-1.22.3-py39h25ab29e_0",
+    "type": 1
+  },
+  "md5": "28716ffa0e10bb9ef57840f81bf22bf4",
+  "name": "numpy",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/numpy-1.22.3-py39h25ab29e_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "5bdd75de71c47468455675d27619158c5d8b71960c7ce62dc0121e8b19f34ec8",
+  "size": 10946,
+  "subdir": "osx-arm64",
+  "timestamp": 1652801810602,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/numpy-1.22.3-py39h25ab29e_0.conda",
+  "version": "1.22.3"
+}

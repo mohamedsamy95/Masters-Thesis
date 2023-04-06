@@ -1,0 +1,32 @@
+{
+  "arch": null,
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "argon2-cffi",
+    "ipykernel",
+    "ipython_genutils",
+    "jinja2",
+    "jupyter_client >=6.1.1",
+    "jupyter_core >=4.6.1",
+    "jupyter_server >=1.17.0",
+    "nbconvert >=5",
+    "nbformat",
+    "nest-asyncio >=1.5",
+    "notebook-shim >=0.1.0",
+    "prometheus_client",
+    "python >=3.7",
+    "pyzmq >=17",
+    "send2trash >=1.8.0",
+    "terminado >=0.8.3",
+    "tornado >=6.1",
+    "traitlets >=4.2.1"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "nbclassic",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1675370248289,
+  "version": "0.5.1"
+}

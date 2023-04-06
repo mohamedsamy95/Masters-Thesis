@@ -1,0 +1,74 @@
+# This file created by conda-build 3.22.0
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_4d2o0arbv6/clone/recipe, last modified Thu Oct  6 12:17:46 2022
+# ------------------------------------------------
+
+package:
+  name: certifi
+  version: 2022.9.24
+source:
+  - folder: certifi
+    sha256: 0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14
+    url: https://pypi.io/packages/source/c/certifi/certifi-2022.9.24.tar.gz
+  - folder: pip_wheel
+    sha256: 0f35d63b7245205f4060efe1982f5ea2196aa6e5b26c07669adcf800e2542026
+    url: https://pypi.io/packages/py2.py3/p/pip/pip-20.2.3-py2.py3-none-any.whl
+  - folder: setuptools_wheel
+    sha256: 4dd5bb0a0a0cff77b46ca5dd3a84857ee48c83e8223886b556613c724994073f
+    url: https://pypi.io/packages/py3/s/setuptools/setuptools-49.6.0-py3-none-any.whl
+build:
+  number: '0'
+  string: py39hca03da5_0
+requirements:
+  host:
+    - ca-certificates 2022.07.19 hca03da5_0
+    - libcxx 14.0.6 h848a8c0_0
+    - libffi 3.4.2 hc377ac9_4
+    - ncurses 6.3 h1a28f6b_3
+    - openssl 1.1.1q h1a28f6b_0
+    - python 3.9.13 hbdb9e5c_1
+    - readline 8.1.2 h1a28f6b_1
+    - sqlite 3.39.3 h1058600_0
+    - tk 8.6.12 hb8d0fd4_0
+    - tzdata 2022c h04d1e81_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.6 h1a28f6b_0
+    - zlib 1.2.12 h5a0b063_3
+  run:
+    - python >=3.9,<3.10.0a0
+test:
+  commands:
+    - pip check
+  imports:
+    - certifi
+  requires:
+    - pip
+about:
+  description: 'Certifi is a curated collection of Root Certificates for validating
+    the
+
+    trustworthiness of SSL certificates while verifying the identity of TLS
+
+    hosts.
+
+    '
+  dev_url: https://github.com/certifi/python-certifi
+  doc_source_url: https://github.com/certifi/python-certifi/blob/master/README.rst
+  doc_url: https://github.com/certifi/python-certifi/blob/master/README.rst
+  home: https://certifi.io/
+  license: MPL-2.0
+  license_family: Other
+  license_file: certifi/LICENSE
+  summary: Python package for providing Mozilla's CA Bundle.
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 4d3fc860-1431-4171-b1a7-6603079ceeca
+  recipe-maintainers:
+    - jakirkham
+    - mingwandroid
+    - ocefpaf
+    - pelson
+    - sigmavirus24
+  remote_url: git@github.com:AnacondaRecipes/certifi-feedstock.git
+  sha: 25544e5658fff582e98e25750c6ce75e33406f96

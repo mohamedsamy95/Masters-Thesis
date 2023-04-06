@@ -1,0 +1,31 @@
+{
+  "channels": [
+    "https://repo.anaconda.com/pkgs/main",
+    "file:///Users/ktietz/opt/cfs/conda-bld"
+  ],
+  "conda_build_version": "3.21.4",
+  "conda_private": false,
+  "conda_version": "4.9.2",
+  "dev_url": "https://github.com/Anorov/PySocks",
+  "doc_url": "https://github.com/Anorov/PySocks/blob/master/README.md",
+  "env_vars": {
+    "CIO_TEST": "<not set>"
+  },
+  "extra": {
+    "copy_test_source_files": true,
+    "final": true,
+    "recipe-maintainers": [
+      "pmlandwehr",
+      "ocefpaf"
+    ]
+  },
+  "home": "https://github.com/Anorov/PySocks",
+  "identifiers": [],
+  "keywords": [],
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "license_file": "LICENSE",
+  "root_pkgs": [],
+  "summary": "A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information.",
+  "tags": []
+}

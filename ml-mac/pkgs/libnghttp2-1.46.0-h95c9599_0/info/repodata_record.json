@@ -1,0 +1,32 @@
+{
+  "arch": "arm64",
+  "build": "h95c9599_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "c-ares >=1.17.1,<2.0a0",
+    "c-ares >=1.7.5",
+    "libcxx >=12.0.0",
+    "libev >=4.11",
+    "libev >=4.33,<4.34.0a0",
+    "openssl >=1.1.1j,<1.1.2a",
+    "zlib >=1.2.11,<1.3.0a0"
+  ],
+  "features": "",
+  "fn": "libnghttp2-1.46.0-h95c9599_0.conda",
+  "legacy_bz2_md5": "de3cfb8cf0bd0a666e037c1234c39cd6",
+  "legacy_bz2_size": 883503,
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "8f15507ece296c9b63ecd2fc8e1b3495",
+  "name": "libnghttp2",
+  "platform": "darwin",
+  "sha256": "46e7d5027d9117936686f64acac9f58b540790a71389b654d80906f11eea0c2c",
+  "size": 663938,
+  "subdir": "osx-arm64",
+  "timestamp": 1637163608546,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libnghttp2-1.46.0-h95c9599_0.conda",
+  "version": "1.46.0"
+}

@@ -1,0 +1,56 @@
+# This file created by conda-build 3.21.4
+# ------------------------------------------------
+
+package:
+  name: libcxx
+  version: 12.0.0
+source:
+  - patches:
+      - patches/0002-libcxx-legacy-standalone-build.patch
+    sha256: 9ed1688943a4402d7c904cc4515798cdb20080066efa010fe7e1f2551b423628
+    url: https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.0/llvm-project-12.0.0.src.tar.xz
+build:
+  ignore_run_exports:
+    - libstdcxx-ng
+  missing_dso_whitelist:
+    - /usr/lib/libc++abi.dylib
+  noarch: false
+  noarch_python: false
+  number: '1'
+  string: hf6beb65_1
+requirements:
+  build: []
+  run: []
+test:
+  commands:
+    - echo 1
+    - test -f $PREFIX/include/c++/v1/iterator
+    - bash compile_test.sh
+    - if [ -f $PREFIX/lib/libc++abi.dylib ]; then exit 1; fi
+  files:
+    - compile_test.sh
+    - test_sources
+  requires:
+    - cctools
+    - clang
+    - clangxx
+    - compiler-rt
+    - ld64
+    - llvm-tools
+about:
+  home: http://llvm.org/
+  license: Apache-2.0 WITH LLVM-exception
+  license_family: Apache
+  license_file: libcxx/LICENSE.TXT
+  summary: LLVM C++ standard library
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - SylvainCorlay
+    - beckermr
+    - inducer
+    - isuruf
+    - jakirkham
+    - katietz
+    - timsnyder
