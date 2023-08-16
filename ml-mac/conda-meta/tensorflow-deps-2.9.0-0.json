@@ -1,0 +1,38 @@
+{
+  "arch": "arm64",
+  "build": "0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/apple/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "grpcio >=1.37.0,<2.0",
+    "h5py >=3.6.0,<3.7",
+    "numpy >=1.22.3,<1.23.0",
+    "python"
+  ],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/tensorflow-deps-2.9.0-0",
+  "features": "",
+  "files": [],
+  "fn": "tensorflow-deps-2.9.0-0.tar.bz2",
+  "license": "Apache2",
+  "license_family": "Apache",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/tensorflow-deps-2.9.0-0",
+    "type": 1
+  },
+  "md5": "dd24926a022491219236042e670d138f",
+  "name": "tensorflow-deps",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/tensorflow-deps-2.9.0-0.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "platform": "darwin",
+  "requested_spec": "tensorflow-deps",
+  "size": 2601,
+  "subdir": "osx-arm64",
+  "timestamp": 1652917809632,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/apple/osx-arm64/tensorflow-deps-2.9.0-0.tar.bz2",
+  "version": "2.9.0"
+}

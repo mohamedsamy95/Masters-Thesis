@@ -1,0 +1,51 @@
+# This file created by conda-build 3.22.0
+# ------------------------------------------------
+
+package:
+  name: libgfortran5
+  version: 11.3.0
+source:
+  patches:
+    - patches/gcc-11.3.0-arm.diff
+  sha256: 98438e6cc7294298b474cf0da7655d9a8c8b796421bb0210531c294a950374ed
+  url: https://ftp.gnu.org/gnu/gcc/gcc-11.3.0/gcc-11.3.0.tar.gz
+build:
+  missing_dso_whitelist:
+    - '*'
+  number: 28
+  run_exports:
+    - libgfortran5 >=11.3.0
+  string: h009349e_28
+requirements:
+  build: []
+  run:
+    - llvm-openmp >=8.0.0
+  run_constrained:
+    - libgfortran 5.0.0 *_28
+test:
+  commands:
+    - test -f "${PREFIX}/lib/libgfortran.dylib"
+    - test -f "${PREFIX}/lib/libgfortran.5.dylib"
+    - test -f "${PREFIX}/lib/libgomp.dylib"
+    - test -f "${PREFIX}/lib/libgomp.1.dylib"
+    - test -f "${PREFIX}/lib/libquadmath.dylib"
+    - test -f "${PREFIX}/lib/libquadmath.0.dylib"
+    - test -f "${PREFIX}/lib/libgcc_s.1.1.dylib"
+about:
+  dev_url: https://gcc.gnu.org/git/?p=gcc.git;a=tree
+  doc_url: https://gcc.gnu.org/onlinedocs/
+  home: https://gcc.gnu.org/
+  license: GPL-3.0-only WITH GCC-exception-3.1
+  license_family: GPL
+  license_file: COPYING3
+  summary: Fortran compiler and libraries from the GNU Compiler Collection
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: f7a664ef-6e8f-4536-bfe7-a6dfe1a2e306
+  recipe-maintainers:
+    - beckermr
+    - isuruf
+    - katietz
+  remote_url: git@github.com:AnacondaRecipes/gfortran_impl_osx-64-feedstock.git
+  sha: 5a7e46121c15d18fd49f886183d4af394289aff0

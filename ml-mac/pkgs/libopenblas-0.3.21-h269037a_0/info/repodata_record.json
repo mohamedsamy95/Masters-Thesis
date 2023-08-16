@@ -1,0 +1,28 @@
+{
+  "arch": "arm64",
+  "build": "h269037a_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=12.0.0",
+    "libgfortran 5.*",
+    "libgfortran5 >=11.2.0"
+  ],
+  "features": "",
+  "fn": "libopenblas-0.3.21-h269037a_0.conda",
+  "legacy_bz2_md5": "0ba7c7444f2cbc64396d3873b874ec63",
+  "legacy_bz2_size": 13307698,
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "f32214c5943b5dec9cd3022edfdd9185",
+  "name": "libopenblas",
+  "platform": "darwin",
+  "sha256": "ffde440b5cbf8f9f9f431ef01e16e3e40f770bfccfbf11cc1dbbaf470c1345fa",
+  "size": 3494516,
+  "subdir": "osx-arm64",
+  "timestamp": 1664897510704,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libopenblas-0.3.21-h269037a_0.conda",
+  "version": "0.3.21"
+}

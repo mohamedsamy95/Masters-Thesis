@@ -1,0 +1,29 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "importlib-metadata >=3.6",
+    "jsonschema >=2.6",
+    "jupyter_core",
+    "python >=3.7",
+    "python-fastjsonschema",
+    "traitlets >=5.1"
+  ],
+  "features": "",
+  "fn": "nbformat-5.7.3-pyhd8ed1ab_0.conda",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "9714111cb6c7dbbc9a9f34de205c2f29",
+  "name": "nbformat",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "337eb552b1ccfc88a4f5841ae01452368ea7c0ca743ea69dcf92133be0ac8897",
+  "size": 100277,
+  "subdir": "noarch",
+  "timestamp": 1673560220188,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/nbformat-5.7.3-pyhd8ed1ab_0.conda",
+  "version": "5.7.3"
+}

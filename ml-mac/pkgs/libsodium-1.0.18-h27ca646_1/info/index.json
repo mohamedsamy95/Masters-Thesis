@@ -1,0 +1,12 @@
+{
+  "arch": "arm64",
+  "build": "h27ca646_1",
+  "build_number": 1,
+  "depends": [],
+  "license": "ISC",
+  "name": "libsodium",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1605135878892,
+  "version": "1.0.18"
+}

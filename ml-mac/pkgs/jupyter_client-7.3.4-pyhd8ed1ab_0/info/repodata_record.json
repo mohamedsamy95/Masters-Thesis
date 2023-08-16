@@ -1,0 +1,31 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "entrypoints",
+    "jupyter_core >=4.9.2",
+    "nest-asyncio >=1.5.4",
+    "python >=3.7",
+    "python-dateutil >=2.8.2",
+    "pyzmq >=23.0",
+    "tornado >=6.0",
+    "traitlets"
+  ],
+  "features": "",
+  "fn": "jupyter_client-7.3.4-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "dad80938cdccc5c274e954dda56b6eb5",
+  "name": "jupyter_client",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "181b36306cf9f389785c63199a14df6154583b605c86ab6c81f36c2fe57b4c9b",
+  "size": 92855,
+  "subdir": "noarch",
+  "timestamp": 1654730948538,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jupyter_client-7.3.4-pyhd8ed1ab_0.tar.bz2",
+  "version": "7.3.4"
+}

@@ -1,0 +1,28 @@
+{
+  "arch": null,
+  "build": "pyhd1c38e8_0",
+  "build_number": 0,
+  "depends": [
+    "__osx",
+    "appnope",
+    "backcall",
+    "decorator",
+    "jedi >=0.16",
+    "matplotlib-inline",
+    "pexpect >4.3",
+    "pickleshare",
+    "prompt-toolkit >=3.0.30,<3.1.0",
+    "pygments >=2.4.0",
+    "python >=3.8",
+    "stack_data",
+    "traitlets >=5"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "ipython",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1676047980602,
+  "version": "8.10.0"
+}

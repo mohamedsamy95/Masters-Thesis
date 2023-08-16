@@ -1,0 +1,25 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.5",
+    "six"
+  ],
+  "features": "",
+  "fn": "asttokens-2.2.1-pyhd8ed1ab_0.conda",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "bf7f54dd0f25c3f06ecb82a07341841a",
+  "name": "asttokens",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "7ed530efddd47a96c11197906b4008405b90e3bc2f4e0df722a36e0e6103fd9c",
+  "size": 27831,
+  "subdir": "noarch",
+  "timestamp": 1670264089059,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/asttokens-2.2.1-pyhd8ed1ab_0.conda",
+  "version": "2.2.1"
+}

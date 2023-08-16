@@ -1,0 +1,16 @@
+diff --git a/lib/easy_lock.h b/lib/easy_lock.h
+index 819f50ce8..e56384dac 100644
+--- a/lib/easy_lock.h
++++ b/lib/easy_lock.h
+@@ -40,6 +40,11 @@
+ #define curl_simple_lock atomic_bool
+ #define CURL_SIMPLE_LOCK_INIT false
+ 
++//Missing inclusion
++#if defined(HAVE_SCHED_YIELD)
++# include <sched.h>
++#endif
++
+ static inline void curl_simple_lock_lock(curl_simple_lock *lock)
+ {
+   for(;;) {

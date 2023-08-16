@@ -1,0 +1,58 @@
+{% set version = "5.9.0" %}
+
+package:
+  name: traitlets
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/t/traitlets/traitlets-{{ version }}.tar.gz
+  sha256: f6cde21a9c68cf756af02035f72d5a723bf607e862e7be33ece505abf4a3bad9
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - hatchling >=1.5
+    - pip
+    - python >=3.7
+  run:
+    - python >=3.7
+
+test:
+  imports:
+    - traitlets
+    - traitlets.config
+  commands:
+    - pip check
+    - pytest -vv --pyargs traitlets --cov traitlets --no-cov-on-fail --cov-report term-missing:skip-covered --cov-fail-under=92
+  requires:
+    - pip
+    - pytest-cov
+    - pytest-mock
+    - argcomplete>=2.0
+
+about:
+  home: https://traitlets.readthedocs.org
+  license: BSD-3-Clause
+  license_file: COPYING.md
+  summary: Configuration system for Python applications
+  dev_url: https://github.com/ipython/traitlets
+  doc_url: https://traitlets.readthedocs.org
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - pelson
+    - minrk
+    - SylvainCorlay
+    - ocefpaf
+    - Carreau
+    - takluyver
+    - rmorshea
+    - blink1073
+    - zsailer
+    - bollwyvl
+    - davidbrochart

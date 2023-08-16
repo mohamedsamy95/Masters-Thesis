@@ -1,0 +1,79 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /Users/ktietz/demo/src/aggregate/ruamel_yaml-feedstock/recipe, last modified Sat Aug  7 09:30:21 2021
+# ------------------------------------------------
+
+package:
+  name: ruamel_yaml
+  version: 0.15.100
+source:
+  sha256: 8e42f3067a59e819935a2926e247170ed93c8f0b2ab64526f888e026854db2e4
+  url: https://pypi.io/packages/source/r/ruamel.yaml/ruamel.yaml-0.15.100.tar.gz
+build:
+  number: '0'
+  string: py39h1a28f6b_0
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h7dde238_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - tapi 1100.0.11 ha21211d_0
+    - zlib 1.2.11 hca03da5_3
+  host:
+    - ca-certificates 2021.7.5 hca03da5_1
+    - certifi 2021.5.30 py39hca03da5_0
+    - cython 0.29.24 py39hc377ac9_0
+    - expat 2.4.1 hc377ac9_2
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.3 hc4ed4cf_2
+    - libiconv 1.16 h1230e6a_0
+    - ncurses 6.2 hc4ed4cf_0
+    - openssl 1.1.1j h1230e6a_0
+    - pip 21.2.3 py39hca03da5_0
+    - python 3.9.6 hc70090a_5
+    - readline 8.1 h1230e6a_0
+    - setuptools 52.0.0 py39hca03da5_0
+    - sqlite 3.36.0 h1058600_0
+    - tk 8.6.10 hb8d0fd4_0
+    - tzdata 2021a h5d7bf9c_0
+    - wheel 0.37.0 pyhd3eb1b0_1
+    - xz 5.2.5 h1a28f6b_0
+    - yaml 0.2.5 h1a28f6b_0
+    - zlib 1.2.11 hca03da5_3
+  run:
+    - python >=3.9,<3.10.0a0
+    - yaml >=0.2.5,<0.3.0a0
+test:
+  commands:
+    - if pip show ruamel.yaml; then exit 1; fi
+    - $PYTHON -m pip install ruamel.yaml
+    - $PYTHON -c "import ruamel.yaml"
+    - pip check
+  imports:
+    - ruamel_yaml
+    - ruamel_yaml.ext._ruamel_yaml
+  requires:
+    - pip
+about:
+  home: https://sourceforge.net/p/ruamel-yaml/code/ci/default/tree
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A patched copy of ruamel.yaml.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - isuruf
+    - jakirkham
+    - mbargull

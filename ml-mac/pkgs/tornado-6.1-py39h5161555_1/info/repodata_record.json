@@ -1,0 +1,25 @@
+{
+  "arch": "arm64",
+  "build": "py39h5161555_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0",
+    "python_abi 3.9.* *_cp39"
+  ],
+  "features": "",
+  "fn": "tornado-6.1-py39h5161555_1.tar.bz2",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "c9399fdba56c3d315c055e3a2e539201",
+  "name": "tornado",
+  "platform": "darwin",
+  "sha256": "0f0a42f1b77fb81926771e67bddc5a598f3a765389dad8ae8448150ffe55ce52",
+  "size": 664034,
+  "subdir": "osx-arm64",
+  "timestamp": 1625489175937,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/tornado-6.1-py39h5161555_1.tar.bz2",
+  "version": "6.1"
+}

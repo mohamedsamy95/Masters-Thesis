@@ -1,0 +1,12 @@
+{
+  "arch": "arm64",
+  "build": "h1a28f6b_0",
+  "build_number": 0,
+  "depends": [],
+  "license": "MIT",
+  "name": "yaml",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1629137313522,
+  "version": "0.2.5"
+}

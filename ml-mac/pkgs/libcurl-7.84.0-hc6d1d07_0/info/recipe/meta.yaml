@@ -1,0 +1,84 @@
+# This file created by conda-build 3.21.8
+# ------------------------------------------------
+
+package:
+  name: libcurl
+  version: 7.84.0
+source:
+  patches:
+    - sched_yield.patch
+  sha256: 702fb26e73190a3bd77071aa146f507b9817cc4dfce218d2ab87f00cd3bc059d
+  url: https://curl.haxx.se/download/curl-7.84.0.tar.bz2
+build:
+  number: 0
+  run_exports:
+    - libcurl >=7.84.0,<8.0a0
+  string: hc6d1d07_0
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - tapi 1100.0.11 ha21211d_0
+    - zlib 1.2.12 h5a0b063_2
+  host:
+    - c-ares 1.18.1 h1a28f6b_0
+    - ca-certificates 2022.07.19 hca03da5_0
+    - krb5 1.19.2 h3b8d789_0
+    - libcxx 12.0.0 hf6beb65_1
+    - libedit 3.1.20210910 h1a28f6b_0
+    - libev 4.33 h1a28f6b_1
+    - libnghttp2 1.46.0 h95c9599_0
+    - libssh2 1.10.0 hf27765b_0
+    - ncurses 6.3 h1a28f6b_3
+    - openssl 1.1.1q h1a28f6b_0
+    - zlib 1.2.12 h5a0b063_2
+  run:
+    - krb5 >=1.19.2,<1.20.0a0
+    - libnghttp2 >=1.46.0,<2.0a0
+    - libssh2 >=1.10.0,<2.0a0
+    - openssl >=1.1.1q,<1.1.2a
+    - zlib >=1.2.12,<1.3.0a0
+test:
+  commands:
+    - curl-config --features
+    - curl-config --protocols
+    - test -f ${PREFIX}/lib/libcurl${SHLIB_EXT}
+    - test ! -f ${PREFIX}/lib/libcurl.a
+about:
+  description: 'Curl is an open source command line tool and library for transferring
+    data
+
+    with URL syntax. It is used in command lines or scripts to transfer data.
+
+    '
+  dev_url: https://github.com/curl/curl
+  doc_source_url: https://github.com/curl/curl/tree/master/docs
+  doc_url: https://curl.haxx.se/docs/
+  home: https://curl.haxx.se/
+  license: curl
+  license_family: MIT
+  license_file: COPYING
+  summary: tool and library for transferring data with URL syntax
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 7fbaabbf-6e50-4e98-a0e6-3f114133d981
+  recipe-maintainers:
+    - jakirkham
+    - mingwandroid
+    - msarahan
+    - ocefpaf
+    - xylar
+  remote_url: git@github.com:AnacondaRecipes/curl-feedstock.git
+  sha: f7f0f2372600cfde5fabb8a8346a2fe62bd55730

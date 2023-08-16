@@ -1,0 +1,25 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "jupyter_server >=1.8,<3",
+    "python >=3.7"
+  ],
+  "features": "",
+  "fn": "notebook-shim-0.2.2-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "40be846cd4e78672a40e43db9dae753c",
+  "name": "notebook-shim",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "d798a6a1938e3efa1562d3477a0337720ce07ef571c8b0255d80089f285eaf8a",
+  "size": 14936,
+  "subdir": "noarch",
+  "timestamp": 1667478510169,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/notebook-shim-0.2.2-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.2.2"
+}

@@ -1,0 +1,75 @@
+{% set version = "23.2.0" %}
+
+package:
+  name: pyzmq
+  version: {{ version }}
+
+source:
+  # We use the pypi URL as it includes the prepared Cython files.
+  url: https://pypi.io/packages/source/p/pyzmq/pyzmq-{{ version }}.tar.gz
+  sha256: a51f12a8719aad9dcfb55d456022f16b90abc8dde7d3ca93ce3120b40e3fa169
+
+build:
+  number: 0
+  skip: True  # [py<36]
+  ignore_run_exports:
+    - zeromq  # [win]
+  missing_dso_whitelist:
+    - $RPATH/libzmq.cp*-win_amd64.pyd  # [win]
+
+requirements:
+  build:
+    - pkg-config  # [not win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - python
+    - cython >=0.29
+    - packaging
+    - pip
+    - setuptools
+    - wheel
+    - zeromq
+  run:
+    - python
+    - zeromq
+
+test:
+  imports:
+    - zmq
+    - zmq.backend.cython.socket
+    - zmq.backend.cython.utils
+    - zmq.devices.monitoredqueue
+  requires:
+    - pytest
+  # We run the zmq tests on all platforms except Windows.
+  # The only reason not to run the tests on Windows is that
+  # they terminate with an interactive prompt. See also
+  # https://github.com/conda-forge/staged-recipes/pull/292#issuecomment-208080893.
+  commands:
+    - py.test --pyargs zmq.tests.test_socket
+
+about:
+  home: https://github.com/zeromq/pyzmq
+  summary: Python bindings for zeromq
+  license: BSD-3-Clause AND LGPL-3.0-or-later
+  license_file: COPYING.BSD
+  license_family: BSD
+  description: |
+    PyZMQ contains Python bindings for 0MQ. 0MQ is a lightweight and fast
+    messaging implementation.
+  doc_url: https://pyzmq.readthedocs.org/
+  doc_source_url: https://github.com/zeromq/pyzmq/blob/master/docs/source/index.rst
+  dev_url: https://github.com/zeromq/pyzmq
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - minrk
+    - msarahan
+    - pelson
+    - SylvainCorlay
+    - JohanMabille
+    - ocefpaf
+    - mingwandroid
+    - chenghlee

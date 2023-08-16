@@ -1,0 +1,202 @@
+{% set version = "7.2.9" %}
+{% set build = 0 %}
+
+package:
+  name: nbconvert-meta
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/n/nbconvert/nbconvert-{{ version }}.tar.gz
+  sha256: a42c3ac137c64f70cbe4d763111bf358641ea53b37a01a5c202ed86374af5234
+
+build:
+  number: {{ build }}
+  noarch: python
+
+requirements:
+  host:
+    - python >=3.7
+    - pip
+  run:
+    - python >=3.7
+
+test:
+  commands:
+    - echo "tests in outputs"
+
+outputs:
+  - name: nbconvert
+    build:
+      noarch: python
+    requirements:
+      host:
+        - pip
+        - python >=3.7
+      run:
+        - {{ pin_subpackage("nbconvert-core", exact=True) }}
+        - {{ pin_subpackage("nbconvert-pandoc", exact=True) }}
+        - python >=3.7
+    test:
+      requires:
+        - pip
+      commands:
+        - pip check
+        - jupyter nbconvert --version
+        - jupyter dejavu --version
+        - jupyter nbconvert --help
+        - jupyter dejavu --help
+
+  - name: nbconvert-core
+    build:
+      noarch: python
+      script: {{ PYTHON }} -m pip install . -vv --no-deps
+      entry_points:
+        - jupyter-dejavu = nbconvert.nbconvertapp:dejavu_main
+        - jupyter-nbconvert = nbconvert.nbconvertapp:main
+    requirements:
+      host:
+        - pip
+        - python >=3.7
+      run:
+        - beautifulsoup4
+        - bleach
+        - defusedxml
+        - entrypoints >=0.2.2
+        - jinja2 >=3.0
+        - jupyter_core >=4.7
+        - jupyterlab_pygments
+        - markupsafe >=2.0
+        - mistune >=2.0.3,<3
+        - nbclient >=0.5.0
+        - nbformat >=5.1
+        - packaging
+        - pandocfilters >=1.4.1
+        - pygments >=2.4.1
+        - python >=3.7
+        - tinycss2
+        - traitlets >=5.0
+      run_constrained:
+        # other packages carry the full `run` dependency
+        - pandoc >=1.12.1
+        - pyppeteer >=1,<1.1
+        # avoid mixing nbconvert-core and pre-split nbconvert
+        # should be {{ pin_subpackage("nbconvert", exact=True) }}
+        # but seems to produce the wrong thing here
+        - nbconvert ={{ version }}=*_{{ build }}
+
+    test:
+      imports:
+        - nbconvert
+        - nbconvert.exporters
+        - nbconvert.filters
+        - nbconvert.postprocessors
+        - nbconvert.preprocessors
+        - nbconvert.resources
+        - nbconvert.utils
+        - nbconvert.writers
+      commands:
+        - jupyter nbconvert --version
+        - jupyter dejavu --version
+        - jupyter nbconvert --help
+        - jupyter dejavu --help
+
+  - name: nbconvert-webpdf
+    build:
+      noarch: python
+    requirements:
+      host:
+        - python >=3.7
+        - pip
+      run:
+        - {{ pin_subpackage("nbconvert-core", exact=True) }}
+        # the pin is handled by the `run_constrained` in nbconvert-core
+        - pyppeteer
+        - python >=3.7
+    test:
+      requires:
+        - pip
+      commands:
+        - pip check
+        - jupyter nbconvert --version
+        - jupyter dejavu --version
+        - jupyter nbconvert --help
+        - jupyter dejavu --help
+    about:
+      description: nbconvert with extra packages for browser-based PDF generation
+
+  - name: nbconvert-pandoc
+    build:
+      noarch: python
+    requirements:
+      host:
+        - pip
+        - python >=3.7
+      run:
+        - {{ pin_subpackage("nbconvert-core", exact=True) }}
+        # the pin is handled by the `run_constrained` in nbconvert-core
+        - pandoc
+        - python >=3.7
+    test:
+      requires:
+        - pip
+      commands:
+        - pip check
+        - jupyter nbconvert --version
+        - jupyter dejavu --version
+        - jupyter nbconvert --help
+        - jupyter dejavu --help
+    about:
+      description: nbconvert with extra packages for pandoc-based outputs
+
+  - name: nbconvert-all
+    build:
+      noarch: python
+    requirements:
+      host:
+        - pip
+        - python >=3.7
+      run:
+        - {{ pin_subpackage("nbconvert-webpdf", exact=True) }}
+        - {{ pin_subpackage("nbconvert", exact=True) }}
+        - python >=3.7
+    test:
+      source_files:
+        - nbconvert/tests/files/notebook1.ipynb
+      requires:
+        - pip
+      commands:
+        - pip check
+        - jupyter nbconvert --version
+        - jupyter dejavu --version
+        - jupyter nbconvert --help
+        - jupyter dejavu --help
+        - jupyter nbconvert nbconvert/tests/files/notebook1.ipynb --to html
+    about:
+      description: nbconvert with all optional packages
+
+about:
+  home: https://jupyter.org
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Converting Jupyter Notebooks
+  description: |
+    The nbconvert tool, jupyter nbconvert, converts notebooks to various other
+    formats via Jinja templates. The nbconvert tool allows you to convert an
+    .ipynb notebook file into various static formats.
+  doc_url: https://nbconvert.readthedocs.org/
+  dev_url: https://github.com/jupyter/nbconvert
+
+extra:
+  feedstock-name: nbconvert
+  recipe-maintainers:
+    - jakirkham
+    - mpacer
+    - minrk
+    - pelson
+    - takluyver
+    - mseal
+    - blink1073
+    - ocefpaf
+    - jasongrout
+    - bollwyvl
+    - martinRenou

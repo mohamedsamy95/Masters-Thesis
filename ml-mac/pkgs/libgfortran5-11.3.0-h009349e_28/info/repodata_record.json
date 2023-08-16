@@ -1,0 +1,28 @@
+{
+  "arch": "arm64",
+  "build": "h009349e_28",
+  "build_number": 28,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [
+    "libgfortran 5.0.0 *_28"
+  ],
+  "depends": [
+    "llvm-openmp >=8.0.0"
+  ],
+  "features": "",
+  "fn": "libgfortran5-11.3.0-h009349e_28.conda",
+  "legacy_bz2_md5": "8f9dde854442b1597ec249e512b88673",
+  "legacy_bz2_size": 1387621,
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "md5": "731b10bb5430bc63ac2bd46ddcaa77db",
+  "name": "libgfortran5",
+  "platform": "darwin",
+  "sha256": "e836c0ecd4a73cbf22d350dbc6bd0af903b3beabdfe519a0d90bbca26e3bc2e7",
+  "size": 1076424,
+  "subdir": "osx-arm64",
+  "timestamp": 1665498967410,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libgfortran5-11.3.0-h009349e_28.conda",
+  "version": "11.3.0"
+}

@@ -1,0 +1,32 @@
+# This file created by conda-build 3.21.4
+# ------------------------------------------------
+
+package:
+  name: blas
+  version: 1.0
+source:
+  fn: openblas-0.3.17.tar.gz
+  patches:
+    - 0005-nan.patch
+  sha256: df2934fa33d04fd84d839ca698280df55c690c86a5a1133b3f7266fce1de279f
+  url: https://github.com/xianyi/OpenBLAS/archive/v0.3.17.tar.gz
+build:
+  number: 0
+  string: openblas
+  track_features:
+    - nomkl
+requirements:
+  build: []
+  run: []
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - beckermr
+    - chenghlee
+    - gillins
+    - groutr
+    - isuruf
+    - jakirkham
+    - jschueller
+    - msarahan

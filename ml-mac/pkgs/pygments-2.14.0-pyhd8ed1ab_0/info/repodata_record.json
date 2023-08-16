@@ -1,0 +1,25 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.6",
+    "setuptools"
+  ],
+  "features": "",
+  "fn": "pygments-2.14.0-pyhd8ed1ab_0.conda",
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "c78cd16b11cd6a295484bd6c8f24bea1",
+  "name": "pygments",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "e8710e24f60b6a97289468f47914e53610101755088bc237621cc1980edbfcd9",
+  "size": 824197,
+  "subdir": "noarch",
+  "timestamp": 1672682136399,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pygments-2.14.0-pyhd8ed1ab_0.conda",
+  "version": "2.14.0"
+}

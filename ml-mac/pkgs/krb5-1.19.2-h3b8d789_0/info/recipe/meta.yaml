@@ -1,0 +1,88 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /Users/ktietz/demo/src/aggregate/krb5-feedstock/recipe, last modified Thu Sep  2 12:36:39 2021
+# ------------------------------------------------
+
+package:
+  name: krb5
+  version: 1.19.2
+source:
+  sha256: 84a1dc720e436926359808cc62543946897bf797aba3588b373165f127532cd8
+  url: https://github.com/krb5/krb5/archive/krb5-1.19.2-final.tar.gz
+build:
+  ignore_run_exports:
+    - libcxx
+    - tk
+  missing_dso_whitelist:
+    - /usr/lib/libresolv.9.dylib
+  number: '0'
+  run_exports:
+    - krb5 >=1.19.2,<1.20.0a0
+  string: h3b8d789_0
+requirements:
+  build:
+    - autoconf 2.69 pl5340h1230e6a_1
+    - bison 3.7.4 hc4ed4cf_1
+    - ca-certificates 2021.7.5 hca03da5_1
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - certifi 2021.5.30 py38hca03da5_1
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - clangxx_osx-arm64 12.0.0 h39b79ac_3
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - flex 2.6.4 hc4ed4cf_1
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.3 hc377ac9_2
+    - libiconv 1.16 h1230e6a_0
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - m4 1.4.18 h1230e6a_1
+    - make 4.2.1 h1a28f6b_1
+    - ncurses 6.2 hc4ed4cf_0
+    - openssl 1.1.1j h1230e6a_0
+    - perl 5.34.0 h1230e6a_0
+    - pip 21.2.4 py38hca03da5_0
+    - pkg-config 0.29.2 h1a28f6b_0
+    - python 3.8.11 hbdb9e5c_5
+    - readline 8.1 h1a28f6b_0
+    - setuptools 52.0.0 py38hca03da5_1
+    - sqlite 3.36.0 h1058600_0
+    - tapi 1100.0.11 ha21211d_0
+    - tk 8.6.10 hb8d0fd4_0
+    - wheel 0.37.0 pyhd3eb1b0_1
+    - xz 5.2.5 h1a28f6b_0
+    - zlib 1.2.11 hca03da5_3
+  host:
+    - ca-certificates 2021.7.5 hca03da5_1
+    - libedit 3.1.20210216 h1a28f6b_1
+    - ncurses 6.2 hc4ed4cf_0
+    - openssl 1.1.1j h1230e6a_0
+    - tk 8.6.10 hb8d0fd4_0
+    - zlib 1.2.11 hca03da5_3
+  run:
+    - libedit >=3.1.20210216,<3.2.0a0
+    - libedit >=3.1.20210216,<4.0a0
+    - openssl >=1.1.1j,<1.1.2a
+test:
+  requires:
+    - python 3.8.*
+about:
+  home: http://web.mit.edu/kerberos/
+  license: MIT
+  license_file: doc/notice.rst
+  summary: A network authentication protocol.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - chenghlee
+    - mariusvniekerk
+    - mingwandroid
+    - ocefpaf
+    - pelson

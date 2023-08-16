@@ -1,0 +1,6 @@
+lib/libblas.dylib
+lib/libcblas.dylib
+lib/liblapack.dylib
+lib/libopenblas.0.dylib
+lib/libopenblas.dylib
+lib/libopenblasp-r0.3.21.dylib

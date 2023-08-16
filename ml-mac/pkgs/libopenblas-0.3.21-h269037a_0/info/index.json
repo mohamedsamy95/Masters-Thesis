@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "h269037a_0",
+  "build_number": 0,
+  "depends": [
+    "libcxx >=12.0.0",
+    "libgfortran 5.*",
+    "libgfortran5 >=11.2.0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "name": "libopenblas",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1664897510704,
+  "version": "0.3.21"
+}

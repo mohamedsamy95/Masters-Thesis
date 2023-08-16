@@ -1,0 +1,25 @@
+{
+  "arch": "arm64",
+  "build": "hbdafb3b_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=11.1.0",
+    "libsodium >=1.0.18,<1.0.19.0a0"
+  ],
+  "features": "",
+  "fn": "zeromq-4.3.4-hbdafb3b_1.tar.bz2",
+  "license": "LGPL-3.0-or-later",
+  "license_family": "LGPL",
+  "md5": "49132c08da6545dc68351ff8b659ac8e",
+  "name": "zeromq",
+  "platform": "darwin",
+  "sha256": "b65624f1e22f095223462807c417001b18ec17ef33a3c7065a19429f4cd42193",
+  "size": 318091,
+  "subdir": "osx-arm64",
+  "timestamp": 1629967291905,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/zeromq-4.3.4-hbdafb3b_1.tar.bz2",
+  "version": "4.3.4"
+}

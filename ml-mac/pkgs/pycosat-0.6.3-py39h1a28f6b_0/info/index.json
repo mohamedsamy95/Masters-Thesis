@@ -1,0 +1,14 @@
+{
+  "arch": "arm64",
+  "build": "py39h1a28f6b_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "license": "MIT",
+  "name": "pycosat",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1629723366831,
+  "version": "0.6.3"
+}

@@ -1,0 +1,4 @@
+{
+  "noarch_platform": "osx",
+  "channel_targets": "conda-forge main"
+}

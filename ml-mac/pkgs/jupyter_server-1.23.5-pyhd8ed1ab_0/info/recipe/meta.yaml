@@ -1,0 +1,106 @@
+# This file created by conda-build 3.23.3
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Fri Jan 13 01:48:03 2023
+# ------------------------------------------------
+
+package:
+  name: jupyter_server
+  version: 1.23.5
+source:
+  sha256: a2caa759e2a29ece1aad013c58215fe951f38317b97de462b921834955fe3fca
+  url: https://pypi.io/packages/source/j/jupyter_server/jupyter_server-1.23.5.tar.gz
+build:
+  entry_points:
+    - jupyter-server = jupyter_server.serverapp:main
+  noarch: python
+  number: '0'
+  script:
+    - /home/conda/feedstock_root/build_artifacts/jupyter_server_1673574555503/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh/bin/python
+      -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  string: pyhd8ed1ab_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - bzip2 1.0.8 h7f98852_4
+    - ca-certificates 2022.12.7 ha878542_0
+    - deprecation 2.1.0 pyh9f0ad1d_0
+    - jupyter-packaging 0.12.3 pyha770c72_0
+    - ld_impl_linux-64 2.39 hcc3a1bd_1
+    - libffi 3.4.2 h7f98852_5
+    - libgcc-ng 12.2.0 h65d4601_19
+    - libgomp 12.2.0 h65d4601_19
+    - libnsl 2.0.0 h7f98852_0
+    - libsqlite 3.40.0 h753d276_0
+    - libuuid 2.32.1 h7f98852_1000
+    - libzlib 1.2.13 h166bdaf_4
+    - ncurses 6.3 h27087fc_1
+    - openssl 3.0.7 h0b41bf4_1
+    - packaging 23.0 pyhd8ed1ab_0
+    - pip 22.3.1 pyhd8ed1ab_0
+    - python 3.11.0 ha86cf86_0_cpython
+    - readline 8.1.2 h0f457ee_0
+    - setuptools 65.6.3 pyhd8ed1ab_0
+    - tk 8.6.12 h27826a3_0
+    - tomlkit 0.11.6 pyha770c72_0
+    - typing 3.10.0.0 pyhd8ed1ab_0
+    - tzdata 2022g h191b570_0
+    - wheel 0.38.4 pyhd8ed1ab_0
+    - xz 5.2.6 h166bdaf_0
+  run:
+    - anyio >=3.1.0
+    - argon2-cffi
+    - jinja2
+    - jupyter_client >=6.1.12
+    - jupyter_core >=4.12,!=5.0.*
+    - nbconvert-core >=6.4.4
+    - nbformat >=5.2.0
+    - packaging
+    - prometheus_client
+    - python >=3.7
+    - pyzmq >=17
+    - send2trash
+    - terminado >=0.8.3
+    - tornado >=6.1.0
+    - traitlets >=5.1.0
+    - websocket-client
+test:
+  commands:
+    - pip check
+    - jupyter server -h
+    - cd tests && pytest -vv --cov jupyter_server --cov-report term-missing:skip-covered
+      --no-cov-on-fail --cov-fail-under 70
+  imports:
+    - jupyter_server
+  requires:
+    - coverage
+    - ipykernel
+    - pip
+    - pytest >=6.0
+    - pytest-console-scripts
+    - pytest-cov
+    - pytest-mock
+    - pytest-timeout
+    - pytest-tornasync
+    - requests
+about:
+  description: The Jupyter Server provides the backend for Jupyter web applications
+    such as the Jupyter notebook and JupyterLab.
+  dev_url: https://github.com/jupyter/jupyter_server
+  doc_url: https://jupyter-server.readthedocs.io
+  home: https://jupyter.org
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: COPYING.md
+  summary: Jupyter Server
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - SylvainCorlay
+    - Zsailer
+    - blink1073
+    - bollwyvl
+    - jasongrout
+    - maartenbreddels
+    - minrk

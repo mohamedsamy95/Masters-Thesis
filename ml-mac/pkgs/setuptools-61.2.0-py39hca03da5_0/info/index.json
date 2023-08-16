@@ -1,0 +1,16 @@
+{
+  "arch": "arm64",
+  "build": "py39hca03da5_0",
+  "build_number": 0,
+  "depends": [
+    "certifi >=2016.9.26",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "setuptools",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1649230450695,
+  "version": "61.2.0"
+}

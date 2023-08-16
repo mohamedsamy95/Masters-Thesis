@@ -1,0 +1,26 @@
+{
+  "arch": "arm64",
+  "build": "py39hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "features": "",
+  "fn": "certifi-2022.9.24-py39hca03da5_0.conda",
+  "legacy_bz2_md5": "6b9eafc71b77ceb29bbe5474668b52a9",
+  "legacy_bz2_size": 161693,
+  "license": "MPL-2.0",
+  "license_family": "Other",
+  "md5": "39d05737215fba2a5a566059c853fc20",
+  "name": "certifi",
+  "platform": "darwin",
+  "sha256": "0455366db311531d8d842832aa4f9f745315b94282cb1675ff04ec98102fcfd9",
+  "size": 158339,
+  "subdir": "osx-arm64",
+  "timestamp": 1665076791364,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/certifi-2022.9.24-py39hca03da5_0.conda",
+  "version": "2022.9.24"
+}

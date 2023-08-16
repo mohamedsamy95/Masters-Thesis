@@ -1,0 +1,75 @@
+{% set version = "3.6.0" %}
+{% set build = 0 %}
+
+# mpi must be defined for conda-smithy lint
+{% set mpi = mpi or 'nompi' %}
+
+package:
+  name: h5py
+  version: {{ version }}
+
+source:
+  url: https://github.com/h5py/h5py/archive/{{ version }}.tar.gz
+  sha256: 840fca0787bca8ad2729b9c20e06a16f219e7a24ccc59fdf5177a05ec8472b2d
+  patches:
+    - osx-arm64.diff    # [osx and arm64]
+    - osx-arm64-hdf5.diff    # [osx and arm64]
+
+build:
+  skip: True  # [py<=36]
+  number: {{ build }}
+  script_env:
+    - HDF5_HAS_ROS3=1  # [osx and arm64]
+
+requirements:
+  build:
+    - {{ compiler("c") }}
+    - m2-patch  # [win]
+    - patch     # [not win]
+  host:
+    - python
+    - pip
+    - numpy
+    - hdf5
+    - cython >=0.29.15
+    - pkgconfig
+    - setuptools
+    - wheel
+  run:
+    - python >=3.7
+    - cached-property  # [py<38]
+    - {{ pin_compatible('numpy') }}
+    # hdf5 >=1.10.4 has run_exports
+    - hdf5
+    - pyreadline  # [win]
+
+test:
+  imports:
+    - h5py
+    - h5py._hl
+    - h5py.tests
+    - h5py.tests.data_files
+    - h5py.tests.test_vds
+  requires:
+    - pip
+    - pytest
+    - pytest-mpi
+    - curl
+  commands:
+    - pip check
+
+about:
+  home: http://www.h5py.org/
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: licenses/license.txt
+  summary: Read and write HDF5 files from Python
+  dev_url: https://github.com/h5py/h5py
+
+extra:
+  recipe-maintainers:
+    - jakirkham
+    - tacaswell
+    - ocefpaf
+    - minrk
+    - scopatz

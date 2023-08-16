@@ -1,0 +1,27 @@
+{
+  "arch": "arm64",
+  "build": "py39hc377ac9_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libcxx >=12.0.0",
+    "python >=3.9,<3.10.0a0",
+    "zeromq >=4.3.4,<4.4.0a0"
+  ],
+  "features": "",
+  "fn": "pyzmq-23.2.0-py39hc377ac9_0.conda",
+  "legacy_bz2_md5": "e6e92da28e9b0e428ed4b7df417bec25",
+  "license": "BSD-3-Clause AND LGPL-3.0-or-later",
+  "license_family": "BSD",
+  "md5": "43e6500fedfb7e27570c9ee6f61898ad",
+  "name": "pyzmq",
+  "platform": "darwin",
+  "sha256": "9330340c66a47cb2f304cecb390ffcba6ab503422ecf13add30e19f866f87965",
+  "size": 432215,
+  "subdir": "osx-arm64",
+  "timestamp": 1657724315435,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyzmq-23.2.0-py39hc377ac9_0.conda",
+  "version": "23.2.0"
+}

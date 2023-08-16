@@ -1,0 +1,173 @@
+{% set version = "0.3.21" %}
+{% set build_number = "0" %}
+{% set sha_hash = "f36ba3d7a60e7c8bcc54cd9aaa9b1223dd42eaf02c811791c37e8ca707c241ca" %}
+
+
+package:
+  name: openblas_multipkg
+  version: {{ version }}
+
+source:
+  fn: openblas-{{ version }}.tar.gz
+  url: https://github.com/xianyi/OpenBLAS/archive/v{{ version }}.tar.gz
+  sha256: {{ sha_hash }}
+  patches:
+    # LAPACK tests are failing on osx-arm64 due to some issues with gfortran 11.2
+    # when set to armv8.3-a. This should be fixed when gfortran gets updated to 11.3.
+    # In the meantime we can use this workaround:
+    # See https://github.com/xianyi/OpenBLAS/issues/3735
+    - 0001-gfortran11.2_workaround_issue3753.patch # [osx and arm64]
+
+build:
+  number: {{ build_number }}
+  skip: true  # [win]
+  missing_dso_whitelist:
+    # Mildly concerned this triggers an overlinking warning, but it may be a
+    # sign some S390X-specific changes needed in conda-build.  Leaving this in
+    # while we investigate so the linux-s390x build out can continue.
+    - "*/ld64.so.1"   # [s390x]
+
+requirements:
+  build:
+    - {{ compiler("c") }}
+    - {{ compiler("cxx") }}
+    - {{ compiler("fortran") }}
+    - cmake                      # [win]
+    - curl                       # [win]
+    - jom                        # [win]
+    - make                       # [unix]
+    - objconv                    # [osx]
+    - patch                      # [unix]
+    - m2-patch                   # [win]
+outputs:
+  - name: libopenblas
+    files:
+      - lib/libblas{{ SHLIB_EXT }}    # [unix]
+      - lib/libcblas{{ SHLIB_EXT }}   # [unix]
+      - lib/liblapack{{ SHLIB_EXT }}  # [unix]
+      - lib/libopenblas*.so*          # [linux]
+      - lib/libopenblas*.dylib        # [osx]
+    requirements:
+      build:
+        - {{ compiler("c") }}
+        - {{ compiler("cxx") }}
+        - {{ compiler("fortran") }}
+    test:
+      requires:
+        - python      # [unix]
+      commands:
+        - python -c "import ctypes; ctypes.cdll['${PREFIX}/lib/libopenblas${SHLIB_EXT}']"  # [unix]
+        - if not exist %PREFIX%\\Library\\lib\\openblas.lib exit 1    # [win]
+    about:
+      home: https://www.openblas.net/
+      license: BSD-3-Clause
+      license_file: LICENSE
+      license_family: BSD
+      summary: An Optimized BLAS library
+      description: OpenBLAS is based on GotoBLAS2 1.13 BSD version.
+      doc_url: https://www.openblas.net/
+      doc_source_url: https://github.com/xianyi/OpenBLAS/blob/develop/README.md
+      dev_url: https://github.com/xianyi/OpenBLAS
+
+  - name: libopenblas-static
+    files:
+      - lib/libblas.a
+      - lib/libcblas.a
+      - lib/liblapack.a
+      - lib/libopenblas*.a
+    test:
+      commands:
+        - test -f ${PREFIX}/lib/libopenblas.a                            # [unix]
+    about:
+      home: https://www.openblas.net/
+      license: BSD-3-Clause
+      license_file: LICENSE
+      license_family: BSD
+      summary: OpenBLAS static libraries.
+      description: OpenBLAS is based on GotoBLAS2 1.13 BSD version.
+      doc_url: https://www.openblas.net/
+      doc_source_url: https://github.com/xianyi/OpenBLAS/blob/develop/README.md
+      dev_url: https://github.com/xianyi/OpenBLAS
+
+  - name: openblas-devel
+    files:
+      - include/*blas.h
+      - include/lapack*.h
+      - include/openblas_config.h
+      - lib/cmake/openblas
+      - lib/pkgconfig/*blas.pc
+      - lib/pkgconfig/lapack*.pc
+      - site.cfg
+    run_exports:
+      - {{ pin_subpackage("libopenblas") }}
+      - blas * openblas
+    requirements:
+      run:
+        - {{ pin_subpackage("libopenblas", exact=True) }}
+        - {{ pin_subpackage("nomkl", exact=True) }}
+    about:
+      home: https://www.openblas.net/
+      license: BSD-3-Clause
+      license_file: LICENSE
+      license_family: BSD
+      summary: OpenBLAS headers and libraries for developing software that used OpenBLAS.
+      description: OpenBLAS is based on GotoBLAS2 1.13 BSD version.
+      doc_url: https://www.openblas.net/
+      doc_source_url: https://github.com/xianyi/OpenBLAS/blob/develop/README.md
+      dev_url: https://github.com/xianyi/OpenBLAS
+
+  # openblas meta-package. It is better to require openblas-devel or libopenblas
+  - name: openblas
+    requirements:
+      run:
+        - {{ pin_subpackage("libopenblas", exact=True) }}
+        - {{ pin_subpackage("openblas-devel", exact=True) }}
+        - {{ pin_subpackage("blas", exact=True) }}
+        - {{ pin_subpackage("nomkl", exact=True) }}
+
+    about:
+      home: https://www.openblas.net/
+      license: BSD-3-Clause
+      license_file:
+        - LICENSE
+        - lapack-netlib/LICENSE
+      license_family: BSD
+      summary: An optimized BLAS library
+      description: OpenBLAS is based on GotoBLAS2 1.13 BSD version.
+      doc_url: https://www.openblas.net/
+      doc_source_url: https://github.com/xianyi/OpenBLAS/blob/develop/README.md
+      dev_url: https://github.com/xianyi/OpenBLAS
+
+  # mutex package to keep only one blas implementation in a given env
+  - name: blas
+    version: 1.0
+    build:
+      string: openblas
+      # track_features doesn't really track anything anymore (blas metapackage
+      # dependencies do the same job better). This is still here, though, as it
+      # effectively "weighs down" nomkl packages, allowing mkl to take
+      # precedence when defaults is the top channel priority.
+      track_features:
+        - nomkl
+
+  - name: nomkl
+    version: 3.0
+    build:
+      string: "0"
+      number: 0
+    requirements:
+      run:
+        - blas * openblas
+    about:
+      license: BSD-3-clause
+
+extra:
+  recipe-maintainers:
+    - gillins
+    - groutr
+    - jakirkham
+    - jschueller
+    - isuruf
+    - msarahan
+    - beckermr
+    - chenghlee

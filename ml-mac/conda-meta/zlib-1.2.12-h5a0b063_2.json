@@ -1,0 +1,52 @@
+{
+  "build": "h5a0b063_2",
+  "build_number": 2,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/zlib-1.2.12-h5a0b063_2",
+  "features": "",
+  "files": [
+    "include/zconf.h",
+    "include/zlib.h",
+    "lib/libz.1.2.12.dylib",
+    "lib/libz.1.dylib",
+    "lib/libz.a",
+    "lib/libz.dylib",
+    "lib/pkgconfig/zlib.pc"
+  ],
+  "fn": "zlib-1.2.12-h5a0b063_2.conda",
+  "legacy_bz2_md5": "863a2f99486071c63d3ace74fc30a5a7",
+  "legacy_bz2_size": 102741,
+  "license": "Zlib",
+  "license_family": "Other",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/zlib-1.2.12-h5a0b063_2",
+    "type": 1
+  },
+  "md5": "5a9ad84c3e0002fbe11ae0c0ac3c776f",
+  "name": "zlib",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/zlib-1.2.12-h5a0b063_2.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/pkgconfig/zlib.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_5dbc68ad-082a-4266-8a8c-155fd5a71461ci4myp3p/croots/recipe/zlib_1650637692623/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "cc1117aa860fcca39da41423b11bda8f3353b7cdef878afa83d5cb1b6ea3880f",
+        "sha256_in_prefix": "71d45af75850ac20369fc1a86b9eb484ff4eaa4fd555448b44745d404e162134",
+        "size_in_bytes": 1487
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "zlib==1.2.12=h5a0b063_2",
+  "sha256": "c6ceb6cf36ea96eb1d6885a3ae53336b28f0bd933eb2afbee8bec4471d547b02",
+  "size": 83650,
+  "subdir": "osx-arm64",
+  "timestamp": 1650637722446,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/zlib-1.2.12-h5a0b063_2.conda",
+  "version": "1.2.12"
+}

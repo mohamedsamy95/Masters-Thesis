@@ -1,0 +1,96 @@
+# This file created by conda-build 3.22.0
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Wed Oct 19 14:50:28 2022
+# ------------------------------------------------
+
+package:
+  name: anyio
+  version: 3.6.2
+source:
+  - folder: dist
+    sha256: 25ea0d673ae30af41a0c442f81cf3b38c7e79fdc7b60335a4c14e05eb0947421
+    url: https://pypi.io/packages/source/a/anyio/anyio-3.6.2.tar.gz
+  - folder: src
+    sha256: befe8a0e100f6a92ad1b15a6e4adc86bb5f1e055f09b125090300ade5b33534d
+    url: https://github.com/agronholm/anyio/archive/3.6.2.tar.gz
+build:
+  noarch: python
+  number: '0'
+  script: cd dist && /home/conda/feedstock_root/build_artifacts/anyio_1666191106763/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/bin/python
+    -m pip install . -vv --no-deps
+  string: pyhd8ed1ab_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - bzip2 1.0.8 h7f98852_4
+    - ca-certificates 2022.9.24 ha878542_0
+    - importlib-metadata 4.11.4 py310hff52083_0
+    - ld_impl_linux-64 2.39 hc81fddc_0
+    - libffi 3.4.2 h7f98852_5
+    - libgcc-ng 12.2.0 h65d4601_18
+    - libgomp 12.2.0 h65d4601_18
+    - libnsl 2.0.0 h7f98852_0
+    - libsqlite 3.39.4 h753d276_0
+    - libuuid 2.32.1 h7f98852_1000
+    - libzlib 1.2.13 h166bdaf_4
+    - ncurses 6.3 h27087fc_1
+    - openssl 3.0.5 h166bdaf_2
+    - packaging 21.3 pyhd8ed1ab_0
+    - pip 22.3 pyhd8ed1ab_0
+    - pyparsing 3.0.9 pyhd8ed1ab_0
+    - python 3.10.6 ha86cf86_0_cpython
+    - python_abi 3.10 2_cp310
+    - readline 8.1.2 h0f457ee_0
+    - setuptools 65.5.0 pyhd8ed1ab_0
+    - setuptools-scm 7.0.5 pyhd8ed1ab_0
+    - tk 8.6.12 h27826a3_0
+    - tomli 2.0.1 pyhd8ed1ab_0
+    - typing-extensions 4.4.0 hd8ed1ab_0
+    - typing_extensions 4.4.0 pyha770c72_0
+    - tzdata 2022e h191b570_0
+    - wheel 0.37.1 pyhd8ed1ab_0
+    - xz 5.2.6 h166bdaf_0
+    - zipp 3.9.0 pyhd8ed1ab_0
+  run:
+    - idna >=2.8
+    - python >=3.7
+    - sniffio >=1.1
+    - typing_extensions
+  run_constrained:
+    - trio >=0.16,<0.22
+test:
+  commands:
+    - pip check
+  imports:
+    - anyio
+  requires:
+    - coverage >=4.5
+    - hypothesis >=4.0
+    - mock >=4
+    - pip
+    - pytest >=6.0
+    - pytest-cov
+    - pytest-mock >=3.6.1
+    - toml
+    - trio
+    - trustme
+    - uvloop >=0.17
+  source_files:
+    - src/pyproject.toml
+    - src/tests
+about:
+  doc_source_url: https://github.com/agronholm/anyio/tree/3.6.2/docs
+  doc_url: https://anyio.readthedocs.io
+  home: https://github.com/agronholm/anyio
+  license: MIT
+  license_family: MIT
+  license_file: dist/LICENSE
+  summary: High level compatibility layer for multiple asynchronous event loop implementations
+    on Python
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - CJ-Wright
+    - bollwyvl

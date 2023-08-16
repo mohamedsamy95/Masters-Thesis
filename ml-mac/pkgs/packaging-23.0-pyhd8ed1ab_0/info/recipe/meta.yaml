@@ -1,0 +1,77 @@
+# This file created by conda-build 3.23.3
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Thu Jan 12 00:08:17 2023
+# ------------------------------------------------
+
+package:
+  name: packaging
+  version: '23.0'
+source:
+  sha256: b6ad297f8907de0fa2fe1ccbd26fdaf387f5f47c7275fedf8cce89f99446cf97
+  url: https://pypi.io/packages/source/p/packaging/packaging-23.0.tar.gz
+build:
+  noarch: python
+  number: '0'
+  script: /home/conda/feedstock_root/build_artifacts/packaging_1673482170163/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p/bin/python
+    -m pip install . --no-deps -vv
+  string: pyhd8ed1ab_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - brotlipy 0.7.0 py311hd4cff14_1005
+    - bzip2 1.0.8 h7f98852_4
+    - ca-certificates 2022.12.7 ha878542_0
+    - certifi 2022.12.7 pyhd8ed1ab_0
+    - cffi 1.15.1 py311h409f033_3
+    - charset-normalizer 2.1.1 pyhd8ed1ab_0
+    - cryptography 39.0.0 py311h9b4c7bb_0
+    - docutils 0.19 py311h38be061_1
+    - flit 3.8.0 pyhd8ed1ab_0
+    - flit-core 3.8.0 pyhd8ed1ab_0
+    - idna 3.4 pyhd8ed1ab_0
+    - ld_impl_linux-64 2.39 hcc3a1bd_1
+    - libffi 3.4.2 h7f98852_5
+    - libgcc-ng 12.2.0 h65d4601_19
+    - libgomp 12.2.0 h65d4601_19
+    - libnsl 2.0.0 h7f98852_0
+    - libsqlite 3.40.0 h753d276_0
+    - libuuid 2.32.1 h7f98852_1000
+    - libzlib 1.2.13 h166bdaf_4
+    - ncurses 6.3 h27087fc_1
+    - openssl 3.0.7 h0b41bf4_1
+    - pip 22.3.1 pyhd8ed1ab_0
+    - pycparser 2.21 pyhd8ed1ab_0
+    - pyopenssl 23.0.0 pyhd8ed1ab_0
+    - pysocks 1.7.1 pyha2e5f31_6
+    - python 3.11.0 ha86cf86_0_cpython
+    - python_abi 3.11 3_cp311
+    - readline 8.1.2 h0f457ee_0
+    - requests 2.28.1 pyhd8ed1ab_1
+    - setuptools 65.6.3 pyhd8ed1ab_0
+    - tk 8.6.12 h27826a3_0
+    - tomli-w 1.0.0 pyhd8ed1ab_0
+    - tzdata 2022g h191b570_0
+    - urllib3 1.26.14 pyhd8ed1ab_0
+    - wheel 0.38.4 pyhd8ed1ab_0
+    - xz 5.2.6 h166bdaf_0
+  run:
+    - python >=3.7
+test:
+  commands:
+    - pip check
+  imports:
+    - packaging
+  requires:
+    - pip
+about:
+  home: https://github.com/pypa/packaging
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: Core utilities for Python packages
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - jakirkham
+    - nicoddemus

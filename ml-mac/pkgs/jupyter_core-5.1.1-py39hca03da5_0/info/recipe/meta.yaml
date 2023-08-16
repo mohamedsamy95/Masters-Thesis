@@ -1,0 +1,89 @@
+# This file created by conda-build 3.23.3
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_aa_owuo5e_/clone/recipe, last modified Thu Dec 29 10:43:43 2022
+# ------------------------------------------------
+
+package:
+  name: jupyter_core
+  version: 5.1.1
+source:
+  sha256: f342d29eb6edb06f8dffa69adea987b3a9ee2b6702338a8cb6911516ea0b432d
+  url: https://pypi.io/packages/source/j/jupyter_core/jupyter_core-5.1.1.tar.gz
+build:
+  entry_points:
+    - jupyter = jupyter_core.command:main
+    - jupyter-migrate = jupyter_core.migrate:main
+    - jupyter-troubleshoot = jupyter_core.troubleshoot:main
+  number: '0'
+  script: /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_aa_owuo5e_/croot/jupyter_core_1672332232507/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p/bin/python
+    -m pip install . --no-deps -vv
+  string: py39hca03da5_0
+requirements:
+  host:
+    - ca-certificates 2022.10.11 hca03da5_0
+    - certifi 2022.12.7 py39hca03da5_0
+    - editables 0.3 py39hca03da5_0
+    - hatchling 1.8.0 py39hca03da5_0
+    - libcxx 14.0.6 h848a8c0_0
+    - libffi 3.4.2 hca03da5_6
+    - ncurses 6.3 h1a28f6b_3
+    - openssl 1.1.1s h1a28f6b_0
+    - packaging 22.0 py39hca03da5_0
+    - pathspec 0.9.0 py39hca03da5_0
+    - pip 22.3.1 py39hca03da5_0
+    - pluggy 1.0.0 py39hca03da5_1
+    - python 3.9.15 hc0d8a6c_2
+    - readline 8.2 h1a28f6b_0
+    - setuptools 65.5.0 py39hca03da5_0
+    - sqlite 3.40.0 h7a7dc30_0
+    - tk 8.6.12 hb8d0fd4_0
+    - tomli 2.0.1 py39hca03da5_0
+    - tzdata 2022g h04d1e81_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.8 h80987f9_0
+    - zlib 1.2.13 h5a0b063_0
+  run:
+    - platformdirs >=2.5
+    - python >=3.9,<3.10.0a0
+    - traitlets >=5.3
+test:
+  commands:
+    - pip check
+    - jupyter -h
+    - jupyter-migrate -h
+    - jupyter-troubleshoot --help
+    - python -m pytest -vv --pyargs jupyter_core -k "not (test_not_on_path or test_path_priority)"
+  imports:
+    - jupyter_core
+    - jupyter_core.tests
+    - jupyter_core.utils
+  requires:
+    - pip
+    - pytest
+about:
+  description: 'Jupyter core package. A base package on which Jupyter projects rely.
+
+    This package contains base application classes and configuration inherited by
+    other projects.
+
+    '
+  dev_url: https://github.com/jupyter/jupyter_core
+  doc_url: https://jupyter-core.readthedocs.io
+  home: https://jupyter.org
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: COPYING.md
+  summary: Core common functionality of Jupyter projects.
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: aae157fb-df86-45f6-9e78-a087c7ac4bf1
+  recipe-maintainers:
+    - Carreau
+    - bollwyvl
+    - jakirkham
+    - minrk
+    - ocefpaf
+    - pelson
+  remote_url: git@github.com:AnacondaRecipes/jupyter_core-feedstock.git
+  sha: 31c92caa202d1509dd67de9d0f6cdda539e43f55

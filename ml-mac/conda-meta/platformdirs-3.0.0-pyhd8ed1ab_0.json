@@ -1,0 +1,207 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.7",
+    "typing-extensions >=4.4"
+  ],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/platformdirs-3.0.0-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "lib/python3.9/site-packages/platformdirs-3.0.0.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/platformdirs-3.0.0.dist-info/METADATA",
+    "lib/python3.9/site-packages/platformdirs-3.0.0.dist-info/RECORD",
+    "lib/python3.9/site-packages/platformdirs-3.0.0.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/platformdirs-3.0.0.dist-info/WHEEL",
+    "lib/python3.9/site-packages/platformdirs-3.0.0.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/platformdirs-3.0.0.dist-info/licenses/LICENSE",
+    "lib/python3.9/site-packages/platformdirs/__init__.py",
+    "lib/python3.9/site-packages/platformdirs/__main__.py",
+    "lib/python3.9/site-packages/platformdirs/android.py",
+    "lib/python3.9/site-packages/platformdirs/api.py",
+    "lib/python3.9/site-packages/platformdirs/macos.py",
+    "lib/python3.9/site-packages/platformdirs/py.typed",
+    "lib/python3.9/site-packages/platformdirs/unix.py",
+    "lib/python3.9/site-packages/platformdirs/version.py",
+    "lib/python3.9/site-packages/platformdirs/windows.py",
+    "lib/python3.9/site-packages/platformdirs/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/platformdirs/__pycache__/__main__.cpython-39.pyc",
+    "lib/python3.9/site-packages/platformdirs/__pycache__/android.cpython-39.pyc",
+    "lib/python3.9/site-packages/platformdirs/__pycache__/api.cpython-39.pyc",
+    "lib/python3.9/site-packages/platformdirs/__pycache__/macos.cpython-39.pyc",
+    "lib/python3.9/site-packages/platformdirs/__pycache__/unix.cpython-39.pyc",
+    "lib/python3.9/site-packages/platformdirs/__pycache__/version.cpython-39.pyc",
+    "lib/python3.9/site-packages/platformdirs/__pycache__/windows.cpython-39.pyc"
+  ],
+  "fn": "platformdirs-3.0.0-pyhd8ed1ab_0.conda",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/platformdirs-3.0.0-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "c34694044915d7f291ef257029f2e2af",
+  "name": "platformdirs",
+  "noarch": "python",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/platformdirs-3.0.0-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/platformdirs-3.0.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/platformdirs-3.0.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "cf7827c41f08a508245bf2ea1cee26ded4107736854905c4995a5855dc23cb88",
+        "sha256_in_prefix": "cf7827c41f08a508245bf2ea1cee26ded4107736854905c4995a5855dc23cb88",
+        "size_in_bytes": 9537
+      },
+      {
+        "_path": "site-packages/platformdirs-3.0.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "4e90882ea5c3e91009051d5c9b263a49d7ca26f6d24c4e2e987728e77d359f1e",
+        "sha256_in_prefix": "4e90882ea5c3e91009051d5c9b263a49d7ca26f6d24c4e2e987728e77d359f1e",
+        "size_in_bytes": 1740
+      },
+      {
+        "_path": "site-packages/platformdirs-3.0.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/platformdirs-3.0.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "84a8bb008231eaa7e7b116ebd3ceefa5e267ad552e0e89031d969c3cf316efe6",
+        "sha256_in_prefix": "84a8bb008231eaa7e7b116ebd3ceefa5e267ad552e0e89031d969c3cf316efe6",
+        "size_in_bytes": 87
+      },
+      {
+        "_path": "site-packages/platformdirs-3.0.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "11f1e2a92f121988466176b4c601264e21cce0ad2c67432ee6ace4c1f9fdd5db",
+        "sha256_in_prefix": "11f1e2a92f121988466176b4c601264e21cce0ad2c67432ee6ace4c1f9fdd5db",
+        "size_in_bytes": 108
+      },
+      {
+        "_path": "site-packages/platformdirs-3.0.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+        "sha256_in_prefix": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+        "size_in_bytes": 1089
+      },
+      {
+        "_path": "site-packages/platformdirs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "604eb16b8c35ab71deead945e80de56e6e360e0d4574ff95652db5f681b2081f",
+        "sha256_in_prefix": "604eb16b8c35ab71deead945e80de56e6e360e0d4574ff95652db5f681b2081f",
+        "size_in_bytes": 12863
+      },
+      {
+        "_path": "site-packages/platformdirs/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "56c0b4b799bee9fd1856bf7a3d592cf771b710317c312358e0aa5432f3da8430",
+        "sha256_in_prefix": "56c0b4b799bee9fd1856bf7a3d592cf771b710317c312358e0aa5432f3da8430",
+        "size_in_bytes": 1164
+      },
+      {
+        "_path": "site-packages/platformdirs/android.py",
+        "path_type": "hardlink",
+        "sha256": "18a8b38724bb11246253aeeef149c124b9b8ea0a1abbdf77ec47215d66cf0659",
+        "sha256_in_prefix": "18a8b38724bb11246253aeeef149c124b9b8ea0a1abbdf77ec47215d66cf0659",
+        "size_in_bytes": 4068
+      },
+      {
+        "_path": "site-packages/platformdirs/api.py",
+        "path_type": "hardlink",
+        "sha256": "3172875ce2f77a1ffeb6b4a893e2544e3011ff38e698a177ae34445400633fcb",
+        "sha256_in_prefix": "3172875ce2f77a1ffeb6b4a893e2544e3011ff38e698a177ae34445400633fcb",
+        "size_in_bytes": 4910
+      },
+      {
+        "_path": "site-packages/platformdirs/macos.py",
+        "path_type": "hardlink",
+        "sha256": "9b6543485daa3e2e90c573228a210222013e7bb2546654b9a25bd4c2baf9baeb",
+        "sha256_in_prefix": "9b6543485daa3e2e90c573228a210222013e7bb2546654b9a25bd4c2baf9baeb",
+        "size_in_bytes": 2514
+      },
+      {
+        "_path": "site-packages/platformdirs/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/platformdirs/unix.py",
+        "path_type": "hardlink",
+        "sha256": "3fe5908d24a2784dfc0d78cc0dad6de171e728943989d11a293d0fc97c26f0a4",
+        "sha256_in_prefix": "3fe5908d24a2784dfc0d78cc0dad6de171e728943989d11a293d0fc97c26f0a4",
+        "size_in_bytes": 6911
+      },
+      {
+        "_path": "site-packages/platformdirs/version.py",
+        "path_type": "hardlink",
+        "sha256": "f8e7b4ed52bb25946e6617ff580c9179810a7bcb65c9696eea4e871329cdc9f6",
+        "sha256_in_prefix": "f8e7b4ed52bb25946e6617ff580c9179810a7bcb65c9696eea4e871329cdc9f6",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "site-packages/platformdirs/windows.py",
+        "path_type": "hardlink",
+        "sha256": "2cead72e02340a3425743a36ce1399606619ea0e1efdc24e081fe917d68c4564",
+        "sha256_in_prefix": "2cead72e02340a3425743a36ce1399606619ea0e1efdc24e081fe917d68c4564",
+        "size_in_bytes": 6596
+      },
+      {
+        "_path": "lib/python3.9/site-packages/platformdirs/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/platformdirs/__pycache__/__main__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/platformdirs/__pycache__/android.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/platformdirs/__pycache__/api.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/platformdirs/__pycache__/macos.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/platformdirs/__pycache__/unix.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/platformdirs/__pycache__/version.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/platformdirs/__pycache__/windows.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "ba1c3ea59cc5419756fd6597b3d691802b862689fa9e9fcac189333a1915ea1e",
+  "size": 17273,
+  "subdir": "noarch",
+  "timestamp": 1675735814554,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/platformdirs-3.0.0-pyhd8ed1ab_0.conda",
+  "version": "3.0.0"
+}

@@ -1,0 +1,16 @@
+{
+  "arch": "arm64",
+  "build": "py39h1a28f6b_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.9,<3.10.0a0",
+    "ruamel.yaml.clib >=0.2.6"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "ruamel.yaml",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1666304660157,
+  "version": "0.17.21"
+}

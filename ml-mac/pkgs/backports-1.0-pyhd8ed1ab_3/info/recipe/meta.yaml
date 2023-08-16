@@ -1,0 +1,54 @@
+# This file created by conda-build 3.22.0
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Nov 22 23:09:16 2022
+# ------------------------------------------------
+
+package:
+  name: backports
+  version: '1.0'
+build:
+  noarch: python
+  number: '3'
+  script:
+    - cd /home/conda/feedstock_root/build_artifacts/backports_1669158625137/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p/lib/python3.10/site-packages
+    - mkdir backports && cd backports
+    - python -c "open('__init__.py', 'w').close()"
+    - cd /home/conda/feedstock_root/build_artifacts/backports_1669158625137/work
+    - python -c "import backports"
+  string: pyhd8ed1ab_3
+requirements:
+  build:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - bzip2 1.0.8 h7f98852_4
+    - ca-certificates 2022.9.24 ha878542_0
+    - ld_impl_linux-64 2.39 hcc3a1bd_1
+    - libffi 3.4.2 h7f98852_5
+    - libgcc-ng 12.2.0 h65d4601_19
+    - libgomp 12.2.0 h65d4601_19
+    - libnsl 2.0.0 h7f98852_0
+    - libsqlite 3.40.0 h753d276_0
+    - libuuid 2.32.1 h7f98852_1000
+    - libzlib 1.2.13 h166bdaf_4
+    - ncurses 6.3 h27087fc_1
+    - openssl 3.0.7 h166bdaf_0
+    - python 3.11.0 ha86cf86_0_cpython
+    - readline 8.1.2 h0f457ee_0
+    - tk 8.6.12 h27826a3_0
+    - tzdata 2022f h191b570_0
+    - xz 5.2.6 h166bdaf_0
+  run:
+    - python >=2.7
+test:
+  imports:
+    - backports
+about:
+  home: http://github.com/conda-forge/backports-feedstock
+  license: BSD-3-Clause
+  license_file: /home/conda/recipe_root/LICENSE.txt
+  summary: A package to ensure the `backports` namespace is available.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - jakirkham

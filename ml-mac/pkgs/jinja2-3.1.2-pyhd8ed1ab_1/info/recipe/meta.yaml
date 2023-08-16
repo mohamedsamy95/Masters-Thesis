@@ -1,0 +1,83 @@
+# This file created by conda-build 3.21.9
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Sat Jun  4 00:26:11 2022
+# ------------------------------------------------
+
+package:
+  name: jinja2
+  version: 3.1.2
+source:
+  fn: Jinja2-3.1.2.tar.gz
+  sha256: 31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852
+  url: https://pypi.io/packages/source/J/Jinja2/Jinja2-3.1.2.tar.gz
+build:
+  noarch: python
+  number: '1'
+  script: /home/conda/feedstock_root/build_artifacts/jinja2_1654302431367/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac/bin/python
+    -m pip install . --no-deps -vv
+  string: pyhd8ed1ab_1
+requirements:
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - bzip2 1.0.8 h7f98852_4
+    - ca-certificates 2022.5.18.1 ha878542_0
+    - ld_impl_linux-64 2.36.1 hea4e1c9_2
+    - libffi 3.4.2 h7f98852_5
+    - libgcc-ng 12.1.0 h8d9b700_16
+    - libgomp 12.1.0 h8d9b700_16
+    - libnsl 2.0.0 h7f98852_0
+    - libuuid 2.32.1 h7f98852_1000
+    - libzlib 1.2.12 h166bdaf_0
+    - ncurses 6.3 h27087fc_1
+    - openssl 3.0.3 h166bdaf_0
+    - pip 22.1.2 pyhd8ed1ab_0
+    - python 3.10.4 h2660328_0_cpython
+    - python_abi 3.10 2_cp310
+    - readline 8.1 h46c0cb4_0
+    - setuptools 62.3.2 py310hff52083_0
+    - sqlite 3.38.5 h4ff8645_0
+    - tk 8.6.12 h27826a3_0
+    - tzdata 2022a h191b570_0
+    - wheel 0.37.1 pyhd8ed1ab_0
+    - xz 5.2.5 h516909a_1
+    - zlib 1.2.12 h166bdaf_0
+  run:
+    - markupsafe >=2.0
+    - python >=3.7
+test:
+  commands:
+    - pip check
+  imports:
+    - jinja2
+  requires:
+    - pip
+about:
+  description: "Jinja is a fast, expressive, extensible templating engine. Special\n\
+    placeholders in the template allow writing code similar to Python\nsyntax. Then\
+    \ the template is passed data to render the final document.\n\nIt includes:\n\n\
+    -   Template inheritance and inclusion.\n-   Define and import macros within templates.\n\
+    -   HTML templates can use autoescaping to prevent XSS from untrusted\n    user\
+    \ input.\n-   A sandboxed environment can safely render untrusted templates.\n\
+    -   AsyncIO support for generating templates and calling async\n    functions.\n\
+    -   I18N support with Babel.\n-   Templates are compiled to optimized Python code\
+    \ just-in-time and\n    cached, or can be compiled ahead-of-time.\n-   Exceptions\
+    \ point to the correct line in templates to make debugging\n    easier.\n-   Extensible\
+    \ filters, tests, functions, and even syntax.\n\nJinja's philosophy is that while\
+    \ application logic belongs in Python if\npossible, it shouldn't make the template\
+    \ designer's job difficult by\nrestricting functionality too much.\n"
+  dev_url: https://github.com/pallets/jinja/
+  doc_url: https://jinja.palletsprojects.com/
+  home: https://palletsprojects.com/p/jinja/
+  license: BSD-3-Clause
+  license_file: LICENSE.rst
+  summary: A very fast and expressive template engine.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - jakirkham
+    - msarahan
+    - nehaljwani
+    - scopatz
+    - xylar

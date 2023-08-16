@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/zipp-3.13.0.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/zipp-3.13.0.dist-info/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8",
+      "size_in_bytes": 1050
+    },
+    {
+      "_path": "site-packages/zipp-3.13.0.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "308df01aed7551dd0c9997254582fc25f6e25c69e124e678a5d965e75c23b341",
+      "size_in_bytes": 3742
+    },
+    {
+      "_path": "site-packages/zipp-3.13.0.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "ef86dbd3f171c2ac5605010b3e359f12242176506349f6e558949623d11deefa",
+      "size_in_bytes": 890
+    },
+    {
+      "_path": "site-packages/zipp-3.13.0.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/zipp-3.13.0.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba",
+      "size_in_bytes": 92
+    },
+    {
+      "_path": "site-packages/zipp-3.13.0.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "319f5ead9231a3b8bae206177a68c068a23797012604e3e2ef56fe4b4f6ec953",
+      "size_in_bytes": 100
+    },
+    {
+      "_path": "site-packages/zipp-3.13.0.dist-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "8806dda121df686a817d56f65ee47d26a4901c2a0eb0eb46eb2f42fcb4a9a85c",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/zipp/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "9b53153adac57ead55b9c8e558dc116e506cbe461a518ae8629eed0d70b1e670",
+      "size_in_bytes": 10531
+    },
+    {
+      "_path": "site-packages/zipp/py310compat.py",
+      "path_type": "hardlink",
+      "sha256": "1d01b821ff9e239bf8453f3651a824ecfb8bb1b9c9ec72a08f4690286440a7c3",
+      "size_in_bytes": 309
+    }
+  ],
+  "paths_version": 1
+}

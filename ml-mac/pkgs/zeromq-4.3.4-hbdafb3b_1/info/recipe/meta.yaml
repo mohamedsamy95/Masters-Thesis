@@ -1,0 +1,71 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /Users/runner/work/1/s/recipe, last modified Thu Aug 26 08:31:37 2021
+# ------------------------------------------------
+
+package:
+  name: zeromq
+  version: 4.3.4
+source:
+  fn: zeromq-4.3.4.tar.gz
+  patches:
+    - 001-windows-install.patch
+    - 002-osx-test.patch
+    - pr-4242.patch
+  sha256: c593001a89f5a85dd2ddf564805deb860e02471171b3f204944857336295c3e5
+  url: https://github.com/zeromq/libzmq/releases/download/v4.3.4/zeromq-4.3.4.tar.gz
+build:
+  number: '1'
+  run_exports:
+    - zeromq >=4.3.4,<4.4.0a0
+  string: hbdafb3b_1
+requirements:
+  build:
+    - autoconf 2.69 pl5320hbcb3906_10
+    - automake 1.16.2 pl5320h694c41f_3
+    - cctools_osx-64 949.0.1 h6407bdd_22
+    - cctools_osx-arm64 949.0.1 h55de48a_22
+    - clang 11.1.0 h694c41f_1
+    - clang-11 11.1.0 default_he082bbe_1
+    - clang_osx-arm64 11.1.0 h40be2b1_3
+    - clangxx 11.1.0 default_he082bbe_1
+    - clangxx_osx-arm64 11.1.0 hc50fe25_3
+    - compiler-rt 11.1.0 h654b07c_0
+    - compiler-rt_osx-64 11.1.0 h8c5fa43_0
+    - ld64_osx-64 530 he8994da_21
+    - ld64_osx-arm64 530 h3681fde_21
+    - ldid 2.1.2 h7660a38_2
+    - libclang-cpp11.1 11.1.0 default_he082bbe_1
+    - libcxx 12.0.1 habf9029_0
+    - libiconv 1.16 haf1e3a3_0
+    - libllvm11 11.1.0 hd011deb_2
+    - libllvm12 12.0.1 hd011deb_2
+    - libtool 2.4.6 h2e338ed_1007
+    - llvm-tools 11.1.0 hd011deb_2
+    - m4 1.4.18 haf1e3a3_1001
+    - make 4.3 h22f3db7_1
+    - perl 5.32.1 0_h0d85af4_perl5
+    - pkg-config 0.29.2 h31203cd_1008
+    - tapi 1100.0.11 h9ce4665_0
+    - zlib 1.2.11 h7795811_1010
+  host:
+    - libcxx 12.0.1 h168391b_0
+    - libsodium 1.0.18 h27ca646_1
+  run:
+    - libcxx >=11.1.0
+    - libsodium >=1.0.18,<1.0.19.0a0
+    - libsodium >=1.0.18,<1.0.19.0a0
+about:
+  home: http://zeromq.org
+  license: LGPL-3.0-or-later
+  license_file: COPYING.LESSER
+  summary: A high-performance asynchronous messaging library.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - JohanMabille
+    - SylvainCorlay
+    - davidbrochart
+    - jakirkham
+    - minrk

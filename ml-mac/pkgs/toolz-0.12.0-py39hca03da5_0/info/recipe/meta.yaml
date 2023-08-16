@@ -1,0 +1,83 @@
+# This file created by conda-build 3.22.0
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_362wyqvvgy/clone/recipe, last modified Thu Nov  3 03:27:52 2022
+# ------------------------------------------------
+
+package:
+  name: toolz
+  version: 0.12.0
+source:
+  sha256: 88c570861c440ee3f2f6037c4654613228ff40c93a6c25e0eba70d17282c6194
+  url: https://pypi.io/packages/source/t/toolz/toolz-0.12.0.tar.gz
+build:
+  number: '0'
+  script: /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_362wyqvvgy/croot/toolz_1667464079070/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol/bin/python
+    -m pip install . -vv
+  string: py39hca03da5_0
+requirements:
+  host:
+    - ca-certificates 2022.10.11 hca03da5_0
+    - certifi 2022.9.24 py39hca03da5_0
+    - libcxx 14.0.6 h848a8c0_0
+    - libffi 3.4.2 hc377ac9_4
+    - ncurses 6.3 h1a28f6b_3
+    - openssl 1.1.1q h1a28f6b_0
+    - pip 22.2.2 py39hca03da5_0
+    - python 3.9.13 hbdb9e5c_2
+    - readline 8.2 h1a28f6b_0
+    - setuptools 65.5.0 py39hca03da5_0
+    - sqlite 3.39.3 h1058600_0
+    - tk 8.6.12 hb8d0fd4_0
+    - tzdata 2022f h04d1e81_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.6 h1a28f6b_0
+    - zlib 1.2.13 h5a0b063_0
+  run:
+    - python >=3.9,<3.10.0a0
+test:
+  commands:
+    - pip check
+    - pytest --doctest-modules --pyargs toolz
+  imports:
+    - tlz
+    - toolz
+    - toolz.curried
+    - toolz.functoolz
+    - toolz.sandbox
+  requires:
+    - pip
+    - pytest
+about:
+  description: 'Toolz provides a set of utility functions for iterators, functions,
+    and
+
+    dictionaries. These functions interoperate well and form the building
+
+    blocks of common data analytic operations. They extend the standard
+
+    libraries itertools and functools and borrow heavily from the standard
+
+    libraries of contemporary functional languages.
+
+    '
+  dev_url: https://github.com/pytoolz/toolz
+  doc_source_url: https://github.com/pytoolz/toolz/blob/master/doc/source/index.rst
+  doc_url: https://toolz.readthedocs.io/
+  home: https://toolz.readthedocs.io/
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  license_url: https://github.com/pytoolz/toolz/blob/master/LICENSE.txt
+  summary: List processing tools and functional utilities
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 361b178e-3b07-4a6f-a29e-b7e92ea9a234
+  recipe-maintainers:
+    - eriknw
+    - jakirkham
+    - jcrist
+    - mrocklin
+    - ocefpaf
+  remote_url: git@github.com:AnacondaRecipes/toolz-feedstock.git
+  sha: be0168670c32d9b763a3f483300d942da68dc01a

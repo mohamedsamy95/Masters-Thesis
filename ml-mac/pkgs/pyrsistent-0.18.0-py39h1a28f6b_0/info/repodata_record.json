@@ -1,0 +1,25 @@
+{
+  "arch": "arm64",
+  "build": "py39h1a28f6b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "features": "",
+  "fn": "pyrsistent-0.18.0-py39h1a28f6b_0.conda",
+  "legacy_bz2_md5": "1907629863ed8e7c35ead232dae7693f",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "a8982150f29ef854b7b259c822feb194",
+  "name": "pyrsistent",
+  "platform": "darwin",
+  "sha256": "a96290444a4cb90bbec7913aa2312e68e62f95c3eab22d088708b2411a1b5620",
+  "size": 90706,
+  "subdir": "osx-arm64",
+  "timestamp": 1628941083263,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pyrsistent-0.18.0-py39h1a28f6b_0.conda",
+  "version": "0.18.0"
+}

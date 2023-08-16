@@ -1,0 +1,78 @@
+{% set version = "1.42.0" %}
+
+package:
+  name: grpcio
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/g/grpcio/grpcio-{{ version }}.tar.gz
+  sha256: 4a8f2c7490fe3696e0cdd566e2f099fb91b51bc75446125175c55581c2f7bc11
+  patches:
+    - 0001-Monkey-patch-distutils.ccompiler.spawn-to-elide-std-.patch
+    - 0002-windows-ssl-lib-names.patch
+    - 0001-fix-win-commands.patch
+
+build:
+  number: 0
+  skip: True  # [python_impl == 'pypy']
+  skip: True  # [py<36]
+  missing_dso_whitelist:
+    - $RPATH/ld64.so.1  # [s390x]
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - m2-patch  # [win]
+    - patch  # [not win]
+  host:
+    - python
+    - c-ares            # [unix]
+    - coverage >=4.0
+    - cython >=0.29.8
+    - openssl
+    - pip
+    - pthread-stubs     # [linux]
+    - setuptools
+    - six >=1.10
+    - wheel >=0.29
+    - zlib
+  run:
+    - python >=3.6
+    - openssl
+    - six >=1.5.2
+    - zlib
+    - {{ pin_compatible("c-ares") }}  # [unix]
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
+
+test:
+  requires:
+    - pip
+  imports:
+    - grpc
+    - grpc._cython
+    - grpc._cython._cygrpc
+    - grpc.beta
+    - grpc.framework
+    - grpc.framework.common
+    - grpc.framework.foundation
+    - grpc.framework.interfaces
+    - grpc.framework.interfaces.base
+    - grpc.framework.interfaces.face
+  commands:
+    - python -m pip check
+
+about:
+  home: https://grpc.io
+  license: Apache-2.0
+  license_file: LICENSE
+  license_family: APACHE
+  summary: HTTP/2-based RPC framework
+  dev_url: https://pypi.org/project/grpcio/
+
+extra:
+  recipe-maintainers:
+    - ocefpaf
+    - jcrist
+    - bollwyvl
+    - tswast

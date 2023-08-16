@@ -1,0 +1,119 @@
+{
+  "paths": [
+    {
+      "_path": "etc/jupyter/jupyter_server_config.d/notebook_shim.json",
+      "path_type": "hardlink",
+      "sha256": "b75ff94669b4a06f17c5553397dab9722626f3b8d12ddd8d43e0866173b3eb3b",
+      "size_in_bytes": 106
+    },
+    {
+      "_path": "site-packages/notebook_shim-0.2.2.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/notebook_shim-0.2.2.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "7a72abb01478866cde43f11f80f0b7ef81246787de8bddb746583854c3c4a971",
+      "size_in_bytes": 3985
+    },
+    {
+      "_path": "site-packages/notebook_shim-0.2.2.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "2e57bf3c5b2bf29dd469b328ac3ed6bcc19662c9d94a54a769a6e31619cd9381",
+      "size_in_bytes": 2437
+    },
+    {
+      "_path": "site-packages/notebook_shim-0.2.2.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/notebook_shim-0.2.2.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "35a2e68071d6fdff634efbffc1187dbdc2bb73b10af68e5fc2c21730ece81a03",
+      "size_in_bytes": 87
+    },
+    {
+      "_path": "site-packages/notebook_shim-0.2.2.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "616cd090226a0c2545aba896ce7704012d4fda2789b09c5b5e0010853a638fb9",
+      "size_in_bytes": 109
+    },
+    {
+      "_path": "site-packages/notebook_shim-0.2.2.dist-info/licenses/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "628c1d4a9f10c2f61355c9212f0d8ecd52ad831df9967f1f2309c90a65a9d789",
+      "size_in_bytes": 1535
+    },
+    {
+      "_path": "site-packages/notebook_shim/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "bed3c9dfc5d6fecc5dd6db960dbc62e072a0487fd20cabcb0d8be3f0f74e125c",
+      "size_in_bytes": 126
+    },
+    {
+      "_path": "site-packages/notebook_shim/_version.py",
+      "path_type": "hardlink",
+      "sha256": "b8c9ad03860703de5e8ba29f679e58a56c61ff7ce1a6eafa040af8156f0cb115",
+      "size_in_bytes": 55
+    },
+    {
+      "_path": "site-packages/notebook_shim/nbserver.py",
+      "path_type": "hardlink",
+      "sha256": "82541b345155acc1bc5bc01e98e4bde4affacfc116c2c14ff67a23d66eb69ea4",
+      "size_in_bytes": 5189
+    },
+    {
+      "_path": "site-packages/notebook_shim/shim.py",
+      "path_type": "hardlink",
+      "sha256": "8001501da634d5e4c6a326e3fb5119542bed86116496bc7773916e219c2d7065",
+      "size_in_bytes": 11718
+    },
+    {
+      "_path": "site-packages/notebook_shim/tests/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/notebook_shim/tests/confs/jupyter_my_ext_config.py",
+      "path_type": "hardlink",
+      "sha256": "a6503a4e172e6fdb7adc607efdf88d63fc9865310ae573b83c971da4e8fea868",
+      "size_in_bytes": 31
+    },
+    {
+      "_path": "site-packages/notebook_shim/tests/confs/jupyter_notebook_config.py",
+      "path_type": "hardlink",
+      "sha256": "5f0781fd3530fe82e5ebc729efbb19abc8a57c137575cc2f6f359fe96e260320",
+      "size_in_bytes": 105
+    },
+    {
+      "_path": "site-packages/notebook_shim/tests/confs/jupyter_server_config.py",
+      "path_type": "hardlink",
+      "sha256": "6959b13db400322afef37053090868e9d4f2f246ba6ed1e5dd0e0b1e78610f5f",
+      "size_in_bytes": 24
+    },
+    {
+      "_path": "site-packages/notebook_shim/tests/mockextension.py",
+      "path_type": "hardlink",
+      "sha256": "907fe938e123e77b942d3318fdef85870435fe1465fa35704c1aec53fd18bdb1",
+      "size_in_bytes": 850
+    },
+    {
+      "_path": "site-packages/notebook_shim/tests/test_extension.py",
+      "path_type": "hardlink",
+      "sha256": "6251d1a26ff383b58680ae038e649f1db1ff8c133adfa7021303422d95b2804f",
+      "size_in_bytes": 3850
+    },
+    {
+      "_path": "site-packages/notebook_shim/traits.py",
+      "path_type": "hardlink",
+      "sha256": "17eb42dab0ca55cff2679f19af41135fefc8c593d88c872f3d3e7950b2f42d1a",
+      "size_in_bytes": 5600
+    }
+  ],
+  "paths_version": 1
+}

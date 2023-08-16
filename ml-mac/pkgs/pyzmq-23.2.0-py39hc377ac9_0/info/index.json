@@ -1,0 +1,17 @@
+{
+  "arch": "arm64",
+  "build": "py39hc377ac9_0",
+  "build_number": 0,
+  "depends": [
+    "libcxx >=12.0.0",
+    "python >=3.9,<3.10.0a0",
+    "zeromq >=4.3.4,<4.4.0a0"
+  ],
+  "license": "BSD-3-Clause AND LGPL-3.0-or-later",
+  "license_family": "BSD",
+  "name": "pyzmq",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1657724315435,
+  "version": "23.2.0"
+}

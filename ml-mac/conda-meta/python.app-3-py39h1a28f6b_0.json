@@ -1,0 +1,67 @@
+{
+  "build": "py39h1a28f6b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0"
+  ],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/python.app-3-py39h1a28f6b_0",
+  "features": "",
+  "files": [
+    "bin/.python.app-post-link.sh",
+    "bin/.python.app-pre-unlink.sh",
+    "bin/python.app",
+    "bin/pythonw",
+    "pythonapp/Contents/Info.plist",
+    "pythonapp/Contents/MacOS/python",
+    "pythonapp/Contents/PkgInfo",
+    "pythonapp/Contents/Resources/empty.lproj",
+    "pythonapp/Contents/Resources/qt_menu.nib/classes.nib",
+    "pythonapp/Contents/Resources/qt_menu.nib/info.nib",
+    "pythonapp/Contents/Resources/qt_menu.nib/keyedobjects.nib"
+  ],
+  "fn": "python.app-3-py39h1a28f6b_0.conda",
+  "legacy_bz2_md5": "1335394b38c72406fd83af1795c2929f",
+  "legacy_bz2_size": 12822,
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/python.app-3-py39h1a28f6b_0",
+    "type": 1
+  },
+  "md5": "1027ef059c6f837191e8a7bcb712f53a",
+  "name": "python.app",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/python.app-3-py39h1a28f6b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/python.app",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/ktietz/demo/mc3/conda-bld/python.app_1629479576996/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_",
+        "sha256": "79f36fd9a060e6276758de4fccc88fb9dc5f0ff663add40a126956c1860c1786",
+        "sha256_in_prefix": "b9ef5e3a127bc0f06184b965cb3fea1253347111d37b8d7de20e6fef259ebe48",
+        "size_in_bytes": 597
+      },
+      {
+        "_path": "bin/pythonw",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/ktietz/demo/mc3/conda-bld/python.app_1629479576996/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_",
+        "sha256": "79f36fd9a060e6276758de4fccc88fb9dc5f0ff663add40a126956c1860c1786",
+        "sha256_in_prefix": "b9ef5e3a127bc0f06184b965cb3fea1253347111d37b8d7de20e6fef259ebe48",
+        "size_in_bytes": 597
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "python.app==3=py39h1a28f6b_0",
+  "sha256": "de6f4fbb2b4e56309c6c34bbaa8014a0bf90748506dd9aaad1b1e65cabf32714",
+  "size": 17050,
+  "subdir": "osx-arm64",
+  "timestamp": 1629479590356,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/python.app-3-py39h1a28f6b_0.conda",
+  "version": "3"
+}

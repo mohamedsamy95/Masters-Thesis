@@ -1,0 +1,16 @@
+{
+  "arch": null,
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "python >=2.7"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "executing",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1667317463548,
+  "version": "1.2.0"
+}

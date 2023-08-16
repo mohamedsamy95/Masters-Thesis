@@ -1,0 +1,1 @@
+["ipykernel", "pytest-console-scripts", "requests", "pytest-tornasync", "pytest >=6.0", "pytest-mock", "pytest-cov", "pytest-timeout", "pip", "coverage"]

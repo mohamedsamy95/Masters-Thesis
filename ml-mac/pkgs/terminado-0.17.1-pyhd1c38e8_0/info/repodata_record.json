@@ -1,0 +1,27 @@
+{
+  "build": "pyhd1c38e8_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "__osx",
+    "ptyprocess",
+    "python >=3.7",
+    "tornado >=6.1.0"
+  ],
+  "features": "",
+  "fn": "terminado-0.17.1-pyhd1c38e8_0.conda",
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "046120b71d8896cb7faef78bfdbfee1e",
+  "name": "terminado",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "a2f8382ab390c74af592cc3566dc22e2ed81e5ac69c5b6417d1b7c22e63927bc",
+  "size": 20347,
+  "subdir": "noarch",
+  "timestamp": 1670254383751,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/terminado-0.17.1-pyhd1c38e8_0.conda",
+  "version": "0.17.1"
+}

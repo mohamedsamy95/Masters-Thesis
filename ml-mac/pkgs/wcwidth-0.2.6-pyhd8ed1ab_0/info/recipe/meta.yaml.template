@@ -1,0 +1,40 @@
+{% set version = "0.2.6" %}
+
+package:
+  name: wcwidth
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/w/wcwidth/wcwidth-{{ version }}.tar.gz
+  sha256: a5220780a404dbe3353789870978e472cfe477761f06ee55077256e509b156d0
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python >=3.6
+    - pip
+  run:
+    - python >=3.6
+    - backports.functools_lru_cache
+
+test:
+  imports:
+    - wcwidth
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: https://github.com/jquast/wcwidth
+  license: MIT
+  license_file: LICENSE
+  summary: Measures number of Terminal column cells of wide-character codes.
+
+extra:
+  recipe-maintainers:
+    - ocefpaf

@@ -1,0 +1,103 @@
+# This file created by conda-build 3.21.8
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_8599562e-e9e5-443b-91db-7f7c0ba6aad3mrdoyvz4/clone/recipe, last modified Wed Jul 13 09:56:30 2022
+# ------------------------------------------------
+
+package:
+  name: pyzmq
+  version: 23.2.0
+source:
+  sha256: a51f12a8719aad9dcfb55d456022f16b90abc8dde7d3ca93ce3120b40e3fa169
+  url: https://pypi.io/packages/source/p/pyzmq/pyzmq-23.2.0.tar.gz
+build:
+  ignore_run_exports: null
+  missing_dso_whitelist: null
+  number: '0'
+  string: py39hc377ac9_0
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - clangxx_osx-arm64 12.0.0 h39b79ac_3
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libiconv 1.16 h1a28f6b_2
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - pkg-config 0.29.2 h1a28f6b_0
+    - tapi 1100.0.11 ha21211d_0
+    - zlib 1.2.12 h5a0b063_2
+  host:
+    - ca-certificates 2022.4.26 hca03da5_0
+    - certifi 2022.6.15 py39hca03da5_0
+    - cython 0.29.30 py39hc377ac9_0
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.4.2 hc377ac9_4
+    - libsodium 1.0.18 h1a28f6b_0
+    - ncurses 6.3 h1a28f6b_3
+    - openssl 1.1.1q h1a28f6b_0
+    - packaging 21.3 pyhd3eb1b0_0
+    - pip 22.1.2 py39hca03da5_0
+    - pyparsing 3.0.4 pyhd3eb1b0_0
+    - python 3.9.12 hbdb9e5c_1
+    - readline 8.1.2 h1a28f6b_1
+    - setuptools 61.2.0 py39hca03da5_0
+    - sqlite 3.38.5 h1058600_0
+    - tk 8.6.12 hb8d0fd4_0
+    - tzdata 2022a hda174b7_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h1a28f6b_1
+    - zeromq 4.3.4 hc377ac9_0
+    - zlib 1.2.12 h5a0b063_2
+  run:
+    - libcxx >=12.0.0
+    - python >=3.9,<3.10.0a0
+    - zeromq >=4.3.4,<4.4.0a0
+    - zeromq >=4.3.4,<4.4.0a0
+test:
+  commands:
+    - py.test --pyargs zmq.tests.test_socket
+  imports:
+    - zmq
+    - zmq.backend.cython.socket
+    - zmq.backend.cython.utils
+    - zmq.devices.monitoredqueue
+  requires:
+    - pytest
+about:
+  description: 'PyZMQ contains Python bindings for 0MQ. 0MQ is a lightweight and fast
+
+    messaging implementation.
+
+    '
+  dev_url: https://github.com/zeromq/pyzmq
+  doc_source_url: https://github.com/zeromq/pyzmq/blob/master/docs/source/index.rst
+  doc_url: https://pyzmq.readthedocs.org/
+  home: https://github.com/zeromq/pyzmq
+  license: BSD-3-Clause AND LGPL-3.0-or-later
+  license_family: BSD
+  license_file: COPYING.BSD
+  summary: Python bindings for zeromq
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 8599562e-e9e5-443b-91db-7f7c0ba6aad3
+  recipe-maintainers:
+    - JohanMabille
+    - SylvainCorlay
+    - chenghlee
+    - jakirkham
+    - mingwandroid
+    - minrk
+    - msarahan
+    - ocefpaf
+    - pelson
+  remote_url: git@github.com:AnacondaRecipes/pyzmq-feedstock.git
+  sha: 0958566a6302f2b6d5bbeac15838c88dcd6ef8e9

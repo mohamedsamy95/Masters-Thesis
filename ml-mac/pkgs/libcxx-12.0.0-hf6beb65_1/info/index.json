@@ -1,0 +1,13 @@
+{
+  "arch": "arm64",
+  "build": "hf6beb65_1",
+  "build_number": 1,
+  "depends": [],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "name": "libcxx",
+  "platform": "osx",
+  "subdir": "osx-arm64",
+  "timestamp": 1628340254280,
+  "version": "12.0.0"
+}

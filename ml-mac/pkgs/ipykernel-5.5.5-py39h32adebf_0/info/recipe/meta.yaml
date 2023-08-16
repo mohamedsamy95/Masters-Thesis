@@ -1,0 +1,177 @@
+# This file created by conda-build 3.21.4
+# meta.yaml template originally from:
+# /Users/runner/work/1/s/recipe, last modified Thu May 13 13:34:58 2021
+# ------------------------------------------------
+
+package:
+  name: ipykernel
+  version: 5.5.5
+source:
+  sha256: e976751336b51082a89fc2099fb7f96ef20f535837c398df6eab1283c2070884
+  url: https://pypi.io/packages/source/i/ipykernel/ipykernel-5.5.5.tar.gz
+build:
+  number: '0'
+  script:
+    - /Users/runner/miniforge3/conda-bld/ipykernel_1620913002553/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+      setup.py bdist_wheel
+    - cd dist
+    - /Users/runner/miniforge3/conda-bld/ipykernel_1620913002553/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+      -m pip install ipykernel-5.5.5-py3-none-any.whl --no-deps -vv
+    - /Users/runner/miniforge3/conda-bld/ipykernel_1620913002553/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold/bin/python
+      -m ipykernel install --sys-prefix
+  string: py39h32adebf_0
+requirements:
+  build:
+    - appnope 0.1.2 py39h6e9494a_1
+    - backcall 0.2.0 pyh9f0ad1d_0
+    - backports 1.0 py_2
+    - backports.functools_lru_cache 1.6.4 pyhd8ed1ab_0
+    - ca-certificates 2020.12.5 h033912b_0
+    - cctools_osx-64 949.0.1 h6407bdd_21
+    - cctools_osx-arm64 949.0.1 h55de48a_21
+    - certifi 2020.12.5 py39h6e9494a_1
+    - clang 11.1.0 h694c41f_1
+    - clang-11 11.1.0 default_he082bbe_1
+    - clang_osx-arm64 11.1.0 h40be2b1_2
+    - clangxx 11.1.0 default_he082bbe_1
+    - compiler-rt 11.1.0 h654b07c_0
+    - compiler-rt_osx-64 11.1.0 h8c5fa43_0
+    - cross-python_osx-arm64 3.9 11_cpython
+    - crossenv 1.0 pyhd8ed1ab_1
+    - decorator 5.0.7 pyhd8ed1ab_0
+    - gettext 0.19.8.1 h7937167_1005
+    - ipython 7.23.1 py39h71a6800_0
+    - ipython_genutils 0.2.0 py_1
+    - jedi 0.18.0 py39h6e9494a_2
+    - jupyter_client 6.1.12 pyhd8ed1ab_0
+    - jupyter_core 4.7.1 py39h6e9494a_0
+    - ld64_osx-64 530 he8994da_21
+    - ld64_osx-arm64 530 h3681fde_21
+    - ldid 2.1.2 h7660a38_2
+    - libclang-cpp11.1 11.1.0 default_he082bbe_1
+    - libcxx 11.1.0 habf9029_0
+    - libffi 3.3 h046ec9c_2
+    - libiconv 1.16 haf1e3a3_0
+    - libllvm11 11.1.0 hd011deb_2
+    - libsodium 1.0.18 hbcb3906_1
+    - llvm-tools 11.1.0 hd011deb_2
+    - lz4-c 1.9.3 h046ec9c_0
+    - matplotlib-inline 0.1.2 pyhd8ed1ab_2
+    - ncurses 6.2 h2e338ed_4
+    - openssl 1.1.1k h0d85af4_0
+    - parso 0.8.2 pyhd8ed1ab_0
+    - pexpect 4.8.0 pyh9f0ad1d_2
+    - pickleshare 0.7.5 py_1003
+    - popt 1.16 h7b079dc_2002
+    - prompt-toolkit 3.0.18 pyha770c72_0
+    - ptyprocess 0.7.0 pyhd3deb0d_0
+    - pygments 2.9.0 pyhd8ed1ab_0
+    - python 3.9.4 h9133fd0_0_cpython
+    - python-dateutil 2.8.1 py_0
+    - python_abi 3.9 1_cp39
+    - pyzmq 22.0.3 py39h7fec2f1_1
+    - readline 8.1 h05e3726_0
+    - rsync 3.2.3 h71e35cd_1
+    - sed 4.7 h3efe00b_1000
+    - setuptools 49.6.0 py39h6e9494a_3
+    - six 1.16.0 pyh6c4a22f_0
+    - sqlite 3.35.5 h44b9ce1_0
+    - tapi 1100.0.11 h9ce4665_0
+    - tk 8.6.10 h0419947_1
+    - tornado 6.1 py39hcbf5805_1
+    - traitlets 5.0.5 py_0
+    - tzdata 2021a he74cb21_0
+    - wcwidth 0.2.5 pyh9f0ad1d_2
+    - xxhash 0.8.0 h35c211d_3
+    - xz 5.2.5 haf1e3a3_1
+    - zeromq 4.3.4 h1c7c35f_0
+    - zlib 1.2.11 h7795811_1010
+    - zstd 1.4.9 h582d3a0_0
+  host:
+    - appnope 0.1.2 py39h2804cbe_1
+    - backcall 0.2.0 pyh9f0ad1d_0
+    - backports 1.0 py_2
+    - backports.functools_lru_cache 1.6.4 pyhd8ed1ab_0
+    - ca-certificates 2020.12.5 h4653dfc_0
+    - certifi 2020.12.5 py39h2804cbe_1
+    - decorator 5.0.7 pyhd8ed1ab_0
+    - ipython 7.23.1 py39h32adebf_0
+    - ipython_genutils 0.2.0 py_1
+    - jedi 0.18.0 py39h2804cbe_2
+    - jupyter_client 6.1.12 pyhd8ed1ab_0
+    - jupyter_core 4.7.1 py39h2804cbe_0
+    - libcxx 11.1.0 h168391b_0
+    - libsodium 1.0.18 h27ca646_1
+    - matplotlib-inline 0.1.2 pyhd8ed1ab_2
+    - ncurses 6.2 h9aa5885_4
+    - openssl 1.1.1k h27ca646_0
+    - parso 0.8.2 pyhd8ed1ab_0
+    - pexpect 4.8.0 pyh9f0ad1d_2
+    - pickleshare 0.7.5 py_1003
+    - pip 21.1.1 pyhd8ed1ab_0
+    - prompt-toolkit 3.0.18 pyha770c72_0
+    - ptyprocess 0.7.0 pyhd3deb0d_0
+    - pygments 2.9.0 pyhd8ed1ab_0
+    - python 3.9.4 h5b20da3_0_cpython
+    - python-dateutil 2.8.1 py_0
+    - python_abi 3.9 1_cp39
+    - pyzmq 22.0.3 py39h997613d_1
+    - readline 8.1 hedafd6a_0
+    - setuptools 49.6.0 py39h2804cbe_3
+    - six 1.16.0 pyh6c4a22f_0
+    - sqlite 3.35.5 hc49ca36_0
+    - tk 8.6.10 hf7e6567_1
+    - tornado 6.1 py39h46acfd9_1
+    - traitlets 5.0.5 py_0
+    - tzdata 2021a he74cb21_0
+    - wcwidth 0.2.5 pyh9f0ad1d_2
+    - wheel 0.36.2 pyhd3deb0d_0
+    - xz 5.2.5 h642e427_1
+    - zeromq 4.3.4 h9f76cd9_0
+    - zlib 1.2.11 h31e879b_1009
+  run:
+    - ipython >=5.0
+    - jupyter_client
+    - python >=3.9,<3.10.0a0
+    - python >=3.9,<3.10.0a0
+    - python_abi 3.9.* *_cp39
+    - pyzmq !=21
+    - tornado >=4.2
+    - traitlets >=4.1
+test:
+  commands:
+    - jupyter kernelspec list
+  imports:
+    - ipykernel
+  requires:
+    - curio
+    - flaky
+    - ipython
+    - nose
+    - numpy
+    - pytest !=5.3.4
+about:
+  description: 'A powerful interactive Python shell and a Jupyter kernel to work with
+
+    Python code in Jupyter notebooks and other interactive frontends.
+
+    '
+  dev_url: https://github.com/ipython/ipykernel
+  doc_source_url: https://github.com/ipython/ipykernel/blob/master/docs/index.rst
+  doc_url: https://ipython.readthedocs.io
+  home: https://ipython.org
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: COPYING.md
+  summary: IPython Kernel for Jupyter
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - Carreau
+    - blink1073
+    - bollwyvl
+    - jakirkham
+    - minrk
+    - ocefpaf
+    - pelson

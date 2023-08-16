@@ -1,0 +1,90 @@
+{
+  "build": "h1a28f6b_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "ncurses >=6.3,<7.0a0"
+  ],
+  "extracted_package_dir": "/Users/backupuser/MA/ml-mac/pkgs/readline-8.1.2-h1a28f6b_1",
+  "features": "",
+  "files": [
+    "include/readline/chardefs.h",
+    "include/readline/history.h",
+    "include/readline/keymaps.h",
+    "include/readline/readline.h",
+    "include/readline/rlconf.h",
+    "include/readline/rlstdc.h",
+    "include/readline/rltypedefs.h",
+    "include/readline/tilde.h",
+    "lib/libhistory.8.1.dylib",
+    "lib/libhistory.8.dylib",
+    "lib/libhistory.a",
+    "lib/libhistory.dylib",
+    "lib/libreadline.8.1.dylib",
+    "lib/libreadline.8.dylib",
+    "lib/libreadline.a",
+    "lib/libreadline.dylib",
+    "lib/pkgconfig/readline.pc",
+    "share/doc/readline/CHANGES",
+    "share/doc/readline/INSTALL",
+    "share/doc/readline/README",
+    "share/info/history.info",
+    "share/info/readline.info",
+    "share/info/rluserman.info",
+    "share/man/man3/history.3",
+    "share/man/man3/readline.3"
+  ],
+  "fn": "readline-8.1.2-h1a28f6b_1.conda",
+  "legacy_bz2_md5": "a6a08ab5dbe5a6d9d463b8846410e83f",
+  "legacy_bz2_size": 447266,
+  "license": "GPL-3.0-only",
+  "license_family": "GPL",
+  "link": {
+    "source": "/Users/backupuser/MA/ml-mac/pkgs/readline-8.1.2-h1a28f6b_1",
+    "type": 1
+  },
+  "md5": "0cd650e3e84935b6ebeae607057ffafd",
+  "name": "readline",
+  "package_tarball_full_path": "/Users/backupuser/MA/ml-mac/pkgs/readline-8.1.2-h1a28f6b_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libhistory.8.1.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/croot-03na3avi/readline_1642022366522/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "e3e6c490c15f88b8d62502856c50b369647576e43cd0304fa4736b7735c62901",
+        "sha256_in_prefix": "82e3eea78832e134f5976a52d0cdbcfe63fb22bc7cb67133f043475fde28860a",
+        "size_in_bytes": 91120
+      },
+      {
+        "_path": "lib/libreadline.8.1.dylib",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/croot-03na3avi/readline_1642022366522/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "ad319c1d23e0fe09cf87a922e436f2deee6650451c7ce1e87ed504a26ce4aafe",
+        "sha256_in_prefix": "94df3d8a60f0cc0e4aa65a4eb79f6ac72962342d890dd31a72bd54dffb1381a2",
+        "size_in_bytes": 326416
+      },
+      {
+        "_path": "lib/pkgconfig/readline.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/croot-03na3avi/readline_1642022366522/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "d5327719e861a511937c9f4d87d8b71af276c2461afcaf31fc21cf7767774df5",
+        "sha256_in_prefix": "a8a7c815e0402311e594c55b3b442f6b551ec6df78da70348fd054f0b94254e6",
+        "size_in_bytes": 564
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "readline==8.1.2=h1a28f6b_1",
+  "sha256": "dd39316375e516bca241bfbcf42c22494c3183cf57e521e250750bc64217117b",
+  "size": 356344,
+  "subdir": "osx-arm64",
+  "timestamp": 1642022399486,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/readline-8.1.2-h1a28f6b_1.conda",
+  "version": "8.1.2"
+}

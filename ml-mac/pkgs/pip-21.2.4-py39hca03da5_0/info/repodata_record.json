@@ -1,0 +1,26 @@
+{
+  "build": "py39hca03da5_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "python >=3.9,<3.10.0a0",
+    "setuptools",
+    "wheel"
+  ],
+  "features": "",
+  "fn": "pip-21.2.4-py39hca03da5_0.conda",
+  "legacy_bz2_md5": "cdb09f27aba158b38b60ce77bca8ce5d",
+  "legacy_bz2_size": 2135730,
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "beaa3636b91bfed769d635fea9143f57",
+  "name": "pip",
+  "sha256": "29f7f5ae4f5cc56e3b27dec55c1bdac08745d780d3c3420524cc0ba013b2f542",
+  "size": 1884541,
+  "subdir": "osx-arm64",
+  "timestamp": 1629887340959,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/pip-21.2.4-py39hca03da5_0.conda",
+  "version": "21.2.4"
+}

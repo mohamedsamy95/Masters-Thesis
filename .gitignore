@@ -1,7 +1,10 @@
-.ipynb_checkpoints
+ml-mac
 bin
 include
 lib
 share
+.ipynb_checkpoints
 pyvenv.cfg
 .DS_Store
+__pycache__
+Dataset

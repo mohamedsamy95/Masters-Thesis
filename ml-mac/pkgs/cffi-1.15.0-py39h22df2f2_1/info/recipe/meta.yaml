@@ -1,0 +1,94 @@
+# This file created by conda-build 3.21.7
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/clone-d25b74s5/recipe, last modified Thu Jan 20 11:51:47 2022
+# ------------------------------------------------
+
+package:
+  name: cffi
+  version: 1.15.0
+source:
+  patches:
+    - 0001-Link-to-dl-library.patch
+    - setup-linux.patch
+  sha256: 920f0d66a896c2d99f0adbb391f990a84091179542c205fa53ce5787aff87954
+  url: https://pypi.io/packages/source/c/cffi/cffi-1.15.0.tar.gz
+build:
+  missing_dso_whitelist: null
+  number: '1'
+  script: /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/croot-jgj0vmyy/cffi_1642701117808/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place/bin/python
+    -m pip install . --no-deps -vv
+  string: py39h22df2f2_1
+requirements:
+  build:
+    - cctools_osx-arm64 949.0.1 h332cad3_24
+    - clang 12.0.0 hca03da5_4
+    - clang-12 12.0.0 default_he099f3d_4
+    - clang_osx-arm64 12.0.0 hcb56dc5_3
+    - clangxx 12.0.0 default_he099f3d_4
+    - compiler-rt 12.0.0 h4ccfd99_3
+    - compiler-rt_osx-arm64 12.0.0 h4fb70ea_3
+    - ld64_osx-arm64 530 h001ce53_24
+    - ldid 2.1.2 h64d1936_2
+    - libclang-cpp12 12.0.0 default_he099f3d_4
+    - libcxx 12.0.0 hf6beb65_1
+    - libllvm12 12.0.0 h12f7ac0_4
+    - llvm-tools 12.0.0 h12f7ac0_4
+    - patch 2.7.6 h1a28f6b_1001
+    - tapi 1100.0.11 ha21211d_0
+    - zlib 1.2.11 h5a0b063_4
+  host:
+    - ca-certificates 2021.10.26 hca03da5_2
+    - certifi 2021.10.8 py39hca03da5_2
+    - expat 2.4.1 hc377ac9_2
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.4.2 hc377ac9_2
+    - libiconv 1.16 h1230e6a_0
+    - ncurses 6.3 h1a28f6b_2
+    - openssl 1.1.1m h1a28f6b_0
+    - pip 21.2.4 py39hca03da5_0
+    - python 3.9.7 hc70090a_1
+    - readline 8.1.2 h1a28f6b_1
+    - setuptools 58.0.4 py39hca03da5_1
+    - sqlite 3.37.0 h1058600_0
+    - tk 8.6.11 hb8d0fd4_0
+    - tzdata 2021e hda174b7_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h1a28f6b_0
+    - zlib 1.2.11 h5a0b063_4
+  run:
+    - libffi >=3.3
+    - pycparser
+    - python >=3.9,<3.10.0a0
+test:
+  commands:
+    - pip check
+  imports:
+    - _cffi_backend
+    - cffi
+  requires:
+    - pip
+about:
+  description: 'Cffi aims to allow users to call C code from Python without having
+    to
+
+    learn a 3rd language. It provides a convenient and reliable way to call
+
+    compiled C code from Python using interface declarations written in C.
+
+    '
+  dev_url: https://foss.heptapod.net/pypy/cffi
+  doc_source_url: https://foss.heptapod.net/pypy/cffi/-/tree/branch/default/doc/source
+  doc_url: https://cffi.readthedocs.io/en/latest/
+  home: http://cffi.readthedocs.org/
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Foreign Function Interface for Python calling C code.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - goanpeca
+    - inducer
+    - mingwandroid
+    - ocefpaf

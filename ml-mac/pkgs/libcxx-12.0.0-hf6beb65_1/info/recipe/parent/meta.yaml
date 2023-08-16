@@ -1,0 +1,107 @@
+{% set version = "12.0.0" %}
+
+package:
+  name: libcxx_and_libcxxabi
+  version: {{ version }}
+
+source:
+  - url: https://github.com/llvm/llvm-project/releases/download/llvmorg-{{ version.replace(".rc", "-rc") }}/llvm-project-{{ version.replace(".rc", "rc") }}.src.tar.xz
+    sha256: 9ed1688943a4402d7c904cc4515798cdb20080066efa010fe7e1f2551b423628
+    patches:
+      - patches/0001-libcxxabi-10.9-compatibility.patch  # [osx and x86_64]
+      - patches/0002-libcxx-legacy-standalone-build.patch
+
+build:
+  number: 1
+  skip: true  # [win and vc<14]
+  skip: true  # [win]
+  skip: true  # [ppc64le or aarch64]
+  ignore_run_exports:
+    - libstdcxx-ng
+  missing_dso_whitelist:
+    - /usr/lib/libc++abi.dylib
+
+requirements:
+  build:
+    - cmake
+    - make                    # [unix]
+    - {{ compiler('cxx') }}
+    - python >3               # [not osx]
+  host:
+    - clangdev {{ version }}  # [not osx]
+    - llvmdev {{ version }}   # [not osx]
+
+outputs:
+  - name: libcxx
+    files:
+      - include/c++
+      - Library/include/c++  # [win]
+      - lib/libc++.*  # [unix]
+      - lib/libc++fs.*  # [unix and not osx]
+      - lib/libc++experimental.*  # [unix and not osx]
+      - Library/bin/c++*.dll  # [win]
+      - Library/lib/c++*.lib  # [win]
+      - Library/lib/libc++*.lib  # [win]
+    requirements:   # [linux]
+      run:   # [linux]
+        - {{ pin_subpackage("libcxxabi", exact=True) }}    # [linux]
+    test:
+      requires:
+        - clang                  # [osx]
+        - clangxx
+        - compiler-rt            # [osx]
+        - ld64                   # [osx]
+        - cctools                # [osx]
+        - llvm-tools             # [osx]
+        - {{ compiler('cxx') }}  # [not osx]
+      files:
+        - test_sources
+        - compile_test.sh   # [unix]
+        - compile_test.bat  # [win]
+      commands:
+        # Dummy var for different hashes
+        - echo {{ dummy_var }}   # [osx]
+        - if not exist %LIBRARY_INC%\\c++\\v1\\iterator exit 1     # [win]
+        - test -f $PREFIX/include/c++/v1/iterator      # [unix]
+        - bash compile_test.sh   # [unix]
+        - compile_test.bat       # [win]
+        # !!!!!!!!!!!! README !!!!!!!!!!!!!!!!!!
+        # we do not ship libcxxabi on OSX - this breaks exception passing
+        - if [ -f $PREFIX/lib/libc++abi.dylib ]; then exit 1; fi  # [osx]
+        - test -f $PREFIX/lib/libc++abi.so  # [linux]
+
+      # Following 2 projects had issues with libc++, so check them
+      # before releasing just to be sure.
+      # downstreams:   # [osx]
+      #  - python-symengine  # [osx]
+      #  - openturns         # [osx]
+      #  - libcxx-testing    # [osx]
+
+  - name: libcxxabi
+    build:
+      skip: true  # [not linux]
+    files:
+      - lib/libc++abi.*
+    requirements:
+      run_constrained:
+        - libcxx {{ version }}.*
+    test:
+      commands:
+        - test -f $PREFIX/lib/libc++abi.so  # [linux]
+
+about:
+  home: http://llvm.org/
+  license: Apache-2.0 WITH LLVM-exception
+  license_file: libcxx/LICENSE.TXT
+  license_family: Apache
+  summary: LLVM C++ standard library
+
+extra:
+  recipe-maintainers:
+    - SylvainCorlay
+    - inducer
+    - jakirkham
+    - isuruf
+    - beckermr
+    - timsnyder
+    - katietz

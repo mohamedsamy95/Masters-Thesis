@@ -1,0 +1,22 @@
+{
+  "build": "hf6beb65_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [],
+  "features": "",
+  "fn": "libcxx-12.0.0-hf6beb65_1.conda",
+  "legacy_bz2_md5": "6604e0e32cd77840804ced23b7ab8ea4",
+  "legacy_bz2_size": 1073436,
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "md5": "2667a7b81d580c65fe4b9f13d9c85ee7",
+  "name": "libcxx",
+  "sha256": "e196c2197bd4cb6a79984fbb6d8afb7837a0eb36ac92331c7915c12efbb0d87e",
+  "size": 812202,
+  "subdir": "osx-arm64",
+  "timestamp": 1628340254280,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/libcxx-12.0.0-hf6beb65_1.conda",
+  "version": "12.0.0"
+}

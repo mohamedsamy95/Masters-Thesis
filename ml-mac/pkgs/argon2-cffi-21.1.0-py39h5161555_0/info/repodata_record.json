@@ -1,0 +1,29 @@
+{
+  "arch": "arm64",
+  "build": "py39h5161555_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [
+    "argon2_cffi ==999"
+  ],
+  "depends": [
+    "cffi >=1.0.0",
+    "python >=3.9,<3.10.0a0",
+    "python_abi 3.9.* *_cp39",
+    "six"
+  ],
+  "features": "",
+  "fn": "argon2-cffi-21.1.0-py39h5161555_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "bfdeb6fd53164eb3f0d159402abab731",
+  "name": "argon2-cffi",
+  "platform": "darwin",
+  "sha256": "d78ada15141a72dbcb4b74ff45fa940e254b98e8edeb821a942bb027454eacaf",
+  "size": 46466,
+  "subdir": "osx-arm64",
+  "timestamp": 1633991122565,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/argon2-cffi-21.1.0-py39h5161555_0.tar.bz2",
+  "version": "21.1.0"
+}

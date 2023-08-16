@@ -1,0 +1,18 @@
+{
+  "arch": null,
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "backports",
+    "python >=3.6",
+    "setuptools"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "backports.functools_lru_cache",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1618230771610,
+  "version": "1.6.4"
+}

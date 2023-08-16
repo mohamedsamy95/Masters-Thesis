@@ -1,0 +1,29 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [
+    "trio >=0.16,<0.22"
+  ],
+  "depends": [
+    "idna >=2.8",
+    "python >=3.7",
+    "sniffio >=1.1",
+    "typing_extensions"
+  ],
+  "features": "",
+  "fn": "anyio-3.6.2-pyhd8ed1ab_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "8ada050fa88f26916fc1e76e368a49fd",
+  "name": "anyio",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "fd75e43157315b02a816d8feddd6da6fffe84d4c78e6429cf017e366b54bcb74",
+  "size": 85156,
+  "subdir": "noarch",
+  "timestamp": 1666191244773,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/anyio-3.6.2-pyhd8ed1ab_0.tar.bz2",
+  "version": "3.6.2"
+}

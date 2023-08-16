@@ -1,0 +1,335 @@
+{
+  "paths": [
+    {
+      "_path": "site-packages/jsonschema-4.17.3.dist-info/INSTALLER",
+      "path_type": "hardlink",
+      "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+      "size_in_bytes": 5
+    },
+    {
+      "_path": "site-packages/jsonschema-4.17.3.dist-info/METADATA",
+      "path_type": "hardlink",
+      "sha256": "6270c4b3e8fa4b802dfc5ab9e2eecfa9f606e20413f04e67ae9f2fbb63d7797c",
+      "size_in_bytes": 7879
+    },
+    {
+      "_path": "site-packages/jsonschema-4.17.3.dist-info/RECORD",
+      "path_type": "hardlink",
+      "sha256": "3eaa4ad8c7925d04876a99a061d3fddc0eecf5986d385573be548e2fcccb00c6",
+      "size_in_bytes": 6754
+    },
+    {
+      "_path": "site-packages/jsonschema-4.17.3.dist-info/REQUESTED",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/jsonschema-4.17.3.dist-info/WHEEL",
+      "path_type": "hardlink",
+      "sha256": "35a2e68071d6fdff634efbffc1187dbdc2bb73b10af68e5fc2c21730ece81a03",
+      "size_in_bytes": 87
+    },
+    {
+      "_path": "site-packages/jsonschema-4.17.3.dist-info/direct_url.json",
+      "path_type": "hardlink",
+      "sha256": "16b1df7dcfe75720c9dc9a6c84e5c619e72614efb70d0a36f698a8938539b1f1",
+      "size_in_bytes": 111
+    },
+    {
+      "_path": "site-packages/jsonschema-4.17.3.dist-info/entry_points.txt",
+      "path_type": "hardlink",
+      "sha256": "bceeeb5f816cff1215272da99c0b4a8134b17e99e8cc0550d038c29a93319d61",
+      "size_in_bytes": 51
+    },
+    {
+      "_path": "site-packages/jsonschema-4.17.3.dist-info/licenses/COPYING",
+      "path_type": "hardlink",
+      "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+      "size_in_bytes": 1057
+    },
+    {
+      "_path": "site-packages/jsonschema/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "1517490d737cf80164f858f5a9c95c910b1935e19007ffebfd0b8c8ed468cdee",
+      "size_in_bytes": 2187
+    },
+    {
+      "_path": "site-packages/jsonschema/__main__.py",
+      "path_type": "hardlink",
+      "sha256": "49fcf564d7a88329a3fca671aba25763717a3bfd6fdbcb0b222b24bac89f439b",
+      "size_in_bytes": 40
+    },
+    {
+      "_path": "site-packages/jsonschema/_format.py",
+      "path_type": "hardlink",
+      "sha256": "3fb823119cd66b5754d300eedcd6f21b570d5ba76b3378b8e786bfeec244f136",
+      "size_in_bytes": 14575
+    },
+    {
+      "_path": "site-packages/jsonschema/_legacy_validators.py",
+      "path_type": "hardlink",
+      "sha256": "d0a0dcdd7d204f3b96e76351409d76dd95bf2012dc203b016951557cca3fbcd6",
+      "size_in_bytes": 10549
+    },
+    {
+      "_path": "site-packages/jsonschema/_types.py",
+      "path_type": "hardlink",
+      "sha256": "6202a48f37fdee9291b22b9ce5137bea324f182a6674c1c996170e5568c25bbf",
+      "size_in_bytes": 5425
+    },
+    {
+      "_path": "site-packages/jsonschema/_utils.py",
+      "path_type": "hardlink",
+      "sha256": "0f7a111934a4ea596c64315d0c0550581122eb6532ff849655b8cf886f4f25cb",
+      "size_in_bytes": 10429
+    },
+    {
+      "_path": "site-packages/jsonschema/_validators.py",
+      "path_type": "hardlink",
+      "sha256": "e07d132360485e1989ae6177882d55cca831c2109f886ade25f05606d3f6d076",
+      "size_in_bytes": 15956
+    },
+    {
+      "_path": "site-packages/jsonschema/benchmarks/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "034b10af10c15474b243ef2bbb72f5d613177f7abd815b81f71fd88076f847d3",
+      "size_in_bytes": 70
+    },
+    {
+      "_path": "site-packages/jsonschema/benchmarks/issue232.py",
+      "path_type": "hardlink",
+      "sha256": "18a401c26d37b1ffa93d2c41c5ce180ef0419cc6249ce93a9be5ad4e7b4de551",
+      "size_in_bytes": 506
+    },
+    {
+      "_path": "site-packages/jsonschema/benchmarks/issue232/issue.json",
+      "path_type": "hardlink",
+      "sha256": "79a3ce663311bb9bbc4692abb00f6e93bb9c3d94b9b64286e03fe190e4d0dc79",
+      "size_in_bytes": 117105
+    },
+    {
+      "_path": "site-packages/jsonschema/benchmarks/json_schema_test_suite.py",
+      "path_type": "hardlink",
+      "sha256": "3ef7da6e9518705e3fedcb180d37136ae103f2b9c510661b758e51a935c3d3cb",
+      "size_in_bytes": 320
+    },
+    {
+      "_path": "site-packages/jsonschema/cli.py",
+      "path_type": "hardlink",
+      "sha256": "0c985642ce97e67b2659f52aae74a398077383949b7778a07111a0b872401105",
+      "size_in_bytes": 8518
+    },
+    {
+      "_path": "site-packages/jsonschema/exceptions.py",
+      "path_type": "hardlink",
+      "sha256": "6ac67c9f03f0b9094c0974dbed9b728b53aec64a9188f9f12bd4eec220ea191a",
+      "size_in_bytes": 11336
+    },
+    {
+      "_path": "site-packages/jsonschema/protocols.py",
+      "path_type": "hardlink",
+      "sha256": "cdf8fe466736aec3484231081679ccb079581284beae9ae70474c6e6982f0b2d",
+      "size_in_bytes": 7295
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/draft2019-09.json",
+      "path_type": "hardlink",
+      "sha256": "7b761b3e121f0a0ca1ea2a0b8e2cc856bcf801604b8268d71bacaa202bc0c13b",
+      "size_in_bytes": 1785
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/draft2020-12.json",
+      "path_type": "hardlink",
+      "sha256": "41da76f5afb7ce062d248f762463a92f7ca47e4e0f905b224ba6afeef91ded0f",
+      "size_in_bytes": 2452
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/draft3.json",
+      "path_type": "hardlink",
+      "sha256": "2cf75f64436fb5be374a2eaa27ab8b7e1fd651c9b46daea6c67b02fd64e2458b",
+      "size_in_bytes": 2600
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/draft4.json",
+      "path_type": "hardlink",
+      "sha256": "e1489d0b4755f02793302591d3fcb8f07b6893a82a94f24895f8e4edf11b82e2",
+      "size_in_bytes": 4357
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/draft6.json",
+      "path_type": "hardlink",
+      "sha256": "c29dfce9f54835c3a06c03b3c5d5ec0eda77706568f9c4df7cfbc7566a51006d",
+      "size_in_bytes": 4437
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/draft7.json",
+      "path_type": "hardlink",
+      "sha256": "3d5392088261606c559b603f385329c9f1ab45b5d667eb990687453b055d405e",
+      "size_in_bytes": 4819
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2019-09/applicator",
+      "path_type": "hardlink",
+      "sha256": "6895100e99726fbb107058512bbec3ecfd4b24e8fd2facee3e505ee72b0d4c31",
+      "size_in_bytes": 1860
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2019-09/content",
+      "path_type": "hardlink",
+      "sha256": "9b7d4f55a4e2fdb02c430068fdffabc732addce238da3f1df2690249c3353274",
+      "size_in_bytes": 517
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2019-09/core",
+      "path_type": "hardlink",
+      "sha256": "b5a2c4957f6495d0a5081f0409ebe8a14e4139acb203fc748471f8ede2af5b2c",
+      "size_in_bytes": 1531
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2019-09/meta-data",
+      "path_type": "hardlink",
+      "sha256": "d47e2445dd6a82271a298d83cc6c6cb8d4ae1e15e0dc56becd37a163ecf01286",
+      "size_in_bytes": 892
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2019-09/validation",
+      "path_type": "hardlink",
+      "sha256": "1e526c1d335a734805fc82cf5798c12b960ad7da2517c66cda5a1b09359c3c1c",
+      "size_in_bytes": 2834
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/applicator",
+      "path_type": "hardlink",
+      "sha256": "c4a6e4147b91fef7fea6dc058cb1bf93402f7414b76578a8b16aaf1dad6aacef",
+      "size_in_bytes": 1659
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/content",
+      "path_type": "hardlink",
+      "sha256": "08343747764e4a5814262793cf4d652057a7913863c5950d43297e8e1fdac5b6",
+      "size_in_bytes": 519
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/core",
+      "path_type": "hardlink",
+      "sha256": "c2d12a8e4dd11d336dfc83a3f663aa4c69f0b49b3beb094ffeb25b5316f4803d",
+      "size_in_bytes": 1564
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/format",
+      "path_type": "hardlink",
+      "sha256": "50ebbfe790611a849b8cc400a09c1d0e0fb6ab5c0d43a0f22201fd3625056bf4",
+      "size_in_bytes": 403
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/format-annotation",
+      "path_type": "hardlink",
+      "sha256": "abc775adfefd89d22358170d9bf93f4ebd2349563bbbedd60f02bef7c812bcc0",
+      "size_in_bytes": 448
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/format-assertion",
+      "path_type": "hardlink",
+      "sha256": "c52242b9a1bb786b26c3e82c7add428c31f9c96e575dce99e56ea5feaa6da20c",
+      "size_in_bytes": 445
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/meta-data",
+      "path_type": "hardlink",
+      "sha256": "8f76d6e14f41b9b92ef933b708cdc5144c8b5268651ad11918485fb1754f1c76",
+      "size_in_bytes": 892
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/unevaluated",
+      "path_type": "hardlink",
+      "sha256": "2dbfbcb73994b670b0976492adee1fffb46c21682784d2f5a4ca561f9e2d0cb4",
+      "size_in_bytes": 506
+    },
+    {
+      "_path": "site-packages/jsonschema/schemas/vocabularies/draft2020-12/validation",
+      "path_type": "hardlink",
+      "sha256": "7010a31e541f32d2be721e2de348df75c9b36876a3ed304877fc0abda1d37a58",
+      "size_in_bytes": 2834
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/_helpers.py",
+      "path_type": "hardlink",
+      "sha256": "ca85a959562ae1abae4cf3ddd7ff055d5efb46573342d8b2bad4a1e9cd7dd593",
+      "size_in_bytes": 618
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/_suite.py",
+      "path_type": "hardlink",
+      "sha256": "132cea23710694988c5ffa370be5b9d49da6e09551534baaad61637660aca602",
+      "size_in_bytes": 7052
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/fuzz_validate.py",
+      "path_type": "hardlink",
+      "sha256": "7d403bc932488a1682c09a659147a165ec81f381dc5c472ab58e683c95c83bb2",
+      "size_in_bytes": 1114
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/test_cli.py",
+      "path_type": "hardlink",
+      "sha256": "7bd923c1f569d6c481085f5f7c61fb17081c4654da05951e85c5a233e06698b9",
+      "size_in_bytes": 28857
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/test_deprecations.py",
+      "path_type": "hardlink",
+      "sha256": "b9fd1cb7e8bd577501737ce6f0345c8310a2b5444a976f90b77c29014a0ad065",
+      "size_in_bytes": 9284
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/test_exceptions.py",
+      "path_type": "hardlink",
+      "sha256": "bef878cdf1d5bc4f5e8069f8a9cd63428dacf1f874f6856dd5670246968a8af3",
+      "size_in_bytes": 19639
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/test_format.py",
+      "path_type": "hardlink",
+      "sha256": "87bf602a970a579f2a3903a7f13b0935fd87164ad4633359dd46a2fdc7369d01",
+      "size_in_bytes": 3810
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/test_jsonschema_test_suite.py",
+      "path_type": "hardlink",
+      "sha256": "fac52e985c3fd4c4dc7cc1ab1b9f99c37ff295d5470ada3a4b13e1f9aa21eb88",
+      "size_in_bytes": 18090
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/test_types.py",
+      "path_type": "hardlink",
+      "sha256": "fe6edc84c1a3f54e46e7b8c1fc2994b8fe664a2b773c44f9f387a1a0894a91fe",
+      "size_in_bytes": 6983
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/test_utils.py",
+      "path_type": "hardlink",
+      "sha256": "94945563241e6504d409353f337061964c4f3208ec73c29009ded4fd0928a24f",
+      "size_in_bytes": 3749
+    },
+    {
+      "_path": "site-packages/jsonschema/tests/test_validators.py",
+      "path_type": "hardlink",
+      "sha256": "256e18e66cd532eba661d0421058713ceec422a37e9363276f0cc15c7abb2c81",
+      "size_in_bytes": 78785
+    },
+    {
+      "_path": "site-packages/jsonschema/validators.py",
+      "path_type": "hardlink",
+      "sha256": "cf07dd6a2405bc7f99f44a041fe1bf061f21090cce8ab260ebefc01684fcfe8c",
+      "size_in_bytes": 38150
+    }
+  ],
+  "paths_version": 1
+}

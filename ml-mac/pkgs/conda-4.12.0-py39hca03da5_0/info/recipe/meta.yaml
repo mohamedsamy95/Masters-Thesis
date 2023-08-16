@@ -1,0 +1,104 @@
+# This file created by conda-build 3.21.7
+# meta.yaml template originally from:
+# /var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_clone-6cfppufl/recipe, last modified Tue Mar 15 12:46:28 2022
+# ------------------------------------------------
+
+package:
+  name: conda
+  version: 4.12.0
+source:
+  fn: conda-4.12.0.tar.gz
+  sha256: c6607fee920aae5d96528669fc9e61b9beff6cf8c634d1d85bc6f409d5146b44
+  url: https://github.com/conda/conda/archive/4.12.0.tar.gz
+build:
+  always_include_files:
+    - bin/activate
+    - bin/conda
+    - bin/deactivate
+  number: '0'
+  string: py39hca03da5_0
+requirements:
+  build: []
+  host:
+    - ca-certificates 2022.2.1 hca03da5_0
+    - certifi 2021.10.8 py39hca03da5_2
+    - colorama 0.4.4 pyhd3eb1b0_0
+    - conda-package-handling 1.7.3 py39h1a28f6b_1
+    - expat 2.4.4 hc377ac9_0
+    - libcxx 12.0.0 hf6beb65_1
+    - libffi 3.4.2 hc377ac9_2
+    - libiconv 1.16 h1a28f6b_1
+    - ncurses 6.3 h1a28f6b_2
+    - openssl 1.1.1m h1a28f6b_0
+    - pip 21.2.4 py39hca03da5_0
+    - python 3.9.7 hc70090a_1
+    - readline 8.1.2 h1a28f6b_1
+    - ruamel_yaml 0.15.100 py39h1a28f6b_0
+    - setuptools 58.0.4 py39hca03da5_1
+    - six 1.16.0 pyhd3eb1b0_1
+    - sqlite 3.38.0 h1058600_0
+    - tk 8.6.11 hb8d0fd4_0
+    - tqdm 4.63.0 pyhd3eb1b0_0
+    - tzdata 2021e hda174b7_0
+    - wheel 0.37.1 pyhd3eb1b0_0
+    - xz 5.2.5 h1a28f6b_0
+    - yaml 0.2.5 h1a28f6b_0
+    - zlib 1.2.11 h5a0b063_4
+  run:
+    - conda-package-handling >=1.3.0
+    - pycosat >=0.6.3
+    - pyopenssl >=16.2.0
+    - python >=3.9,<3.10.0a0
+    - requests >=2.18.4,<3
+    - ruamel_yaml >=0.11.14,<0.17
+    - setuptools >=31.0.1
+  run_constrained:
+    - conda-build >=3
+    - conda-content-trust >=0.1.1
+    - conda-env >=2.6
+    - cytoolz >=0.8.1
+test:
+  downstreams:
+    - conda-smithy
+  imports:
+    - conda
+    - conda_env
+  requires:
+    - mock
+    - pexpect
+    - pytest
+    - responses
+  source_files:
+    - setup.cfg
+    - tests
+about:
+  description: 'Conda is an open source package management system and environment
+    management system for installing multiple versions of software packages and their
+    dependencies and switching easily between them. It works on Linux, OS X and Windows,
+    and was created for Python programs but can package and distribute any software.
+
+    '
+  dev_url: https://github.com/conda/conda
+  doc_url: https://conda.io/projects/conda/en/latest/
+  home: https://conda.io
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  summary: OS-agnostic, system-level binary package and environment manager.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - chenghlee
+    - jakirkham
+    - jezdez
+    - jjhelmus
+    - kalefranz
+    - kenodegard
+    - mbargull
+    - mcg1969
+    - msarahan
+    - mwcraig
+    - ocefpaf
+    - patricksnape
+    - pelson
+    - scopatz

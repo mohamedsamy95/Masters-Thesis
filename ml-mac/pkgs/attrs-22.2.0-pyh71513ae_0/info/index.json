@@ -1,0 +1,16 @@
+{
+  "arch": null,
+  "build": "pyh71513ae_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.5"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "attrs",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1671632710102,
+  "version": "22.2.0"
+}

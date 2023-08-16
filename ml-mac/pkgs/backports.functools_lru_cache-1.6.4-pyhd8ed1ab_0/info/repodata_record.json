@@ -1,0 +1,26 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "backports",
+    "python >=3.6",
+    "setuptools"
+  ],
+  "features": "",
+  "fn": "backports.functools_lru_cache-1.6.4-pyhd8ed1ab_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "c5b3edc62d6309088f4970b3eaaa65a6",
+  "name": "backports.functools_lru_cache",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "fdea00d4b79990f3fe938e2716bc32bd895eb5c44b6c75b8261db095a1b33c16",
+  "size": 9039,
+  "subdir": "noarch",
+  "timestamp": 1618230771610,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/backports.functools_lru_cache-1.6.4-pyhd8ed1ab_0.tar.bz2",
+  "version": "1.6.4"
+}

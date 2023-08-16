@@ -1,0 +1,18 @@
+{
+  "arch": null,
+  "build": "pyhd1c38e8_0",
+  "build_number": 0,
+  "depends": [
+    "__osx",
+    "ptyprocess",
+    "python >=3.7",
+    "tornado >=6.1.0"
+  ],
+  "license": "BSD-2-Clause",
+  "name": "terminado",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1670254383751,
+  "version": "0.17.1"
+}

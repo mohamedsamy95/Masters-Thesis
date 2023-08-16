@@ -1,0 +1,24 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.3"
+  ],
+  "features": "",
+  "fn": "python-fastjsonschema-2.16.2-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "5fe4b6002f505336734ce92961b3e6a0",
+  "name": "python-fastjsonschema",
+  "noarch": "python",
+  "package_type": "noarch_python",
+  "sha256": "f57c3029451da285fc16fd01f1783e00f3b8583b13030736277bd312c9f0adf2",
+  "size": 247498,
+  "subdir": "noarch",
+  "timestamp": 1663619649324,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/python-fastjsonschema-2.16.2-pyhd8ed1ab_0.tar.bz2",
+  "version": "2.16.2"
+}

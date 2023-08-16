@@ -1,0 +1,71 @@
+# This file created by conda-build 3.22.0
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Thu Aug 18 09:24:41 2022
+# ------------------------------------------------
+
+package:
+  name: matplotlib-inline
+  version: 0.1.6
+source:
+  sha256: f887e5f10ba98e8d2b150ddcf4702c1e5f8b3a20005eb0f74bfdbd360ee6f304
+  url: https://pypi.io/packages/source/m/matplotlib-inline/matplotlib-inline-0.1.6.tar.gz
+build:
+  noarch: python
+  number: '0'
+  script: /home/conda/feedstock_root/build_artifacts/matplotlib-inline_1660814786464/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/bin/python
+    -m pip install . -vv
+  string: pyhd8ed1ab_0
+requirements:
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - bzip2 1.0.8 h7f98852_4
+    - ca-certificates 2022.6.15 ha878542_0
+    - ld_impl_linux-64 2.36.1 hea4e1c9_2
+    - libffi 3.4.2 h7f98852_5
+    - libgcc-ng 12.1.0 h8d9b700_16
+    - libgomp 12.1.0 h8d9b700_16
+    - libnsl 2.0.0 h7f98852_0
+    - libsqlite 3.39.2 h753d276_1
+    - libuuid 2.32.1 h7f98852_1000
+    - libzlib 1.2.12 h166bdaf_2
+    - ncurses 6.3 h27087fc_1
+    - openssl 3.0.5 h166bdaf_1
+    - pip 22.2.2 pyhd8ed1ab_0
+    - python 3.10.5 ha86cf86_0_cpython
+    - python_abi 3.10 2_cp310
+    - readline 8.1.2 h0f457ee_0
+    - setuptools 65.0.2 py310hff52083_0
+    - sqlite 3.39.2 h4ff8645_1
+    - tk 8.6.12 h27826a3_0
+    - tzdata 2022c h191b570_0
+    - wheel 0.37.1 pyhd8ed1ab_0
+    - xz 5.2.6 h166bdaf_0
+  run:
+    - python >=3.6
+    - traitlets
+test:
+  commands:
+    - pip check
+  imports:
+    - matplotlib_inline
+    - matplotlib_inline.backend_inline
+  requires:
+    - ipython
+    - matplotlib-base
+    - pip
+about:
+  dev_url: https://github.com/ipython/matplotlib-inline
+  home: https://github.com/ipython/matplotlib-inline
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Inline Matplotlib backend for Jupyter
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - Carreau
+    - SylvainCorlay
+    - fperez
+    - martinRenou

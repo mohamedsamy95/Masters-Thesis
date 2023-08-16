@@ -1,0 +1,26 @@
+{
+  "build": "py39h22df2f2_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libffi >=3.3",
+    "pycparser",
+    "python >=3.9,<3.10.0a0"
+  ],
+  "features": "",
+  "fn": "cffi-1.15.0-py39h22df2f2_1.conda",
+  "legacy_bz2_md5": "8dfbd3438ae4fcc76ea829617ab55ccf",
+  "legacy_bz2_size": 225394,
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "392356983cdc94fe9f29bac91b502ad1",
+  "name": "cffi",
+  "sha256": "499eaefc7185ed229f93499c34ae37e4b7ec2c509097d99e92446ffc9714b063",
+  "size": 220111,
+  "subdir": "osx-arm64",
+  "timestamp": 1642701219423,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/osx-arm64/cffi-1.15.0-py39h22df2f2_1.conda",
+  "version": "1.15.0"
+}

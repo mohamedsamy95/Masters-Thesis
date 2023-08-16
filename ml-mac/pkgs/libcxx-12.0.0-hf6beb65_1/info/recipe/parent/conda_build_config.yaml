@@ -1,0 +1,23 @@
+cxx_compiler:
+  - clang_bootstrap  # [osx]
+  - gxx              # [linux]
+  - vs2017           # [win]
+c_compiler:
+  - clang_bootstrap  # [osx]
+  - gcc              # [linux]
+  - vs2017           # [win]
+vc:
+  - 14
+c_compiler_version:     # [osx and x86_64]
+  - "10.0.0"            # [osx and x86_64]
+cxx_compiler_version:   # [osx and x86_64]
+  - "10.0.0"            # [osx and x86_64]
+
+MACOSX_SDK_VERSION:  # [osx and x86_64]
+  - 10.12            # [osx and x86_64]
+CONDA_BUILD_SYSROOT:  # [osx and x86_64]
+  - /opt/MacOSX10.14.sdk        # [osx and x86_64]
+
+dummy_var:              # [osx]
+  - 0                   # [osx and x86_64]
+  - 1                   # [osx and arm64]
